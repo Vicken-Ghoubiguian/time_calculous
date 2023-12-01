@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
+//
 #define NB_SECONDS_IN_DAY 86400
 
+//
 enum numeral {
     FIRST,
     /*SECOND,
@@ -12,6 +14,7 @@ enum numeral {
     LAST
 };
 
+//
 time_t wished_wday_in_choosen_month(time_t today, int month, int wday, int hour, enum numeral num)
 {
     //

@@ -28,6 +28,7 @@ time_t wished_wday_in_choosen_month(/*time_t today,*/ int year, int month, int w
     date_tm = gmtime(&today);
 
     //
+    date_tm->tm_year = year - 1900;
     date_tm->tm_mday = 1;
     date_tm->tm_hour = hour;
     date_tm->tm_min = 0;
@@ -80,12 +81,12 @@ int main() {
 
     //
     printf("Date of change to winter time for Australia at the year %d : ", utc_date_tm->tm_year + 1900);
-    time_t datetime_for_winter_in_australia = wished_wday_in_choosen_month(2023, 3, 0, 3, FIRST);
+    time_t datetime_for_winter_in_australia = wished_wday_in_choosen_month(2024, 3, 0, 3, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_winter_in_australia)));
 
     //
     printf("Date of change to summer time for Australia at the year %d : ", utc_date_tm->tm_year + 1900);
-    time_t datetime_for_summer_in_australia = wished_wday_in_choosen_month(2023, 9, 0, 2, FIRST);
+    time_t datetime_for_summer_in_australia = wished_wday_in_choosen_month(2024, 9, 0, 2, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_summer_in_australia)));
 
     //
@@ -96,12 +97,12 @@ int main() {
 
     //
     printf("Date of change to winter time for New Zealand at the year %d : ", utc_date_tm->tm_year + 1900);
-    time_t datetime_for_winter_in_new_zealand = wished_wday_in_choosen_month(2023, 3, 0, 3, FIRST);
+    time_t datetime_for_winter_in_new_zealand = wished_wday_in_choosen_month(2024, 3, 0, 3, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_winter_in_new_zealand)));
 
     //
     printf("Date of change to summer time for New Zealand at the year %d : ", utc_date_tm->tm_year + 1900);
-    time_t datetime_for_summer_in_new_zealand = wished_wday_in_choosen_month(2023, 8, 0, 2, LAST);
+    time_t datetime_for_summer_in_new_zealand = wished_wday_in_choosen_month(2024, 8, 0, 2, LAST);
     printf("%s", asctime(gmtime(&datetime_for_summer_in_new_zealand)));
 
     //

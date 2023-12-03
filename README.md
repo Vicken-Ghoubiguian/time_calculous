@@ -3,6 +3,10 @@ C library to make all calculous on time and dates
 
 ## Contents
 
+* [Presentation](#presentation),
+* [Conclusion](#conclusion),
+
+<a href="presentation"></a>
 ## Presentation
 
 ## How to use it ?
@@ -13,4 +17,5 @@ C library to make all calculous on time and dates
 
 ## How to integrate it to your software project ?
 
+<a href="conclusion"></a>
 ## Conclusion

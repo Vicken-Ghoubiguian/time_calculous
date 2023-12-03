@@ -15,7 +15,7 @@ enum numeral {
 };
 
 //
-time_t wished_wday_in_choosen_month(/*time_t today,*/ int year, int month, int wday, int hour, enum numeral num)
+time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, enum numeral num)
 {
     //
     struct tm *date_tm;

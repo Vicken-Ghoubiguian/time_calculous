@@ -70,7 +70,7 @@ time_t wished_wday_in_choosen_month(/*time_t today,*/ int year, int month, int w
 int main() {
 
     //
-    /*time_t utc_today = time(NULL);
+    time_t utc_today = time(NULL);
 
     //
     struct tm *utc_date_tm = gmtime(&utc_today);
@@ -102,7 +102,7 @@ int main() {
     //
     printf("Date of change to summer time for New Zealand at the year %d : ", utc_date_tm->tm_year + 1900);
     time_t datetime_for_summer_in_new_zealand = wished_wday_in_choosen_month(2023, 8, 0, 2, LAST);
-    printf("%s", asctime(gmtime(&datetime_for_summer_in_new_zealand)));*/
+    printf("%s", asctime(gmtime(&datetime_for_summer_in_new_zealand)));
 
     //
     printf("=================================================");

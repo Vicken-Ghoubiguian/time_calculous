@@ -2,15 +2,17 @@
 #include <stdlib.h>
 #include <time.h>
 
+#include "time_calculous/time_calculous.h"
+
 //
-#define NB_SECONDS_IN_DAY 86400
+/*#define NB_SECONDS_IN_DAY 86400
 
 //
 enum numeral {
     FIRST,
-    /*SECOND,
+    //SECOND,
     THIRD,
-    BEFORE_LAST,*/
+    //BEFORE_LAST,
     LAST
 };
 
@@ -65,7 +67,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, enu
 
     //
     return date_timestamp;
-}
+}*/
 
 //
 int main() {

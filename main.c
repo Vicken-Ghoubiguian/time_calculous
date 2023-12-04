@@ -9,13 +9,6 @@
 int main() {
 
     //
-    /*time_t utc_today = time(NULL);
-
-    //
-    struct tm *utc_date_tm = gmtime(&utc_today);
-    utc_date_tm->tm_year = 2025 - 1900;*/
-
-    //
     int year;
 
     //

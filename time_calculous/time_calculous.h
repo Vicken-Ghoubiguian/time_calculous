@@ -16,6 +16,6 @@ enum numeral {
 };
 
 //
-time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, enum numeral num);
+time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num);
 
 #endif

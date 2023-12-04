@@ -2,7 +2,7 @@
 #include "time_calculous.h"
 
 //
-time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, enum numeral num)
+time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num)
 {
     //
     struct tm *date_tm;
@@ -18,8 +18,8 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, enu
     date_tm->tm_year = year - 1900;
     date_tm->tm_mday = 1;
     date_tm->tm_hour = hour;
-    date_tm->tm_min = 0;
-    date_tm->tm_sec = 0;
+    date_tm->tm_min = minute;
+    date_tm->tm_sec = second;
 
     //
     if(num == LAST){ date_tm->tm_mon = month + 1; }

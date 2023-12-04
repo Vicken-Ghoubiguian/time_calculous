@@ -13,6 +13,7 @@ int main() {
 
     //
     struct tm *utc_date_tm = gmtime(&utc_today);
+    utc_date_tm->tm_year = 2024 - 1900;
 
     //
     printf("\n================== Australia ==================\n");

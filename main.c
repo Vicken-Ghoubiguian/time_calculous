@@ -12,6 +12,9 @@ int main() {
     int year;
 
     //
+    print("\n");
+
+    //
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 

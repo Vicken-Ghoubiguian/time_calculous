@@ -12,7 +12,7 @@ int main() {
     int year;
 
     //
-    print("\n");
+    printf("\n");
 
     //
     printf("Veuillez entrer l'année que vous voulez : ");

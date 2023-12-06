@@ -14,7 +14,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     //
     date_tm = gmtime(&today);
 
-    //
+    // Initialization of the 'date_tm' to make all the necessary calculations
     date_tm->tm_year = year - 1900;
     date_tm->tm_mday = 1;
     date_tm->tm_hour = hour;

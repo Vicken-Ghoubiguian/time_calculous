@@ -1,5 +1,5 @@
 # time_calculous
-C library to make all calculous on time and dates
+C library to make all calculations on time and dates
 
 ## Contents
 

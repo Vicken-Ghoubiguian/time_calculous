@@ -4,9 +4,18 @@
 //
 time_t calculations_on_date_and_time(struct tm *cdatetime, time_t tmst)
 {
+    //
+    time_t cdatetime_timestamp;
+    time_t calculation_result_dt;
 
     //
-    return 0;
+    cdatetime_timestamp = timegm(cdatetime);
+
+    //
+    calculation_result_dt = cdatetime_timestamp + tmst;
+
+    //
+    return calculation_result_dt;
 }
 
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year

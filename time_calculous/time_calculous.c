@@ -1,6 +1,14 @@
 #include <time.h>
 #include "time_calculous.h"
 
+//
+/*time_t calculations_on_date_and_time(struct tm *cdatetime, time_t tmst)
+{
+
+    //
+    return 0;
+}*/
+
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num)
 {

@@ -8,11 +8,11 @@
 
 //
 enum numeral {
-    FIRST,
-    /*SECOND,
-    THIRD,
-    BEFORE_LAST,*/
-    LAST
+    FIRST, //
+    /*SECOND, //
+    THIRD, //
+    BEFORE_LAST,*/ //
+    LAST //
 };
 
 //

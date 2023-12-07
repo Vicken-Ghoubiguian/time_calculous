@@ -15,7 +15,7 @@ enum numeral {
     LAST //
 };
 
-//
+// Definition of the 'time_unit' enum to 
 enum time_unit {
     minute = 60,
     hour = 3600,

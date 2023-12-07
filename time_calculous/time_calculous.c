@@ -2,7 +2,7 @@
 #include "time_calculous.h"
 
 //
-time_t calculations_on_date_and_time(struct tm *cdatetime, int tmst)
+time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst)
 {
     //
     time_t cdatetime_timestamp;

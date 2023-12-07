@@ -16,6 +16,14 @@ enum numeral {
 };
 
 //
+enum time_unit {
+    minute = 60,
+    hour = 3600,
+    day = 86400,
+    week = 604800
+};
+
+//
 time_t calculations_on_date_and_time(struct tm *cdatetime, int tmst);
 
 //

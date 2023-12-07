@@ -10,7 +10,7 @@ int main() {
 
     //
     time_t today = time(NULL);
-    time_t calculations_results = calculations_on_date_and_time(gmtime(&today), 604800);
+    time_t calculations_results = calculations_on_date_and_time(gmtime(&today), week);
 
     //
     printf("%s", asctime(gmtime(&calculations_results)));

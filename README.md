@@ -4,7 +4,7 @@ C library to make all calculations on time and dates
 ## Contents
 
 * [Presentation](#presentation),
-* [Conclusion](#conclusion),
+* [Conclusion](#conclusion)
 
 <a href="presentation"></a>
 ## Presentation

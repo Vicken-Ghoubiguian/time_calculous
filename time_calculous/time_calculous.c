@@ -5,6 +5,18 @@
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 {
     //
+    time_t first_dt_timestamp;
+    time_t second_dt_timestamp;
+    time_t calculation_result;
+
+    //
+    first_dt_timestamp = timegm(first_dt);
+    second_dt_timestamp = timegm(second_dt);
+
+    //
+    calculation_result = first_dt_timestamp - second_dt_timestamp;
+
+    //
     return 0;
 }
 

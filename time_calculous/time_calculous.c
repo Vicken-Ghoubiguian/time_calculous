@@ -2,7 +2,7 @@
 #include "time_calculous.h"
 
 //
-time_t diffs__on_date_and_time(struct tm *first_dt, struct tm *second_dt)
+time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 {
     //
     return 0;

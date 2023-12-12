@@ -27,7 +27,7 @@ enum time_unit {
 };
 
 //
-time_t diffs__on_date_and_time(struct tm *first_dt, struct tm *second_dt);
+time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt);
 
 //
 time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst);

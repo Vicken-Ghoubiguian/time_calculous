@@ -27,6 +27,18 @@ enum time_unit {
 };
 
 //
+struct time_diff {
+
+    int years;
+    int months;
+    int days;
+    int hours;
+    int minutes;
+    int seconds;
+    
+} time_diff;
+
+//
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt);
 
 //

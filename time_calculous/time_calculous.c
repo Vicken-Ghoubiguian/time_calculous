@@ -17,7 +17,7 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
     calculation_result = first_dt_timestamp - second_dt_timestamp;
 
     //
-    return 0;
+    return calculation_result;
 }
 
 //

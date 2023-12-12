@@ -27,6 +27,9 @@ enum time_unit {
 };
 
 //
+time_t diffs__on_date_and_time(struct tm *first_dt, struct tm *second_dt);
+
+//
 time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst);
 
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year

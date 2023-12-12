@@ -2,6 +2,13 @@
 #include "time_calculous.h"
 
 //
+time_t diffs__on_date_and_time(struct tm *first_dt, struct tm *second_dt)
+{
+    //
+    return 0;
+}
+
+//
 time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst)
 {
     //

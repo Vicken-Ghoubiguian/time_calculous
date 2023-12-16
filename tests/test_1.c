@@ -18,6 +18,9 @@ int main() {
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 
+    printf("Veuillez entrer le jour de la semaine que vous voulez : ");
+    scanf("%d", &wday);
+
     //
     printf("Date of first tuesday of April %d : ", year);
     time_t datetime_for_winter_in_australia = wished_wday_in_choosen_month(year, 3, 2, 3, 0, 0, FIRST);

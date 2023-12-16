@@ -76,14 +76,22 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     }
 
     //
-    while(date_tm->tm_wday != wday)
+    if((num == LAST) || (num == FIRST))
     {
         //
-        if(num == LAST){ date_timestamp = date_timestamp - NB_SECONDS_IN_DAY; }
-        else{ date_timestamp = date_timestamp + NB_SECONDS_IN_DAY; }
-                
-        //
-        date_tm = gmtime(&date_timestamp);
+        while(date_tm->tm_wday != wday)
+        {
+            //
+            if(num == LAST){ date_timestamp = date_timestamp - NB_SECONDS_IN_DAY; }
+            else{ date_timestamp = date_timestamp + NB_SECONDS_IN_DAY; }
+                    
+            //
+            date_tm = gmtime(&date_timestamp);
+        }
+    }
+    else
+    {
+
     }
 
     //

@@ -21,11 +21,11 @@ int main() {
     scanf("%d", &year);
 
     //
-    printf("Veuillez entrer le mois que vous voulez : ");
+    printf("Veuillez entrer le mois que vous voulez [de 0 à 11] : ");
     scanf("%d", &month);
 
     //
-    printf("Veuillez entrer le jour de la semaine que vous voulez : ");
+    printf("Veuillez entrer le jour de la semaine que vous voulez [de 0 à 6] : ");
     scanf("%d", &wday);
 
     //

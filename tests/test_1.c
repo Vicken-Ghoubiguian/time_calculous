@@ -10,6 +10,7 @@ int main() {
 
     //
     int year;
+    int month;
     int wday;
 
     //
@@ -19,6 +20,11 @@ int main() {
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 
+    //
+    printf("Veuillez entrer le mois que vous voulez : ");
+    scanf("%d", &month);
+
+    //
     printf("Veuillez entrer le jour de la semaine que vous voulez : ");
     scanf("%d", &wday);
 

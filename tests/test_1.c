@@ -49,18 +49,18 @@ int main() {
     }
 
     //
-    printf("Date of first %s of April %d : ", weekDays[wday], year);
-    time_t datetime_for_winter_in_australia = wished_wday_in_choosen_month(year, 3, wday, 0, 0, 0, FIRST);
+    printf("Date of first %s of %s %d : ", weekDays[wday], months[month], year);
+    time_t datetime_for_winter_in_australia = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_winter_in_australia)));
 
     //
-    printf("Date of first %s of October %d : ", weekDays[wday], year);
+    /*printf("Date of first %s of October %d : ", weekDays[wday], year);
     time_t datetime_for_summer_in_australia = wished_wday_in_choosen_month(year, 9, wday, 0, 0, 0, FIRST);
-    printf("%s", asctime(gmtime(&datetime_for_summer_in_australia)));
+    printf("%s", asctime(gmtime(&datetime_for_summer_in_australia)));*/
 
     //
-    printf("Date of last %s of September %d : ", weekDays[wday], year);
-    time_t datetime_for_summer_in_new_zealand = wished_wday_in_choosen_month(year, 8, wday, 0, 0, 0, LAST);
+    printf("Date of last %s of %s %d : ", weekDays[wday], months[month], year);
+    time_t datetime_for_summer_in_new_zealand = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, LAST);
     printf("%s", asctime(gmtime(&datetime_for_summer_in_new_zealand)));
 
     //

@@ -14,10 +14,6 @@ int main() {
     int wday;
 
     //
-    char* weekDays[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
-    //char* months[] = {};
-
-    //
     printf("\n");
 
     //
@@ -53,17 +49,17 @@ int main() {
     }
 
     //
-    printf("Date of first tuesday of April %d : ", year);
+    printf("Date of first %s of April %d : ", weekDays[wday], year);
     time_t datetime_for_winter_in_australia = wished_wday_in_choosen_month(year, 3, wday, 0, 0, 0, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_winter_in_australia)));
 
     //
-    printf("Date of first tuesday of October %d : ", year);
+    printf("Date of first %s of October %d : ", weekDays[wday], year);
     time_t datetime_for_summer_in_australia = wished_wday_in_choosen_month(year, 9, wday, 0, 0, 0, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_summer_in_australia)));
 
     //
-    printf("Date of last tuesday of September %d : ", year);
+    printf("Date of last %s of September %d : ", weekDays[wday], year);
     time_t datetime_for_summer_in_new_zealand = wished_wday_in_choosen_month(year, 8, wday, 0, 0, 0, LAST);
     printf("%s", asctime(gmtime(&datetime_for_summer_in_new_zealand)));
 

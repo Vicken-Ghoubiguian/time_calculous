@@ -39,6 +39,9 @@ struct time_diff {
 } time_diff;
 
 //
+static char* weekDays[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
+
+//
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt);
 
 //

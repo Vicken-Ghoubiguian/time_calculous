@@ -42,6 +42,9 @@ struct time_diff {
 static char* weekDays[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
 
 //
+static char* months[] = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"};
+
+//
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt);
 
 //

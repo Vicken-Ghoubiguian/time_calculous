@@ -25,8 +25,22 @@ int main() {
     scanf("%d", &month);
 
     //
+    if(month < 1 || month > 12)
+    {
+
+        return -1;
+    }
+
+    //
     printf("Veuillez entrer le jour de la semaine que vous voulez [de 0 à 6] : ");
     scanf("%d", &wday);
+
+    //
+    if(wday < 1 || wday > 6)
+    {
+
+        return -1;
+    }
 
     //
     printf("Date of first tuesday of April %d : ", year);

@@ -14,6 +14,10 @@ int main() {
     int wday;
 
     //
+    char* weekDays[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
+    //char* months[] = {};
+
+    //
     printf("\n");
 
     //

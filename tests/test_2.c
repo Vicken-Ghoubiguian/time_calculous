@@ -58,6 +58,13 @@ int main() {
     scanf("%d", &seconds);
 
     //
+    /*if()
+    {
+        //
+        return 0;
+    }*/
+
+    //
     time_t today = time(NULL);
     time_t calculations_results = calculations_on_date_and_time(gmtime(&today), 2 * decade);
 

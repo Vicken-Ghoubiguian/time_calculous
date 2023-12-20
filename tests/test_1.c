@@ -58,6 +58,12 @@ int main() {
     time_t datetime_for_summer_in_australia = wished_wday_in_choosen_month(year, 9, wday, 0, 0, 0, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_summer_in_australia)));*/
 
+    // ===>
+
+    // ===>
+
+    // ===>
+
     //
     printf("Date of last %s of %s %d : ", weekDays[wday], months[month], year);
     time_t datetime_for_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, LAST);

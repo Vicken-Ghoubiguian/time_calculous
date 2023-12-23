@@ -50,10 +50,6 @@ int main() {
     scanf("%d", &minutes);
 
     //
-    printf("Veuillez entrer le nombre de minutes que vous voulez : ");
-    scanf("%d", &minutes);
-
-    //
     printf("Veuillez entrer le nombre de secondes que vous voulez : ");
     scanf("%d", &seconds);
 

@@ -58,7 +58,7 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + seconds;
+    long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
 
     //
     time_t today = time(NULL);

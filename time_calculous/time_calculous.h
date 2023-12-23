@@ -17,6 +17,7 @@ enum numeral {
 
 // Definition of the 'time_unit' enum to to list the number of seconds in each of the time units used
 enum time_unit {
+    second = 1,
     minute = 60,
     hour = 3600,
     day = 86400,

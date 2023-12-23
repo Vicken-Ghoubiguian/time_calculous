@@ -58,15 +58,18 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    /*if()
+    /*if( || )
     {
         //
         return 0;
     }*/
 
     //
+    long long int datetime_calculation = 0;
+
+    //
     time_t today = time(NULL);
-    time_t calculations_results = calculations_on_date_and_time(gmtime(&today), 2 * decade);
+    time_t calculations_results = calculations_on_date_and_time(gmtime(&today), datetime_calculation);
 
     //
     printf("%s", asctime(gmtime(&calculations_results)));

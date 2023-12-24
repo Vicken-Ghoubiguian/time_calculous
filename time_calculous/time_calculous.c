@@ -93,13 +93,11 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
             date_tm = gmtime(&date_timestamp);
         }
     }
-    else
+    else if(num == BEFORE_LAST)
     {
         //
         int i = 0;
 
-        if(num == BEFORE_LAST)
-        {
             //
             while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
             {
@@ -116,11 +114,10 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
                 //
                 date_tm = gmtime(&date_timestamp);
             }
-        }
-        else
-        {
+    }
+    else
+    {
 
-        }
     }
 
     //

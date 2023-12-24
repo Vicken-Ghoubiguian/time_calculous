@@ -75,6 +75,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         date_tm = gmtime(&date_timestamp);
     }
 
+    // =========> CODE À FACTORISER <=========
     //
     if((num == LAST) || (num == FIRST))
     {
@@ -119,6 +120,8 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     {
 
     }
+
+    // =======================================
 
     //
     return date_timestamp;

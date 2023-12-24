@@ -105,7 +105,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
             date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
 
             //
-            if(date_tm->tm_wday == wday)
+            if(date_tm->tm_wday == wday && date_tm->tm_mon == month)
             {
                 //
                 i = i + 1;

@@ -98,22 +98,22 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         //
         int i = 0;
 
+        //
+        while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
+        {
             //
-            while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
+            date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
+
+            //
+            if(date_tm->tm_wday == wday)
             {
                 //
-                date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
-
-                //
-                if(date_tm->tm_wday == wday)
-                {
-                    //
-                    i = i + 1;
-                }
-
-                //
-                date_tm = gmtime(&date_timestamp);
+                i = i + 1;
             }
+
+            //
+            date_tm = gmtime(&date_timestamp);
+        }
     }
     else
     {

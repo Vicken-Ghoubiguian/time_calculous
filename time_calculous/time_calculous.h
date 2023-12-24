@@ -22,9 +22,9 @@ enum time_unit {
     hour = 3600,
     day = 86400,
     week = 604800,
-    month = 2628288,
-    year = 31536000,
-    decade = 315360000
+    month = 2629800,
+    year = 31557600,
+    decade = 315576000
 };
 
 //

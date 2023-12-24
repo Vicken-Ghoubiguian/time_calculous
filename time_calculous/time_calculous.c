@@ -100,20 +100,9 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 
         if(num == BEFORE_LAST)
         {
-
-            //
-            /*if(date_tm->tm_wday == wday && date_tm->tm_mon == month)
-            {
-                //
-                i = i + 1;
-            }*/
-
             //
             while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
             {
-
-                //printf("\n\n%d\n\n", (date_tm->tm_wday != wday && date_tm->tm_mon != month));
-
                 //
                 date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
 

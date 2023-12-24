@@ -62,7 +62,9 @@ int main() {
 
     // ===>
 
-    // ===>
+    printf("Date of before last %s of %s %d : ", weekDays[wday], months[month], year);
+    time_t datetime_for_before_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, BEFORE_LAST);
+    printf("%s", asctime(gmtime(&datetime_for_before_last)));
 
     //
     printf("Date of last %s of %s %d : ", weekDays[wday], months[month], year);

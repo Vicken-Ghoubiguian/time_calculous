@@ -10,8 +10,8 @@
 enum numeral {
     FIRST, //
     /*SECOND, //
-    THIRD, //
-    BEFORE_LAST,*/ //
+    THIRD, // */
+    BEFORE_LAST, //
     LAST //
 };
 

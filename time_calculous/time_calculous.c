@@ -58,7 +58,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     date_tm->tm_sec = second;
 
     //
-    if(num == LAST){ date_tm->tm_mon = month + 1; }
+    if(num == LAST || num == BEFORE_LAST){ date_tm->tm_mon = month + 1; }
     else{ date_tm->tm_mon = month; }
 
     //
@@ -80,18 +80,58 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     {
         //
         while(date_tm->tm_wday != wday)
-        {
-            //
-            if(num == LAST){ date_timestamp = date_timestamp - NB_SECONDS_IN_DAY; }
-            else{ date_timestamp = date_timestamp + NB_SECONDS_IN_DAY; }
-                    
-            //
+        { 
+            if(num == LAST)
+            { 
+                date_timestamp = date_timestamp - NB_SECONDS_IN_DAY; 
+            } 
+            else
+            { 
+                date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
+            }
+            
             date_tm = gmtime(&date_timestamp);
         }
     }
     else
     {
+        //
+        int i = 0;
 
+        if(num == BEFORE_LAST)
+        {
+
+            //
+            /*if(date_tm->tm_wday == wday && date_tm->tm_mon == month)
+            {
+                //
+                i = i + 1;
+            }*/
+
+            //
+            while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
+            {
+
+                //printf("\n\n%d\n\n", (date_tm->tm_wday != wday && date_tm->tm_mon != month));
+
+                //
+                date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
+
+                //
+                if(date_tm->tm_wday == wday)
+                {
+                    //
+                    i = i + 1;
+                }
+
+                //
+                date_tm = gmtime(&date_timestamp);
+            }
+        }
+        else
+        {
+
+        }
     }
 
     //

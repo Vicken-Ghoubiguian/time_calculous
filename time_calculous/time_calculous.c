@@ -122,7 +122,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         int i = 0;
 
         //
-        while(date_tm->tm_wday != wday || i != 2)
+        while(date_tm->tm_wday != wday || i != 1)
         {
             //
             date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
@@ -144,7 +144,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         int i = 0;
 
         //
-        while(date_tm->tm_wday != wday || i != 3)
+        while(date_tm->tm_wday != wday || i != 2)
         {
             //
             date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;

@@ -54,8 +54,14 @@ int main() {
     printf("%s", asctime(gmtime(&datetime_for_first)));
 
     // ===>
+    printf("Date of second %s of %s %d : ", weekDays[wday], months[month], year);
+    time_t datetime_for_second = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, SECOND);
+    printf("%s", asctime(gmtime(&datetime_for_second)));
 
     // ===>
+    printf("Date of third %s of %s %d : ", weekDays[wday], months[month], year);
+    time_t datetime_for_third = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, THIRD);
+    printf("%s", asctime(gmtime(&datetime_for_third)));
 
     printf("Date of before last %s of %s %d : ", weekDays[wday], months[month], year);
     time_t datetime_for_before_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, BEFORE_LAST);

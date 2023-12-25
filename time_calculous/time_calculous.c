@@ -116,9 +116,49 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
             date_tm = gmtime(&date_timestamp);
         }
     }
-    else
+    else if(num == SECOND)
     {
+        //
+        int i = 0;
 
+        //
+        while(date_tm->tm_wday != wday || i != 2)
+        {
+            //
+            date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
+
+            //
+            if(date_tm->tm_wday == wday)
+            {
+                //
+                i = i + 1;
+            }
+
+            //
+            date_tm = gmtime(&date_timestamp);
+        }
+    }
+    else if(num == THIRD)
+    {
+        //
+        int i = 0;
+
+        //
+        while(date_tm->tm_wday != wday || i != 3)
+        {
+            //
+            date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
+
+            //
+            if(date_tm->tm_wday == wday)
+            {
+                //
+                i = i + 1;
+            }
+
+            //
+            date_tm = gmtime(&date_timestamp);
+        }
     }
 
     // =======================================

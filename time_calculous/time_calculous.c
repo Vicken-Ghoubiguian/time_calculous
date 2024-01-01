@@ -104,9 +104,75 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         date_tm = gmtime(&date_timestamp);
     }
 
+    //
+    while(condition)
+    {
+        //
+        if(num == LAST || num == BEFORE_LAST)
+        {
+            //
+            date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
+        }
+        //
+        else
+        {
+            //
+            date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
+        }
+
+        //
+        if(num == BEFORE_LAST)
+        {
+            //
+            if(date_tm->tm_wday == wday && date_tm->tm_mon == month)
+            {
+                //
+                i = i + 1;
+            }
+        }
+        //
+        else if(num == SECOND || num == THIRD)
+        {
+            //
+            if(date_tm->tm_wday == wday)
+            {
+                //
+                i = i + 1;
+            }
+        }
+
+        //
+        date_tm = gmtime(&date_timestamp);
+
+        //
+        if((num == LAST) || (num == FIRST))
+        {
+            //
+            condition = date_tm->tm_wday != wday || date_tm->tm_mon != month;
+        }
+        //
+        else if(num == BEFORE_LAST)
+        {
+            //
+            condition = date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1;
+        }
+        //
+        else if(num == SECOND)
+        {
+            //
+            condition = date_tm->tm_wday != wday || i != 1;
+        }
+        //
+        else if(num == THIRD)
+        {
+            //
+            condition = date_tm->tm_wday != wday || i != 2;
+        }
+    }
+
     // =========> CODE À FACTORISER <=========
     //
-    if((num == LAST) || (num == FIRST))
+    /*if((num == LAST) || (num == FIRST))
     {
         //
         while(date_tm->tm_wday != wday || date_tm->tm_mon != month)
@@ -125,9 +191,6 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     }
     else if(num == BEFORE_LAST)
     {
-        //
-        //int i = 0;
-
         //
         while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
         {
@@ -148,9 +211,6 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     else if(num == SECOND)
     {
         //
-        //int i = 0;
-
-        //
         while(date_tm->tm_wday != wday || i != 1)
         {
             //
@@ -170,9 +230,6 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     else if(num == THIRD)
     {
         //
-        //int i = 0;
-
-        //
         while(date_tm->tm_wday != wday || i != 2)
         {
             //
@@ -188,7 +245,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
             //
             date_tm = gmtime(&date_timestamp);
         }
-    }
+    }*/
 
     // =======================================
 

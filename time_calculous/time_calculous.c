@@ -40,6 +40,10 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst)
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num)
 {
+    //
+    int i = 0;
+    int condition = 0;
+
     // Definition of the 'date_tm' and the 'date_timestamp' variables
     struct tm *date_tm;
     time_t date_timestamp;
@@ -64,6 +68,31 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     //
     date_timestamp = timegm(date_tm);
     date_tm = gmtime(&date_timestamp);
+
+    //
+    if((num == LAST) || (num == FIRST))
+    {
+        //
+        condition = date_tm->tm_wday != wday || date_tm->tm_mon != month;
+    }
+    //
+    else if(num == BEFORE_LAST)
+    {
+        //
+        condition = date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1;
+    }
+    //
+    else if(num == SECOND)
+    {
+        //
+        condition = date_tm->tm_wday != wday || i != 1;
+    }
+    //
+    else if(num == THIRD)
+    {
+        //
+        condition = date_tm->tm_wday != wday || i != 2;
+    }
 
     //
     if((num == LAST) && (date_tm->tm_wday == 0))
@@ -97,7 +126,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     else if(num == BEFORE_LAST)
     {
         //
-        int i = 0;
+        //int i = 0;
 
         //
         while(date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1)
@@ -119,7 +148,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     else if(num == SECOND)
     {
         //
-        int i = 0;
+        //int i = 0;
 
         //
         while(date_tm->tm_wday != wday || i != 1)
@@ -141,7 +170,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     else if(num == THIRD)
     {
         //
-        int i = 0;
+        //int i = 0;
 
         //
         while(date_tm->tm_wday != wday || i != 2)

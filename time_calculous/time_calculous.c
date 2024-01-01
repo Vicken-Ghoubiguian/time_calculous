@@ -108,19 +108,6 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     while(condition)
     {
         //
-        if(num == LAST || num == BEFORE_LAST)
-        {
-            //
-            date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
-        }
-        //
-        else
-        {
-            //
-            date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
-        }
-
-        //
         if(num == BEFORE_LAST)
         {
             //
@@ -139,6 +126,19 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
                 //
                 i = i + 1;
             }
+        }
+
+        //
+        if(num == LAST || num == BEFORE_LAST)
+        {
+            //
+            date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
+        }
+        //
+        else
+        {
+            //
+            date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
         }
 
         //

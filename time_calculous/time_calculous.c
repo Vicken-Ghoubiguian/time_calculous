@@ -21,17 +21,20 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 }
 
 // Definition of the 'calculations_on_date_and_time' to make calculations on datetimes
-time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst)
+time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
 {
     //
     time_t cdatetime_timestamp;
     time_t calculation_result_dt;
 
     //
+    long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
+
+    //
     cdatetime_timestamp = timegm(cdatetime);
 
     //
-    calculation_result_dt = cdatetime_timestamp + tmst;
+    calculation_result_dt = cdatetime_timestamp + datetime_calculation;
 
     //
     return calculation_result_dt;

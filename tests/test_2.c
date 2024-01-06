@@ -8,7 +8,7 @@
 //
 int main() {
 
-    //
+    // Definition of the 
     int decades;
     int years;
     int months;
@@ -65,7 +65,7 @@ int main() {
     time_t calculations_results = calculations_on_date_and_time(gmtime(&today), datetime_calculation);
 
     /* ====== TO TEST ====== */
-    printf("\n%lld\n", calculations_results);
+    printf("\n%ld\n", calculations_results);
     /* ====== TO TEST ====== */
 
     //

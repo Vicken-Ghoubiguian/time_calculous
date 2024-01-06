@@ -20,7 +20,7 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
     return calculation_result;
 }
 
-//
+// Definition of the 'calculations_on_date_and_time' to make calculations on datetimes
 time_t calculations_on_date_and_time(struct tm *cdatetime, long long int tmst)
 {
     //

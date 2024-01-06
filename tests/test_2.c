@@ -54,22 +54,11 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
-
-    /* ====== TO TEST ====== */
-    //printf("\n%lld\n", datetime_calculation);
-    /* ====== TO TEST ====== */
-
-    //
     time_t today = time(NULL);
-    /*time_t calculations_results = calculations_on_date_and_time(gmtime(&today), decades, years, months, weeks, days, hours, minutes, seconds);
-
-    /* ====== TO TEST ====== */
-    //printf("\n%ld\n", calculations_results);
-    /* ====== TO TEST ====== */
+    time_t calculations_results = calculations_on_date_and_time(gmtime(&today), decades, years, months, weeks, days, hours, minutes, seconds);
 
     //
-    /*printf("%s", asctime(gmtime(&calculations_results)));*/
+    printf("%s", asctime(gmtime(&calculations_results)));
 
     //
     return 0;

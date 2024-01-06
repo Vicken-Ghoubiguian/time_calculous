@@ -27,10 +27,7 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     time_t cdatetime_timestamp;
     time_t calculation_result_dt;
 
-    //
-    
-    //
-    //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
+    long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
 
     //
     cdatetime_timestamp = timegm(cdatetime);

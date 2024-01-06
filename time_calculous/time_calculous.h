@@ -16,7 +16,7 @@ enum numeral {
 };
 
 // Definition of the 'time_unit' enum to to list the number of seconds in each of the time units used
-/*enum time_unit {
+enum time_unit {
     second = 1,
     minute = 60,
     hour = 3600,
@@ -25,7 +25,7 @@ enum numeral {
     month = 2629800,
     year = 31557600,
     decade = 315576000
-};*/
+};
 
 //
 struct time_diff {

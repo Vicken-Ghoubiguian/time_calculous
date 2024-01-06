@@ -29,13 +29,15 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 
     // => Si : decades, years, months ou weeks > 0 : manipulation du struct tm entré en paramétre...
 
+    cdatetime_timestamp = timegm(cdatetime);
+
     // => Si : days, hours, minutes, seconds > 0 : manipulation du timestamp à retourner...
 
     //
     long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
 
     //
-    cdatetime_timestamp = timegm(cdatetime);
+    //cdatetime_timestamp = timegm(cdatetime);
 
     //
     calculation_result_dt = cdatetime_timestamp + datetime_calculation;

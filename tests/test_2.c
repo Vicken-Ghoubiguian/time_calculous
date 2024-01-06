@@ -18,7 +18,7 @@ int main() {
     int minutes;
     int seconds;
 
-    //
+    // Breaking line instruction
     printf("\n");
 
     //

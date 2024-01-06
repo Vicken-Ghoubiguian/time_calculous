@@ -62,14 +62,14 @@ int main() {
 
     //
     time_t today = time(NULL);
-    time_t calculations_results = calculations_on_date_and_time(gmtime(&today), decades, years, months, weeks, days, hours, minutes, seconds);
+    /*time_t calculations_results = calculations_on_date_and_time(gmtime(&today), decades, years, months, weeks, days, hours, minutes, seconds);
 
     /* ====== TO TEST ====== */
-    printf("\n%ld\n", calculations_results);
+    //printf("\n%ld\n", calculations_results);
     /* ====== TO TEST ====== */
 
     //
-    printf("%s", asctime(gmtime(&calculations_results)));
+    /*printf("%s", asctime(gmtime(&calculations_results)));*/
 
     //
     return 0;

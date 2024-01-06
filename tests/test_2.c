@@ -64,6 +64,10 @@ int main() {
     time_t today = time(NULL);
     time_t calculations_results = calculations_on_date_and_time(gmtime(&today), datetime_calculation);
 
+    /* ====== TO TEST ====== */
+    printf("\n%lld\n", calculations_results);
+    /* ====== TO TEST ====== */
+
     //
     printf("%s", asctime(gmtime(&calculations_results)));
 

@@ -8,7 +8,7 @@
 //
 int main() {
 
-    // Definition of the 
+    // Definition of the used variable
     int decades;
     int years;
     int months;

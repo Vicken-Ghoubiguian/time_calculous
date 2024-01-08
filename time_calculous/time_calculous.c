@@ -26,21 +26,29 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     //
     time_t cdatetime_timestamp;
     time_t calculation_result_dt;
+    long long int datetime_calculation;
 
-    // => Si : decades, years, months ou weeks > 0 : manipulation du struct tm entré en paramétre...
+    // => Si : decades, years, months, weeks ou days > 0 : manipulation du struct tm entré en paramétre...
 
     // *************
-    long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
+    //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
     cdatetime_timestamp = timegm(cdatetime);
     // *************
 
-    // => Si : days, hours, minutes, seconds > 0 : manipulation du timestamp à retourner...
+    // => Si : hours, minutes, seconds > 0 : manipulation du timestamp à retourner...
 
     //
-    //cdatetime_timestamp = timegm(cdatetime);
+    if(hours >  0 || minutes > 0 || seconds > 0)
+    {
+        //
+        datetime_calculation = hour * hours + minute * minutes + second * seconds;
+
+        //
+        calculation_result_dt = cdatetime_timestamp + datetime_calculation;
+    }
 
     //
-    calculation_result_dt = cdatetime_timestamp + datetime_calculation;
+    //calculation_result_dt = cdatetime_timestamp + datetime_calculation;
 
     //
     return calculation_result_dt;

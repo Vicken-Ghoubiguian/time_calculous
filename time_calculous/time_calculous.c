@@ -35,8 +35,6 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     cdatetime_timestamp = timegm(cdatetime);
     // *************
 
-    // => Si : hours, minutes, seconds > 0 : manipulation du timestamp à retourner...
-
     //
     if(hours >  0 || minutes > 0 || seconds > 0)
     {
@@ -46,9 +44,6 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
         //
         calculation_result_dt = cdatetime_timestamp + datetime_calculation;
     }
-
-    //
-    //calculation_result_dt = cdatetime_timestamp + datetime_calculation;
 
     //
     return calculation_result_dt;

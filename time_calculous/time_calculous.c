@@ -25,15 +25,15 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 {
     //
     time_t cdatetime_timestamp;
-    time_t calculation_result_dt;
+    //time_t calculation_result_dt;
     long long int datetime_calculation;
 
     //
-    if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
+    /*if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
     {
         //
-        cdatetime->tm_year = ((decades * 10) + years) - 1900;
-    }
+        //cdatetime->tm_year = cdatetime->tm_year + years;
+    }*/
 
     // *************
     //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
@@ -47,11 +47,11 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
         datetime_calculation = hour * hours + minute * minutes + second * seconds;
 
         //
-        calculation_result_dt = cdatetime_timestamp + datetime_calculation;
+        cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
     }
 
     //
-    return calculation_result_dt;
+    return cdatetime_timestamp;
 }
 
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year

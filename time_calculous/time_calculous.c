@@ -30,6 +30,13 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 
     // => Si : decades, years, months, weeks ou days > 0 : manipulation du struct tm entré en paramétre...
 
+    //
+    if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
+    {
+        //
+        cdatetime->tm_year = ((decades * 10) + years) - 1900;
+    }
+
     // *************
     //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
     cdatetime_timestamp = timegm(cdatetime);

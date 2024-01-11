@@ -28,11 +28,11 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     long long int datetime_calculation;
 
     //
-    /*if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
+    if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
     {
         //
-        //cdatetime->tm_year = cdatetime->tm_year + years;
-    }*/
+        cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
+    }
 
     // *************
     //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;

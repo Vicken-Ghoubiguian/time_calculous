@@ -28,8 +28,6 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     time_t calculation_result_dt;
     long long int datetime_calculation;
 
-    // => Si : decades, years, months, weeks ou days > 0 : manipulation du struct tm entré en paramétre...
-
     //
     if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
     {

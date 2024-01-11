@@ -32,12 +32,13 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     {
         //
         cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
+
+        //
+        cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;
     }
 
-    // *************
-    //long long int datetime_calculation = decade * decades + year * years + month * months + week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
+    //
     cdatetime_timestamp = timegm(cdatetime);
-    // *************
 
     //
     if(hours >  0 || minutes > 0 || seconds > 0)

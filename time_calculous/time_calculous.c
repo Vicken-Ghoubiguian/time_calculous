@@ -25,7 +25,6 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 {
     //
     time_t cdatetime_timestamp;
-    //time_t calculation_result_dt;
     long long int datetime_calculation;
 
     //

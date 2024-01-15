@@ -3,7 +3,7 @@
 
 #include <time.h>
 
-//
+// Definition of the global variable 'NB_SECONDS_IN_DAY' which contains the number of seconds in a day
 #define NB_SECONDS_IN_DAY 86400
 
 // Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested

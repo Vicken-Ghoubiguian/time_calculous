@@ -8,11 +8,11 @@
 
 // Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested
 enum numeral {
-    FIRST, //
-    SECOND, //
-    THIRD, //
+    FIRST, // First iteration of a week day in a month
+    SECOND, // Second iteration of a week day in a month
+    THIRD, // Third iteration of a week day in a month
     BEFORE_LAST, //
-    LAST //
+    LAST // Last iteration of a week day in a month
 };
 
 // Definition of the 'time_unit' enum to to list the number of seconds in each of the time units used

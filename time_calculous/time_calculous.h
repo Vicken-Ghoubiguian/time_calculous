@@ -6,7 +6,7 @@
 //
 #define NB_SECONDS_IN_DAY 86400
 
-//
+// Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested
 enum numeral {
     FIRST, //
     SECOND, //

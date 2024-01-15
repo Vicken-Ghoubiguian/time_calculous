@@ -11,7 +11,7 @@ enum numeral {
     FIRST, // First iteration of a week day in a month
     SECOND, // Second iteration of a week day in a month
     THIRD, // Third iteration of a week day in a month
-    BEFORE_LAST, //
+    BEFORE_LAST, // Penultimate iteration of a week day in a month
     LAST // Last iteration of a week day in a month
 };
 

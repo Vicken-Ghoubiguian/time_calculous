@@ -34,10 +34,10 @@ struct time_diff {
     
 } time_diff;
 
-//
+// Definition of the array "weekDays" to contain all week days' names
 static char* weekDays[] = {"sunday", "monday", "tuesday", "wednesday", "thursday", "friday", "saturday"};
 
-//
+// Definition of the array "months" to contain all months' names
 static char* months[] = {"january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"};
 
 //

@@ -18,8 +18,8 @@ enum numeral {
 // Definition of the 'time_unit' enum to to list the number of seconds in each of the time units used
 enum time_unit {
     second = 1, // definition of a second
-    minute = 60, // There are 60 seconds in a minute
-    hour = 3600 // There are 3600 seconds in an hour
+    minute = 60, // definition of a minute as 60 seconds
+    hour = 3600 // definition of an hour as 3600 seconds
 };
 
 //

@@ -50,6 +50,6 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num);
 
 //
-time_t n_weekday_in_choosen_year();
+time_t n_weekday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year);
 
 #endif

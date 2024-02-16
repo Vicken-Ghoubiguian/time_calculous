@@ -190,3 +190,11 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     //
     return date_timestamp;
 }
+
+//
+time_t n_weekday_in_choosen_year()
+{
+
+    //
+    return 0;
+}

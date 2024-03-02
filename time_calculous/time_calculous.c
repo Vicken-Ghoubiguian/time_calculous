@@ -194,6 +194,18 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 // Definition of the 'n_weekday_in_choosen_year' function to get the nth choosen weekday in a choosen year
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
+    // Definition of the 'today' variable and its initialization
+    time_t today = time(NULL);
+
+    //
+    date_tm = gmtime(&today);
+
+    // Initialization of the 'date_tm' to make all the necessary calculations
+    /*date_tm->tm_year = year - 1900;
+    date_tm->tm_mday = 1;
+    date_tm->tm_hour = hour;
+    date_tm->tm_min = minute;
+    date_tm->tm_sec = second;*/
 
     //
     return 0;

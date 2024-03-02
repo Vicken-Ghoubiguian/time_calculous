@@ -234,8 +234,8 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     date_timestamp = timegm(date_tm);
 
     //
-    date_timestamp + (number_of_weekday_in_the_year * );
+    return date_timestamp + (number_of_weekday_in_the_year * week);
 
     //
-    return 0;
+    //return 0;
 }

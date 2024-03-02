@@ -19,7 +19,8 @@ enum numeral {
 enum time_unit {
     second = 1, // definition of a second
     minute = 60, // definition of a minute as 60 seconds
-    hour = 3600 // definition of an hour as 3600 seconds
+    hour = 3600, // definition of an hour as 3600 seconds
+    week = 604800 // definition of a week as 604800 seconds
 };
 
 //

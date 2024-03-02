@@ -197,9 +197,14 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     //
     int i = 0;
     int condition = 0;
+    int i_of_week = 1;
 
     // Definition of the 'today' variable and its initialization
     time_t today = time(NULL);
+
+    // Definition of the 'date_tm' and the 'date_timestamp' variables
+    struct tm *date_tm;
+    time_t date_timestamp;
 
     //
     date_tm = gmtime(&today);
@@ -208,6 +213,28 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     date_tm->tm_year = year - 1900;
     date_tm->tm_mday = 1;
     date_tm->tm_mon = 1;
+
+    //
+    condition = date_tm->tm_wday != wday;
+
+    //
+    while(condition)
+    {
+        //
+        date_timestamp = timegm(date_tm);
+
+        //
+        date_tm = gmtime(&date_timestamp);
+
+        //
+        condition = date_tm->tm_wday != wday;
+    }
+
+    //
+    date_timestamp = timegm(date_tm);
+
+    //
+    date_timestamp + (number_of_weekday_in_the_year * );
 
     //
     return 0;

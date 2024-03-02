@@ -235,7 +235,4 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
     //
     return date_timestamp + (number_of_weekday_in_the_year * week);
-
-    //
-    //return 0;
 }

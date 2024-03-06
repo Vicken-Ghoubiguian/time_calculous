@@ -191,7 +191,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     return date_timestamp;
 }
 
-//
+// Definition of the 'number_of_weeks_in_a_year' function to determine how many weeks there are in the year in the 'datetime' struct tm
 int number_of_weeks_in_a_year(struct tm *datetime)
 {
     //

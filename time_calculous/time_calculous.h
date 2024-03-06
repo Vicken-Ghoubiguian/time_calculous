@@ -50,7 +50,7 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num);
 
-//
+// Definition of the 'number_of_weeks_in_a_year' function to determine how many weeks there are in the year in the 'datetime' struct tm
 int number_of_weeks_in_a_year(struct tm *datetime);
 
 // Definition of the 'n_weekday_in_choosen_year' function to get the nth choosen weekday in a choosen year

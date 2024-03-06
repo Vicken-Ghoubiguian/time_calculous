@@ -194,6 +194,12 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 // Definition of the 'number_of_weeks_in_a_year' function to determine how many weeks there are in the year in the 'datetime' struct tm
 int number_of_weeks_in_a_year(struct tm *datetime)
 {
+    /*
+    
+    Pour savoir si une le calendrier annuel compte 52 ou 53 semaines il faut donc connaître le jour du 1er janvier. Si le 1er janvier tombe un jeudi (année régulière et année bissextile) ou un mercredi (année bissextile uniquement) l'année ISO aura 53 semaines. Dans tous les autres cas l'année ISO comptera 52 semaines.
+
+    */
+
     //
     return 0;
 }

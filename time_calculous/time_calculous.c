@@ -201,7 +201,20 @@ int number_of_weeks_in_a_year(struct tm *datetime)
     */
 
     //
-    return 0;
+    int condition = 0;
+
+    //
+    if(condition)
+    {
+        //
+        return 53;
+    }
+    //
+    else
+    {
+        //
+        return 52;
+    }
 }
 
 // Definition of the 'n_weekday_in_choosen_year' function to get the nth choosen weekday in a choosen year

@@ -209,10 +209,10 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
     datetime = gmtime(&timestamp);
 
     //
-    is_leap_year_condition = ((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0);
+    //is_leap_year_condition = ((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0);
 
     //
-    general_condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (is_leap_year_condition));
+    general_condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));
 
     //
     if(general_condition)

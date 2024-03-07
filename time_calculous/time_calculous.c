@@ -208,7 +208,12 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
     timestamp = mktime(datetime);
     datetime = gmtime(&timestamp);
 
-    //
+    // 
+    /* 
+     * 
+     * 
+     * 
+     */
     condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));
 
     // If the condition is satisfied...

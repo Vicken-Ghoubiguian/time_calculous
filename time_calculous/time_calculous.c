@@ -206,19 +206,18 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
     time_t timestamp;
 
     // Initialization of the 'date_tm' to make all the necessary calculations
-    datetime->tm_year = year - 1900;
     datetime->tm_mday = 1;
     datetime->tm_mon = 1;
 
     //
-    timestamp = timegm(datetime);
+    timestamp = mktime(&datetime);
     datetime = gmtime(&timestamp);
 
     //
     is_leap_year_condition = ((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0);
 
     //
-    general_condition = (date_tm->tm_wday == 4) || ((date_tm->tm_wday == 3) && (is_leap_year_condition));
+    general_condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (is_leap_year_condition));
 
     //
     if(general_condition)
@@ -238,7 +237,7 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
     //
-    int i = 0;
+    /*int i = 0;
     int condition = 0;
     int i_of_week = 1;
 
@@ -277,5 +276,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     date_timestamp = timegm(date_tm);
 
     //
-    return date_timestamp + (number_of_weekday_in_the_year * week);
+    return date_timestamp + (number_of_weekday_in_the_year * week);*/
+
+    return 0;
 }

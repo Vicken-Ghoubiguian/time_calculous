@@ -8,7 +8,7 @@
 //
 int main() {
 
-    //
+    // Definition of all needed variables
     int year;
     int month;
     int wday;
@@ -16,11 +16,11 @@ int main() {
     // Breaking line instruction
     printf("\n");
 
-    //
+    // To enter the wished year
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 
-    //
+    // To enter the wished month
     printf("Veuillez entrer le mois que vous voulez [de 0 à 11] : ");
     scanf("%d", &month);
 

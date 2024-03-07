@@ -8,11 +8,11 @@
 //
 int main() {
 
-    //
+    // Definition of all needed variables
     int year;
     time_t timestamp = time(NULL);
 
-    //
+    // To enter the wished year
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 

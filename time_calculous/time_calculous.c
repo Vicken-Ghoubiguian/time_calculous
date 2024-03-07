@@ -218,7 +218,7 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
     is_leap_year_condition = ((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0);
 
     //
-    //general_condition = 
+    general_condition = (date_tm->tm_wday == 4) || ((date_tm->tm_wday == 3) && (is_leap_year_condition));
 
     //
     if(general_condition)

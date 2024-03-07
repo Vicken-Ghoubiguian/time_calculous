@@ -194,7 +194,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 // Definition of the 'number_of_weeks_in_a_year_according_iso_norm' function to determine how many weeks there are in the year in the 'datetime' struct tm according iso norm
 int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
 {
-    //
+    // Definition of all needed variables
     int condition;
     int is_leap_year_condition;
     time_t timestamp;
@@ -211,16 +211,16 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
     //
     condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));
 
-    //
+    // If the condition is satisfied...
     if(condition)
     {
-        //
+        // ...returning 53 (because the wished year contains 53 weeks)
         return 53;
     }
-    //
+    // In the other case...
     else
     {
-        //
+        // ...returning 52 (because the wished year contains 52 weeks)
         return 52;
     }
 }

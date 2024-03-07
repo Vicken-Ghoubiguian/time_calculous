@@ -195,7 +195,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
 {
     //
-    int general_condition = 0;
+    int condition;
     int is_leap_year_condition;
     time_t timestamp;
 
@@ -209,13 +209,10 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
     datetime = gmtime(&timestamp);
 
     //
-    //is_leap_year_condition = ((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0);
+    condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));
 
     //
-    general_condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));
-
-    //
-    if(general_condition)
+    if(condition)
     {
         //
         return 53;

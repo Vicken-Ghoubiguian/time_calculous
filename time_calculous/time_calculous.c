@@ -192,7 +192,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 }
 
 // Definition of the 'number_of_weeks_in_a_year_according_iso_norm' function to determine how many weeks there are in the year in the 'datetime' struct tm according iso norm
-int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
+int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime, int year)
 {
     //
     int general_condition = 0;
@@ -200,6 +200,7 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
     time_t timestamp;
 
     // Initialization of the 'date_tm' to make all the necessary calculations
+    datetime->tm_year = year - 1900;
     datetime->tm_mday = 1;
     datetime->tm_mon = 0;
 

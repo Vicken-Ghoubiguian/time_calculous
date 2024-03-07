@@ -10,13 +10,11 @@ int main() {
 
     //
     int year;
+    time_t timestamp = time(NULL);
 
     //
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
-
-    //
-    time_t timestamp = time(NULL);
 
     //
     int weeks_count = number_of_weeks_in_a_year_according_iso_norm(gmtime(&timestamp), year);

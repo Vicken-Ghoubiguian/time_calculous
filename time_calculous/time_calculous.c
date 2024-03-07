@@ -202,7 +202,7 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
 
     //
     int general_condition = 0;
-    int is_leap_year_condition = 0;
+    int is_leap_year_condition;
     time_t timestamp;
 
     // Initialization of the 'date_tm' to make all the necessary calculations
@@ -215,7 +215,7 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
     datetime = gmtime(&timestamp);
 
     //
-    //is_leap_year_condition = 
+    is_leap_year_condition = ((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0);
 
     //
     //general_condition = 

@@ -89,25 +89,53 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     //
     if((num == LAST) || (num == FIRST))
     {
-        //
+        // 
+        /* Explanation of the condition :
+        * -
+        * - 
+        * - 
+        * - 
+        * -
+        */
         condition = date_tm->tm_wday != wday || date_tm->tm_mon != month;
     }
     //
     else if(num == BEFORE_LAST)
     {
-        //
+        // 
+        /* Explanation of the condition :
+        * -
+        * - 
+        * - 
+        * - 
+        * -
+        */
         condition = date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1;
     }
     //
     else if(num == SECOND)
     {
         //
+        /* Explanation of the condition :
+        * -
+        * - 
+        * - 
+        * - 
+        * -
+        */
         condition = date_tm->tm_wday != wday || i != 1;
     }
     //
     else if(num == THIRD)
     {
         //
+        /* Explanation of the condition :
+        * -
+        * - 
+        * - 
+        * - 
+        * -
+        */
         condition = date_tm->tm_wday != wday || i != 2;
     }
 

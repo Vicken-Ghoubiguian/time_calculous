@@ -201,10 +201,10 @@ int number_of_weeks_in_a_year_according_iso_norm(struct tm *datetime)
 
     // Initialization of the 'date_tm' to make all the necessary calculations
     datetime->tm_mday = 1;
-    datetime->tm_mon = 1;
+    datetime->tm_mon = 0;
 
     //
-    timestamp = mktime(&datetime);
+    timestamp = mktime(datetime);
     datetime = gmtime(&timestamp);
 
     //

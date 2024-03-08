@@ -268,6 +268,16 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     int weeks_count = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
 
     //
+    if((0 < number_of_weekday_in_the_year) && (number_of_weekday_in_the_year < weeks_count))
+    {
+
+    }
+    else
+    {
+        
+    }
+
+    //
     /*int i = 0;
     int condition = 0;
     int i_of_week = 1;

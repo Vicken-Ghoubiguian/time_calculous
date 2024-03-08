@@ -274,10 +274,10 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     }
     else
     {
-        
+
     }
 
-    //
+    // For late...
     /*int i = 0;
     int condition = 0;
     int i_of_week = 1;

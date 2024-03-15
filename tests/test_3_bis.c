@@ -5,10 +5,6 @@
 // Importation of the 'time_calculous' library
 #include "../time_calculous/time_calculous.h"
 
-#define RESET "\033[0m"
-#define BOLDGREEN "\033[1m\033[32m"
-#define BOLDRED "\033[1m\033[31m"
-
 //
 int main() {
 
@@ -20,8 +16,8 @@ int main() {
 
     //
     printf("\n___________________________\n");
-    printf("| year  | number of weeks |\n");
-    printf("|_______|_________________|\n");
+    printf("| year   | number of weeks |\n");
+    printf("|________|_________________|\n");
 
     //
     while(year < 2100)
@@ -47,7 +43,7 @@ int main() {
     }
 
     //
-    printf("|_______|_________________|\n\n");
+    printf("|________|_________________|\n\n");
 
     //
     return 0;

@@ -14,7 +14,7 @@ int main() {
     time_t timestamp = time(NULL);
 
     //
-    printf("\n\n year | number of weeks \n");
+    printf("\n\n year  | number of weeks \n");
 
     //
     while(year < 2100)

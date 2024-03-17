@@ -22,7 +22,7 @@ int main() {
 
     //
     printf("\n___________________________\n");
-    printf("| \033[1m\033[34m year \033[0m |\033[1m\033[34m number of weeks \033[0m|\n");
+    printf("| %s year %s |%s number of weeks %s|\n", BOLDBLUE, RESET, BOLDBLUE, RESET);
     printf("|________|_________________|\n");
 
     //

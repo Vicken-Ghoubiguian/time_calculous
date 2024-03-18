@@ -35,13 +35,13 @@ int main() {
         if(number_of_weeks_in_the_year == 53)
         {
             // ...display in red...
-            printf("| %s %d %s | %s %d %s |\n", BOLDRED, year, RESET, BOLDRED, number_of_weeks_in_the_year, RESET);
+            printf("| %s %d %s | %s %d %s            |\n", BOLDRED, year, RESET, BOLDRED, number_of_weeks_in_the_year, RESET);
         }
         // ...and in the other case...
         else
         {
             // ...display in green
-            printf("| %s %d %s | %s %d %s |\n", BOLDGREEN, year, RESET, BOLDGREEN, number_of_weeks_in_the_year, RESET);
+            printf("| %s %d %s | %s %d %s            |\n", BOLDGREEN, year, RESET, BOLDGREEN, number_of_weeks_in_the_year, RESET);
         }
 
         //

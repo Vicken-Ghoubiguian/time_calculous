@@ -7,9 +7,9 @@
 
 // Definition of colors constants
 #define RESET "\033[0m"
-#define BLUE "\033[34m"
-#define MAGENTA "\033[35m"
-#define YELLOW  "\033[33m"
+#define BOLDBLUE "\033[1m\033[34m"
+#define BOLDMAGENTA "\033[1m\033[35m"
+#define BOLDYELLOW  "\033[1m\033[33m"
 
 //
 int main() {
@@ -23,7 +23,7 @@ int main() {
     printf("\n");
 
     //
-    printf("%s %d %s", BLUE, year, RESET);
+    printf("%s %d %s", BOLDBLUE, year, RESET);
 
     //
      printf("\n\n");
@@ -32,7 +32,7 @@ int main() {
     while(month < 12)
     {
         //
-        printf("%s %s %s", MAGENTA, months[month], RESET);
+        printf("%s %s %s", BOLDMAGENTA, months[month], RESET);
         // ==========> display 'wished_wday_in_choosen_month' function's execution
 
         //

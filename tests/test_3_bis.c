@@ -26,7 +26,7 @@ int main() {
     printf("|________|_________________|\n");
 
     // 
-    while(year < 2100)
+    while(year <= 2100)
     {
         //
         number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);

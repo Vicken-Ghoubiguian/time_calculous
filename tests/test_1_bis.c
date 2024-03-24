@@ -15,23 +15,31 @@
 int main() {
 
     //
-    int year = 2000;
+    int year = 2024;
+    int month = 0;
+    char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
     //
     printf("\n");
 
     //
-    while(year <= 2100)
+    printf("%s %d %s", BLUE, year, RESET);
+
+    //
+     printf("\n\n");
+
+    //
+    while(month < 12)
     {
         //
-        printf("%s %d %s", BLUE, year, RESET);
+        printf("%s %s %s", MAGENTA, months[month], RESET);
         // ==========> display 'wished_wday_in_choosen_month' function's execution
 
         //
-        printf("\n\n");
+        printf("\n");
 
         //
-        year++;
+        month++;
     }
 
     //

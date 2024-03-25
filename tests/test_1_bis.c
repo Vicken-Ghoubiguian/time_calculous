@@ -15,9 +15,16 @@
 int main() {
 
     //
-    int year = 2024;
+    int year;
     int month = 0;
     char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+
+    //
+    printf("\n");
+
+    // To enter the wished year
+    printf("Veuillez entrer l'année que vous voulez : ");
+    scanf("%d", &year);
 
     //
     printf("\n");
@@ -26,7 +33,7 @@ int main() {
     printf("%s %d %s", BOLDBLUE, year, RESET);
 
     //
-     printf("\n\n");
+    printf("\n\n");
 
     //
     while(month < 12)

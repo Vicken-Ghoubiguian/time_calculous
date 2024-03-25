@@ -42,6 +42,11 @@ int main() {
         printf("%s %s %s", BOLDMAGENTA, months[month], RESET);
         // ==========> display 'wished_wday_in_choosen_month' function's execution
 
+        // To display top of the array
+        printf("\n_________________________________________________\n");
+        printf("| %s first %s |%s second %s|%s third %s|%s before last %s|%s last %s|\n", BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET);
+        printf("|_________|________|_______|_____________|______|\n");
+
         //
         printf("\n");
 

@@ -16,9 +16,11 @@ int main() {
 
     //
     int year;
+    int wday;
     int month = 0;
     char* months[] = {"January", "February", "March", "April", "May", 
 "June", "July", "August", "September", "October", "November", "December"};
+    char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     //
     printf("\n");
@@ -28,10 +30,24 @@ int main() {
     scanf("%d", &year);
 
     //
+    printf("Please enter the weekday you want : ");
+    scanf("%d", &wday);
+
+    //
     printf("\n");
 
     //
-    printf("%s Year : %d %s", BOLDBLUE, year, RESET);
+    if(wday < 0 || wday > 6)
+    {
+	// ==========> Error : 
+
+	//
+	return 1;
+    }
+
+    //
+    printf("%s Year : %d %s\n", BOLDBLUE, year, RESET);
+    printf("%s Weekday : %s %s", BOLDBLUE, weekdays[wday], RESET);
 
     //
     printf("\n\n");

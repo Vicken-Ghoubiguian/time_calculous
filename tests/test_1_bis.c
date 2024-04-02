@@ -31,7 +31,7 @@ int main() {
     printf("\n");
 
     //
-    printf("%s %d %s", BOLDBLUE, year, RESET);
+    printf("%s Year : %d %s", BOLDBLUE, year, RESET);
 
     //
     printf("\n\n");
@@ -40,7 +40,7 @@ int main() {
     while(month < 12)
     {
         //
-        printf("%s %s %s", BOLDMAGENTA, months[month], RESET);
+        printf("%s Month : %s %s", BOLDMAGENTA, months[month], RESET);
         // ==========> display 'wished_wday_in_choosen_month' function's execution
 
         // To display top of the array

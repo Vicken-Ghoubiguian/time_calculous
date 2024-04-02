@@ -17,7 +17,8 @@ int main() {
     //
     int year;
     int month = 0;
-    char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+    char* months[] = {"January", "February", "March", "April", "May", 
+"June", "July", "August", "September", "October", "November", "December"};
 
     //
     printf("\n");

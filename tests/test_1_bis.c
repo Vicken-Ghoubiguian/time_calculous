@@ -24,7 +24,7 @@ int main() {
     printf("\n");
 
     // To enter the wished year
-    printf("Veuillez entrer l'année que vous voulez : ");
+    printf("Please enter the year you want : ");
     scanf("%d", &year);
 
     //

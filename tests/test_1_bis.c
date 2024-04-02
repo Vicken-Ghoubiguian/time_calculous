@@ -10,6 +10,7 @@
 #define BOLDBLUE "\033[1m\033[34m"
 #define BOLDMAGENTA "\033[1m\033[35m"
 #define BOLDYELLOW  "\033[1m\033[33m"
+#define BOLDRED "\[\033[0;31m\]"
 
 //
 int main() {

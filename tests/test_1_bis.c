@@ -39,7 +39,7 @@ int main() {
     //
     if(wday < 0 || wday > 6)
     {
-	// ==========> Error : 
+	// ==========> Error : the weekday number you entered is not valid
 
 	//
 	return 1;

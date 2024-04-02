@@ -10,6 +10,7 @@ C library to make all calculations on time and dates...
   * [How to develop it ?](#how_to_develop_it),
   * [How to test it ?](#how_to_test_it).
 * [How to integrate it to your software project ?](#how_to_integrate_it_to_your_software_project),
+  * [All developed examples](#all_developed_examples).
 * [Conclusion](#conclusion)
 
 <a href="presentation"></a>
@@ -29,6 +30,9 @@ C library to make all calculations on time and dates...
 
 <a href="how_to_integrate_it_to_your_software_project"></a>
 ## How to integrate it to your software project ?
+
+<a href="all_developed_examples"></a>
+### All developed examples
 
 <a href="conclusion"></a>
 ## Conclusion

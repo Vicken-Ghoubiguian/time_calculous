@@ -24,6 +24,13 @@ int main() {
     char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     //
+    struct tm* first;
+    struct tm* second;
+    struct tm* third;
+    struct tm* before_last;
+    struct tm* last;
+
+    //
     printf("\n");
 
     // To enter the wished year
@@ -59,6 +66,9 @@ int main() {
         //
         printf("%s Month : %s %s", BOLDMAGENTA, months[month], RESET);
         // ==========> display 'wished_wday_in_choosen_month' function's execution
+
+	//
+	
 
         // To display top of the array
         printf("\n______________________________________________________________\n");

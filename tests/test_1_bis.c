@@ -24,6 +24,13 @@ int main() {
     char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     //
+    time_t pre_first;
+    time_t pre_second;
+    time_t pre_third;
+    time_t pre_before_last;
+    time_t pre_last;
+
+    //
     struct tm* first;
     struct tm* second;
     struct tm* third;
@@ -65,10 +72,26 @@ int main() {
     {
         //
         printf("%s Month : %s %s", BOLDMAGENTA, months[month], RESET);
-        // ==========> display 'wished_wday_in_choosen_month' function's execution
 
 	//
-	
+        pre_first = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, FIRST);
+	first = gmtime(&pre_first);
+    	
+	//
+        pre_second = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, SECOND);
+	second = gmtime(&pre_second);
+    	
+	//
+        pre_third = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, THIRD);
+        third = gmtime(&pre_third);
+    	
+	//
+        pre_before_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, BEFORE_LAST);
+	before_last = gmtime(&pre_before_last);
+    	
+	//
+	pre_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, LAST);
+        last = gmtime(&pre_last);
 
         // To display top of the array
         printf("\n______________________________________________________________\n");

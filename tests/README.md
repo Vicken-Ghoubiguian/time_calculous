@@ -10,7 +10,7 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 
 ### Test 1 bis :
 
-````bash
+```bash
 gcc test_1_bis.c ../time_calculous/time_calculous.c -o test_1_bis
 ```
 

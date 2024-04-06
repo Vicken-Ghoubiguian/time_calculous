@@ -61,6 +61,9 @@ int main() {
         printf("Error : the weekday number you entered is not valid %s\n", RESET);
 
 	//
+	printf("\n");
+
+	//
 	return 1;
     }
 

@@ -105,6 +105,10 @@ int main() {
         printf("|             |%s first %s |%s second %s|%s third %s|%s before last %s|%s last %s|\n", BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET);
         printf("|_____________|________|________|_______|_____________|______|\n");
 
+	//
+	printf("");
+	printf("|_____________|________|________|_______|_____________|______|");
+
         //
         printf("\n");
 

@@ -8,8 +8,18 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 
 ### Test 1 : to get a wished weekday in a chosen month
 
+### Test 1 bis :
+
+````bash
+gcc test_1_bis.c ../time_calculous/time_calculous.c -o test_1_bis
+```
+
 ### Test 2 : to make calculations on dates and times
 
+### Test 2 bis :
+
 ### Test 3 : to get the number of weeks in a chosen year
+
+### Test 3 bis :
 
 ## Conclusion

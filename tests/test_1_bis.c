@@ -101,13 +101,13 @@ int main() {
         last = gmtime(&pre_last);
 
         // To display top of the array
-        printf("\n______________________________________________________________\n");
-        printf("|             |%s first %s |%s second %s|%s third %s|%s before last %s|%s last %s|\n", BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET);
-        printf("|_____________|________|________|_______|_____________|______|\n");
+        printf("\n________________________________________________\n");
+        printf("|%s first %s |%s second %s|%s third %s|%s before last %s|%s last %s|\n", BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET, BOLDYELLOW, RESET);
+        printf("|________|________|_______|_____________|______|\n");
 
 	//
 	printf("");
-	printf("|_____________|________|________|_______|_____________|______|");
+	printf("|________|________|_______|_____________|______|");
 
         //
         printf("\n");

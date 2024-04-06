@@ -10,7 +10,7 @@
 #define BOLDBLUE "\033[1m\033[34m"
 #define BOLDMAGENTA "\033[1m\033[35m"
 #define BOLDYELLOW  "\033[1m\033[33m"
-#define BOLDRED "\[\033[0;31m\]"
+#define BOLDRED "\033[0;31m"
 
 //
 int main() {
@@ -54,7 +54,11 @@ int main() {
     //
     if(wday < 0 || wday > 6)
     {
-	// ==========> Error : the weekday number you entered is not valid
+	//
+	printf("%s", BOLDRED);
+
+	//
+        printf("Error : the weekday number you entered is not valid %s\n", RESET);
 
 	//
 	return 1;

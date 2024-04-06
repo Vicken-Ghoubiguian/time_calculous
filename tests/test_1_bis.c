@@ -21,8 +21,7 @@ int main() {
     int month = 0;
 
     //
-    char* months[] = {"January", "February", "March", "April", "May", 
-"June", "July", "August", "September", "October", "November", "December"};
+    char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
     //

@@ -93,35 +93,35 @@ int main() {
 	first = gmtime(&pre_first);
         mday_first = first->tm_mday;
 
-	printf("%d ", mday_first);
+	//printf("%d ", mday_first);
     	
 	//
         pre_second = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, SECOND);
 	second = gmtime(&pre_second);
         mday_second = second->tm_mday;
 
-	printf("%d ", mday_second);
+	//printf("%d ", mday_second);
     	
 	//
         pre_third = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, THIRD);
         third = gmtime(&pre_third);
         mday_third = third->tm_mday;    	
 
-	printf("%d ", mday_third);
+	//printf("%d ", mday_third);
 
 	//
         pre_before_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, BEFORE_LAST);
 	before_last = gmtime(&pre_before_last);
 	mday_before_last = before_last->tm_mday;    	
 
-	printf("%d ", mday_before_last);
+	//printf("%d ", mday_before_last);
 
 	//
 	pre_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, LAST);
         last = gmtime(&pre_last);
         mday_last = last->tm_mday;
 
-	printf("%d ", mday_last);
+	//printf("%d ", mday_last);
 
         // To display top of the array
         printf("\n________________________________________________\n");
@@ -129,8 +129,7 @@ int main() {
         printf("|________|________|_______|_____________|______|\n");
 
 	//
-	printf("|     %d   |     %d  |     %d  |          %d  |    %d  |\n", first->tm_mday, second->tm_mday, third->tm_mday, before_last->tm_mday, 
-last->tm_mday);
+	printf("|     %d   |     %d  |     %d  |          %d  |    %d  |\n", mday_first, mday_second, mday_third, mday_before_last, mday_last);
 
 	//
 	//printf("");

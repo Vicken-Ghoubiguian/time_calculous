@@ -39,6 +39,13 @@ int main() {
     struct tm* last;
 
     //
+    int mday_first;
+    int mday_second;
+    int mday_third;
+    int mday_before_last;
+    int mday_last;
+
+    //
     printf("\n");
 
     // To enter the wished year
@@ -84,32 +91,37 @@ int main() {
 	//
         pre_first = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, FIRST);
 	first = gmtime(&pre_first);
+        mday_first = first->tm_mday;
 
-	printf("%d ", first->tm_mday);
+	printf("%d ", mday_first);
     	
 	//
         pre_second = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, SECOND);
 	second = gmtime(&pre_second);
+        mday_second = second->tm_mday;
 
-	printf("%d ", second->tm_mday);
+	printf("%d ", mday_second);
     	
 	//
         pre_third = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, THIRD);
         third = gmtime(&pre_third);
-    	
-	printf("%d ", third->tm_mday);
+        mday_third = third->tm_mday;    	
+
+	printf("%d ", mday_third);
 
 	//
         pre_before_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, BEFORE_LAST);
 	before_last = gmtime(&pre_before_last);
-    	
-	printf("%d ", before_last->tm_mday);
+	mday_before_last = before_last->tm_mday;    	
+
+	printf("%d ", mday_before_last);
 
 	//
 	pre_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, LAST);
         last = gmtime(&pre_last);
+        mday_last = last->tm_mday;
 
-	printf("%d ", last->tm_mday);
+	printf("%d ", mday_last);
 
         // To display top of the array
         printf("\n________________________________________________\n");

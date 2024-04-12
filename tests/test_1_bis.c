@@ -20,7 +20,7 @@ int main() {
     int wday;
     int month = 0;
 
-    //
+    // =====> TO DELETE IN A NEAR FUTURE...
     char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
 
@@ -119,7 +119,7 @@ int main() {
         printf("|________|________|_______|_____________|______|\n");
 
 	//
-	printf("|     %d   |     %d  |     %d  |          %d  |    %d  |\n", mday_first, mday_second, mday_third, mday_before_last, mday_last);
+	printf("|     %d  |     %d  |     %d  |          %d  |    %d  |\n", mday_first, mday_second, mday_third, mday_before_last, mday_last);
 
 	//
 	printf("|________|________|_______|_____________|______|");

@@ -23,6 +23,7 @@ int main() {
     // =====> TO DELETE IN A NEAR FUTURE...
     char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
     char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    // =====> END OF THE BLOCK TO DELETE
 
     //
     time_t pre_first;

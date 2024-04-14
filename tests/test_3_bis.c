@@ -21,7 +21,7 @@ int main() {
     time_t timestamp = time(NULL);
 
     // To display top of the array
-    printf("\n___________________________\n");
+    printf("\n____________________________\n");
     printf("| %s year %s |%s number of weeks %s|\n", BOLDBLUE, RESET, BOLDBLUE, RESET);
     printf("|________|_________________|\n");
 

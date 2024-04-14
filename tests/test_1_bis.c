@@ -46,9 +46,6 @@ int main() {
     int mday_before_last;
     int mday_last;
 
-    //
-    printf("\n");
-
     // To enter the wished year
     printf("Please enter the year you want : ");
     scanf("%d", &year);

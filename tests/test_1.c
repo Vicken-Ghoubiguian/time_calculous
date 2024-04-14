@@ -13,9 +13,6 @@ int main() {
     int month;
     int wday;
 
-    // Breaking line instruction
-    printf("\n");
-
     // To enter the wished year
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);

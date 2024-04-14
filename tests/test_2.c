@@ -18,9 +18,6 @@ int main() {
     int minutes;
     int seconds;
 
-    // Breaking line instruction
-    printf("\n");
-
     //
     printf("Veuillez entrer le nombre de décennies que vous voulez : ");
     scanf("%d", &decades);

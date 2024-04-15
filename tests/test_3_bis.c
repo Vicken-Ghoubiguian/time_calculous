@@ -11,7 +11,7 @@
 #define BOLDRED "\033[1m\033[31m"
 #define BOLDBLUE "\033[1m\033[34m"
 
-//
+// Initialisation of 'main' function
 int main() {
 
     // Definition of all useful variables and their implementation for some of them

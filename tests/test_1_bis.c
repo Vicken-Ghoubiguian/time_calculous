@@ -12,7 +12,7 @@
 #define BOLDYELLOW  "\033[1m\033[33m"
 #define BOLDRED "\033[0;31m"
 
-//
+// Initialisation of 'main' function
 int main() {
 
     //

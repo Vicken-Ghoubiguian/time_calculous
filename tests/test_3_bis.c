@@ -51,6 +51,6 @@ int main() {
     // To display foot of the array
     printf("|________|_________________|\n\n");
 
-    //
+    // Return the success code of the 'main' function
     return 0;
 }

@@ -44,7 +44,7 @@ int main() {
             printf("| %s %d %s | %s %d %s            |\n", BOLDGREEN, year, RESET, BOLDGREEN, number_of_weeks_in_the_year, RESET);
         }
 
-        // 
+        // Incrementation of the year 'year' to the following year
         year++;
     }
 

@@ -21,8 +21,8 @@ int main() {
     int month = 0;
 
     // =====> TO DELETE IN A NEAR FUTURE...
-    char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
-    char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
+    //char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
+    //char* weekdays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"};
     // =====> END OF THE BLOCK TO DELETE
 
     //
@@ -75,7 +75,7 @@ int main() {
 
     //
     printf("%s Year : %d %s\n", BOLDBLUE, year, RESET);
-    printf("%s Weekday : %s %s", BOLDBLUE, weekdays[wday], RESET);
+    printf("%s Weekday : %s %s", BOLDBLUE, weekDays[wday], RESET);
 
     //
     printf("\n\n");

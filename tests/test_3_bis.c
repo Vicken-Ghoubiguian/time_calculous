@@ -25,7 +25,7 @@ int main() {
     printf("| %s year %s |%s number of weeks %s|\n", BOLDBLUE, RESET, BOLDBLUE, RESET);
     printf("|________|_________________|\n");
 
-    // 
+    // Definition of a loop to stop calculous at the year 2100 : calculous on current century
     while(year <= 2100)
     {
         //

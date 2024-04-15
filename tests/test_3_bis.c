@@ -28,10 +28,10 @@ int main() {
     // Definition of a loop to stop calculous at the year 2100 : calculous on current century
     while(year <= 2100)
     {
-        //
+        // Calculous on the number of weeks in the year 'year' using the 'number_of_weeks_in_a_year_according_to_the_iso_norm' function
         number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
 
-        // in the case where there are 53 weeks in the year...
+        // In the case where there are 53 weeks in the year...
         if(number_of_weeks_in_the_year == 53)
         {
             // ...display in red...
@@ -44,7 +44,7 @@ int main() {
             printf("| %s %d %s | %s %d %s            |\n", BOLDGREEN, year, RESET, BOLDGREEN, number_of_weeks_in_the_year, RESET);
         }
 
-        //
+        // 
         year++;
     }
 

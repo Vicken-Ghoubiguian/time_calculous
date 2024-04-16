@@ -267,6 +267,17 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     time_t timestamp = time(NULL);
     int weeks_count = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
 
+    // If the case where the number of weeks in the year according the iso norm is 53...
+    if(weeks_count == 53)
+    {
+
+    }
+    // In the other case...
+    else
+    {
+
+    }
+
     // ========>>> to implement the algorithm
 
     return 0;

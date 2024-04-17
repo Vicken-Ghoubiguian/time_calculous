@@ -57,15 +57,11 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num)
 {
-    //
+    // Definition of all needed variables
     int i = 0;
     int condition = 0;
-
-    // Definition of the 'date_tm' and the 'date_timestamp' variables
     struct tm *date_tm;
     time_t date_timestamp;
-
-    // Definition of the 'today' variable and its initialization
     time_t today = time(NULL);
 
     //

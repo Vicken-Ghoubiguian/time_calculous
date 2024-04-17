@@ -25,7 +25,7 @@ int main() {
     if(month < 0 || month > 11)
     {
         //
-        printf("Erreur : le mois de l'année que vous avez renseigné n'est pas valide !\n");
+        printf("\nErreur : le mois de l'année que vous avez renseigné n'est pas valide !\n\n");
 
         //
         return -1;
@@ -39,7 +39,7 @@ int main() {
     if(wday < 0 || wday > 6)
     {
         //
-        printf("Erreur : le jour de la semaine que vous avez renseigné n'est pas valide !\n");
+        printf("\nErreur : le jour de la semaine que vous avez renseigné n'est pas valide !\n\n");
 
         //
         return -1;

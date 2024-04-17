@@ -4,7 +4,7 @@
 #include <time.h>
 
 // Definition of the global variable 'NB_SECONDS_IN_DAY' which contains the number of seconds in a day
-#define NB_SECONDS_IN_DAY 86400
+// #define NB_SECONDS_IN_DAY 86400
 
 // Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested
 enum numeral {
@@ -20,6 +20,7 @@ enum time_unit {
     second = 1, // definition of a second
     minute = 60, // definition of a minute as 60 seconds
     hour = 3600, // definition of an hour as 3600 seconds
+    day = 86400, // definition of a day as 86400 seconds
     week = 604800 // definition of a week as 604800 seconds
 };
 

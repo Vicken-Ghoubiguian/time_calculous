@@ -139,7 +139,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     if((num == LAST) && (date_tm->tm_wday == wday))
     {
         //
-        date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
+        date_timestamp = date_timestamp - day;
 
         //
         date_tm = gmtime(&date_timestamp);
@@ -173,13 +173,13 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         if(num == LAST || num == BEFORE_LAST)
         {
             //
-            date_timestamp = date_timestamp - NB_SECONDS_IN_DAY;
+            date_timestamp = date_timestamp - day;
         }
         //
         else
         {
             //
-            date_timestamp = date_timestamp + NB_SECONDS_IN_DAY;
+            date_timestamp = date_timestamp + day;
         }
 
         //
@@ -260,6 +260,7 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
     // Definition of all needed variables
+    time_t timestamp = time(NULL);
     int weeks_count = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
     struct tm *struct_tm_first_january;
     time_t time_t_first_january;

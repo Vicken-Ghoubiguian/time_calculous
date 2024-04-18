@@ -5,6 +5,10 @@
 // Importation of the 'time_calculous' library
 #include "../time_calculous/time_calculous.h"
 
+// Definition of colors constants
+#define RESET "\033[0m"
+#define BOLDRED "\033[1m\033[31m"
+
 //
 int main() {
 
@@ -25,7 +29,7 @@ int main() {
     if(month < 0 || month > 11)
     {
         //
-        printf("\nErreur : le mois de l'année que vous avez renseigné n'est pas valide !\n\n");
+        printf("\n%sErreur : le mois de l'année que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;
@@ -39,7 +43,7 @@ int main() {
     if(wday < 0 || wday > 6)
     {
         //
-        printf("\nErreur : le jour de la semaine que vous avez renseigné n'est pas valide !\n\n");
+        printf("\n%sErreur : le jour de la semaine que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;

@@ -54,7 +54,7 @@ time_t calculations_on_date_and_time(struct tm *cdatetime, int decades, int year
     return cdatetime_timestamp;
 }
 
-// Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year
+// Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished weekday in the wished month and the wished year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num)
 {
     // Definition of all needed variables
@@ -64,10 +64,10 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     time_t date_timestamp;
     time_t today = time(NULL);
 
-    //
+    // Initialization of the 'date_tm' variable to now date and time
     date_tm = gmtime(&today);
 
-    // Initialization of the 'date_tm' to make all the necessary calculations
+    // Initialization of the 'date_tm' variable to make all the necessary calculations
     date_tm->tm_year = year - 1900;
     date_tm->tm_mday = 1;
     date_tm->tm_hour = hour;
@@ -78,60 +78,32 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     if(num == LAST || num == BEFORE_LAST){ date_tm->tm_mon = month + 1; }
     else{ date_tm->tm_mon = month; }
 
-    //
+    // Initialization of the '' and '' variables 
     date_timestamp = timegm(date_tm);
     date_tm = gmtime(&date_timestamp);
 
-    //
+    // If the wished weekday is the first or the last ones in month...
     if((num == LAST) || (num == FIRST))
     {
-        // 
-        /* Explanation of the condition :
-        * -
-        * - 
-        * - 
-        * - 
-        * -
-        */
+        // Definition of the condition : weekday is different from the wished one and month is different from the wished one
         condition = date_tm->tm_wday != wday || date_tm->tm_mon != month;
     }
-    //
+    // In another case, if the wished weekday is the before last one in month...
     else if(num == BEFORE_LAST)
     {
-        // 
-        /* Explanation of the condition :
-        * -
-        * - 
-        * - 
-        * - 
-        * -
-        */
+        // Definition of the condition : weekday is different from the wished one and month is different from the wished one and incrementor is different from 1
         condition = date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1;
     }
-    //
+    // In another case, if the wished weekday is the second one in month...
     else if(num == SECOND)
     {
-        //
-        /* Explanation of the condition :
-        * -
-        * - 
-        * - 
-        * - 
-        * -
-        */
+        // Definition of the condition : weekday is different from the wished one and incrementor is different from 1
         condition = date_tm->tm_wday != wday || i != 1;
     }
-    //
+    // In another case, if the wished weekday is the third one in month...
     else if(num == THIRD)
     {
-        //
-        /* Explanation of the condition :
-        * -
-        * - 
-        * - 
-        * - 
-        * -
-        */
+        // Definition of the condition : weekday is different from the wished one and incrementor is different from 2
         condition = date_tm->tm_wday != wday || i != 2;
     }
 
@@ -185,33 +157,33 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
         //
         date_tm = gmtime(&date_timestamp);
 
-        //
+        // If the wished weekday is the first or the last ones in month...
         if((num == LAST) || (num == FIRST))
         {
-            //
+            // Definition of the condition : weekday is different from the wished one and month is different from the wished one
             condition = date_tm->tm_wday != wday || date_tm->tm_mon != month;
         }
-        //
+        // In another case, if the wished weekday is the before last one in month...
         else if(num == BEFORE_LAST)
         {
-            //
+            // Definition of the condition : weekday is different from the wished one and month is different from the wished one and incrementor is different from 1
             condition = date_tm->tm_wday != wday || date_tm->tm_mon != month || i != 1;
         }
-        //
+        // In another case, if the wished weekday is the second one in month...
         else if(num == SECOND)
         {
-            //
+            // Definition of the condition : weekday is different from the wished one and incrementor is different from 1
             condition = date_tm->tm_wday != wday || i != 1;
         }
-        //
+        // In another case, if the wished weekday is the third one in month...
         else if(num == THIRD)
         {
-            //
+            // Definition of the condition : weekday is different from the wished one and incrementor is different from 2
             condition = date_tm->tm_wday != wday || i != 2;
         }
     }
 
-    //
+    // Returning the 'date_timestamp' variable with the 
     return date_timestamp;
 }
 
@@ -233,12 +205,13 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int
     datetime = gmtime(&timestamp);
 
     // 
-    /* Explanation of the condition :
+    /* Explanation of the condition : the wished year has 53 years if...
      * -
+     OR
      * - 
-     * - 
-     * - 
-     * -
+        * - 
+        * - 
+        * -
      */
     condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));
 

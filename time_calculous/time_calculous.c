@@ -233,13 +233,12 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
     // Definition of all needed variables
-    time_t timestamp = time(NULL);
-    int weeks_count = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
-    struct tm *struct_tm_first_january;
-    time_t time_t_first_january;
+    // ===> DEFINITION OF THE FIRST DAY OF THE WISHED YEAR
+    struct tm *last_day_in_the_year_as_struct_tm;
+    time_t last_day_in_the_year_as_timestamp;
 
     // If the case where the number of weeks in the year according the iso norm is 53...
-    if(weeks_count == 53)
+    /*if(weeks_count == 53)
     {
         // ========>>> to implement the algorithm
     }
@@ -247,7 +246,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     else
     {
         // ========>>> to implement the algorithm
-    }
+    }*/
 
     //
     return 0;

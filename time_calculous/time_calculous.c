@@ -242,6 +242,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     time_t ldy_time;
 
     // Initialization of the 'fdy_dt' variable which is the first day in the wished year
+    fdy_dt = gmtime(&current_time);
     fdy_dt->tm_year = year - 1900;
     fdy_dt->tm_mon = 0;
     fdy_dt->tm_mday = 1;
@@ -254,7 +255,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     fdy_dt = gmtime(&fdy_time);
 
     //
-    if(fdy_dt->tm_wday != wday)
+    /*if(fdy_dt->tm_wday != wday)
     {
         //
         while(fdy_dt->tm_wday != wday)
@@ -264,10 +265,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
             fdy_time = fdy_time * day;
             fdy_dt = gmtime(&fdy_time);
         }
-    }
-
-    // 
-    fdy_time = timegm(fdy_dt);
+    }*/
 
     //
     if(number_of_weekday_in_the_year == 1)
@@ -277,6 +275,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     }
 
     // Initialization of the 'ldy_dt' variable which is the last day in the wished year
+    ldy_dt = gmtime(&current_time);
     ldy_dt->tm_year = year - 1900;
     ldy_dt->tm_mon = 11;
     ldy_dt->tm_mday = 31;
@@ -299,5 +298,5 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     }
 
     //
-    return fdy_time * number_of_weekday_in_the_year;
+    return fdy_time + (week * (number_of_weekday_in_the_year - 1));
 }

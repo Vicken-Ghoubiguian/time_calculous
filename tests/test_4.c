@@ -5,15 +5,13 @@
 //
 #include "../time_calculous/time_calculous.h"
 
-//
 int main() {
 
-    //
-    int test = wished_wday_in_choosen_year(2024, 0, 23);
+	//
+    time_t test = wished_wday_in_choosen_year(2024, 0, 4);
 
-    //
-    printf("%d\n", test);
+	//
+	printf("%ld", test);
 
-    //
-    return 0;
+	return 0;
 }

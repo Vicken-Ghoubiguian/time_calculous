@@ -51,7 +51,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
 // Definition of the 'number_of_weeks_in_a_year_according_to_the_iso_norm' function to determine how many weeks there are in the year in the 'datetime' struct tm according iso norm
 int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int year);
 
-// Definition of the 'n_weekday_in_choosen_year' function to get the nth choosen weekday in a choosen year
-time_t n_weekday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year);
+// Definition of the 'wished_wday_in_choosen_year' function to get the nth choosen weekday in a choosen year
+time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year);
 
 #endif

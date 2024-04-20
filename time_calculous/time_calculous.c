@@ -265,10 +265,14 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
     // Definition of the weekday of the last day in the year
     ldy_dt = gmtime(&ldy_time);
-    wday_of_the_ldy = ldy_dt->wday;
+    wday_of_the_ldy = ldy_dt->tm_wday;
 
-    // ===> CONDITION OF THE NUMBER OF WEEKS IN THE CURRENT YEAR AND THE WEEKDAY OF THE LAST DAY OF THE WISHED YEAR
-    // CONDITION : number_of_weeks_in_the_year < number_of_weekday_in_the_year || (number_of_weeks_in_the_year <= number_of_weekday_in_the_year && wday_of_the_ldy < wday)
+    //
+    if(number_of_weeks_in_the_year < number_of_weekday_in_the_year || (number_of_weeks_in_the_year <= number_of_weekday_in_the_year && wday_of_the_ldy < wday))
+    {
+        //
+        return -1;
+    }
 
     // ========>>> to implement the algorithm : fdy_time * number_of_weekday_in_the_year
 

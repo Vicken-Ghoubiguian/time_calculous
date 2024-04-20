@@ -251,6 +251,9 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
     // ===> CALCULATION OF THE FIRST WISHED WDAY IN THE YEAR
 
+    // 
+    fdy_time = timegm(fdy_dt);
+
     //
     if(number_of_weekday_in_the_year == 1)
     {
@@ -266,8 +269,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     ldy_dt->tm_min = 0;
     ldy_dt->tm_sec = 0;
 
-    // Conversion of the 'fdy_dt' and 'ldy_dt' variables as time_t
-    fdy_time = timegm(fdy_dt);
+    //
     ldy_time = timegm(ldy_dt);
 
     // Definition of the weekday of the last day in the year

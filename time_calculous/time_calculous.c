@@ -233,10 +233,32 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
     // Definition of all needed variables
-    // ...
-    // ===> DEFINITION OF THE NUMBER OF WEEKS IN THE CURRENT YEAR
-    // ===> DEFINITION OF THE FIRST DAY OF THE WISHED YEAR AND CONVERSION AS TIME_T
-    // ===> DEFINITION OF THE LAST DAY OF THE WISHED YEAR AND CONVERSION AS TIME_T AND STRUCT TM
+    time_t current_time = time(NULL);
+    int number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&current_time), year);
+    struct tm *fdy_dt;
+    struct tm *ldy_dt;
+    time_t fdy_time;
+    time_t ldy_time;
+
+    // Initialization of the 'fdy_dt' variable which is the first day in the wished year
+    fdy_dt->tm_year = year - 1900;
+    fdy_dt->tm_mon = 0;
+    fdy_dt->tm_mday = 1;
+    fdy_dt->tm_hour = 0;
+    fdy_dt->tm_min = 0;
+    fdy_dt->tm_sec = 0;
+
+    // Initialization of the 'ldy_dt' variable which is the last day in the wished year
+    ldy_dt->tm_year = year - 1900;
+    ldy_dt->tm_mon = 11;
+    ldy_dt->tm_mday = 31;
+    ldy_dt->tm_hour = 0;
+    ldy_dt->tm_min = 0;
+    ldy_dt->tm_sec = 0;
+
+    // 
+    fdy_time = timegm(fdy_dt);
+    ldy_time = timegm(ldy_dt);
 
     // ===> CONDITION OF THE NUMBER OF WEEKS IN THE CURRENT YEAR AND THE WEEKDAY OF THE LAST DAY OF THE WISHED YEAR
 

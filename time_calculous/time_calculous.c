@@ -255,17 +255,17 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     fdy_dt = gmtime(&fdy_time);
 
     //
-    /*if(fdy_dt->tm_wday != wday)
+    if(fdy_dt->tm_wday != wday)
     {
         //
-        while(fdy_dt->tm_wday != wday)
+        /*while(fdy_dt->tm_wday != wday)
         {
             //
             fdy_time = timegm(fdy_dt);
             fdy_time = fdy_time * day;
             fdy_dt = gmtime(&fdy_time);
-        }
-    }*/
+        }*/
+    }
 
     //
     if(number_of_weekday_in_the_year == 1)

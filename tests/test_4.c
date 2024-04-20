@@ -8,6 +8,7 @@
 // Definition of colors constants
 #define RESET "\033[0m"
 #define BOLDRED "\033[1m\033[31m"
+#define BOLDMAGENTA "\033[1m\033[35m"
 
 int main() {
 
@@ -53,7 +54,7 @@ int main() {
 	else
 	{
 		//
-		printf("%s\n", asctime(gmtime(&nth_weekday_in_the_year)));
+		printf("%s%s%s\n", BOLDMAGENTA, asctime(gmtime(&nth_weekday_in_the_year)), RESET);
 	}
 
 	return 0;

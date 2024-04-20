@@ -229,7 +229,7 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int
     }
 }
 
-// Definition of the 'n_weekday_in_choosen_year' function to get the nth choosen weekday in a choosen year
+// Definition of the 'n_weekday_in_choosen_year' function to get the  of the nth choosen weekday in a choosen year
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
     // Definition of all needed variables
@@ -262,18 +262,12 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     fdy_time = timegm(fdy_dt);
     ldy_time = timegm(ldy_dt);
 
-    // ===> CONDITION OF THE NUMBER OF WEEKS IN THE CURRENT YEAR AND THE WEEKDAY OF THE LAST DAY OF THE WISHED YEAR
+    // ========>>> to get the weekday of the last day of the year
 
-    // If the case where the number of weeks in the year according the iso norm is 53...
-    /*if(weeks_count == 53)
-    {
-        // ========>>> to implement the algorithm
-    }
-    // In the other case...
-    else
-    {
-        // ========>>> to implement the algorithm
-    }*/
+    // ===> CONDITION OF THE NUMBER OF WEEKS IN THE CURRENT YEAR AND THE WEEKDAY OF THE LAST DAY OF THE WISHED YEAR
+    // CONDITION : number_of_weeks_in_the_year < number_of_weekday_in_the_year || (number_of_weeks_in_the_year <= number_of_weekday_in_the_year && ldy_dt->wday < wday)
+
+    // ========>>> to implement the algorithm : fdy_time * number_of_weekday_in_the_year
 
     //
     return 0;

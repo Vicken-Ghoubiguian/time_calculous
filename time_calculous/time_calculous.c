@@ -251,6 +251,13 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
     // ===> CALCULATION OF THE FIRST WISHED WDAY IN THE YEAR
 
+    //
+    if(number_of_weekday_in_the_year == 1)
+    {
+        //
+        return fdy_time;
+    }
+
     // Initialization of the 'ldy_dt' variable which is the last day in the wished year
     ldy_dt->tm_year = year - 1900;
     ldy_dt->tm_mon = 11;
@@ -274,8 +281,6 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
         return -1;
     }
 
-    // ========>>> to implement the algorithm : fdy_time * number_of_weekday_in_the_year
-
     //
-    return 0;
+    return fdy_time * number_of_weekday_in_the_year;
 }

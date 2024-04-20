@@ -8,7 +8,7 @@
 int main() {
 
 	//
-    time_t test = wished_wday_in_choosen_year(2024, 0, 23);
+    time_t test = wished_wday_in_choosen_year(2024, 5, 51);
 
 	//
 	printf("%ld", test);

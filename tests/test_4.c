@@ -5,13 +5,56 @@
 //
 #include "../time_calculous/time_calculous.h"
 
+// Definition of colors constants
+#define RESET "\033[0m"
+#define BOLDRED "\033[1m\033[31m"
+
 int main() {
 
-	//
-    time_t test = wished_wday_in_choosen_year(2024, 0, 52);
+	// Definition of all needed variables
+    int year;
+    int wday;
+	int wished_number;
+
+	// To enter the wished year
+    printf("Veuillez entrer l'année que vous voulez : ");
+    scanf("%d", &year);
 
 	//
-	printf("%ld\n", test);
+    printf("Veuillez entrer le jour de la semaine que vous voulez [de 0 à 6] : ");
+    scanf("%d", &wday);
+
+    //
+    if(wday < 0 || wday > 6)
+    {
+        //
+        printf("\n%sErreur : le jour de la semaine que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
+
+	//
+	printf("Veuillez entrer le numéro que vous voulez dans l'année : ");
+    scanf("%d", &wished_number);
+
+	// Breaking line instruction
+    printf("\n");
+
+	//
+    time_t nth_weekday_in_the_year = wished_wday_in_choosen_year(year, wday, wished_number);
+
+	//
+	if(nth_weekday_in_the_year == -1)
+	{
+		
+	}
+	//
+	else
+	{
+		//
+		printf("%s\n", asctime(gmtime(&nth_weekday_in_the_year)));
+	}
 
 	return 0;
 }

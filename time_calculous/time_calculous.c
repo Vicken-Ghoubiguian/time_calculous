@@ -78,7 +78,7 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     if(num == LAST || num == BEFORE_LAST){ date_tm->tm_mon = month + 1; }
     else{ date_tm->tm_mon = month; }
 
-    // Initialization of the '' and '' variables 
+    // Initialization of the 'date_timestamp' and 'date_tm' variables 
     date_timestamp = timegm(date_tm);
     date_tm = gmtime(&date_timestamp);
 
@@ -248,6 +248,8 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     fdy_dt->tm_min = 0;
     fdy_dt->tm_sec = 0;
 
+    // ===> CALCULATION OF THE FIRST WISHED WDAY IN THE YEAR
+
     // Initialization of the 'ldy_dt' variable which is the last day in the wished year
     ldy_dt->tm_year = year - 1900;
     ldy_dt->tm_mon = 11;
@@ -256,7 +258,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     ldy_dt->tm_min = 0;
     ldy_dt->tm_sec = 0;
 
-    // 
+    // Conversion of the 'fdy_dt' and 'ldy_dt' variables as time_t
     fdy_time = timegm(fdy_dt);
     ldy_time = timegm(ldy_dt);
 

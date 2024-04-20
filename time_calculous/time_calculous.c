@@ -229,7 +229,7 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int
     }
 }
 
-// Definition of the 'n_weekday_in_choosen_year' function to get the  of the nth choosen weekday in a choosen year
+// Definition of the 'n_weekday_in_choosen_year' function to get the datetime of the nth choosen weekday in a choosen year
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year)
 {
     // Definition of all needed variables

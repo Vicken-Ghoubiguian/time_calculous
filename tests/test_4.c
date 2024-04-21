@@ -16,6 +16,7 @@ int main() {
     int year;
     int wday;
 	int wished_number;
+	time_t nth_weekday_in_the_year;
 
 	// To enter the wished year
     printf("Veuillez entrer l'année que vous voulez : ");
@@ -43,7 +44,7 @@ int main() {
     printf("\n");
 
 	//
-    time_t nth_weekday_in_the_year = wished_wday_in_choosen_year(year, wday, wished_number);
+    nth_weekday_in_the_year = wished_wday_in_choosen_year(year, wday, wished_number);
 
 	//
 	if(nth_weekday_in_the_year == -1)

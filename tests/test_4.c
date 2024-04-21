@@ -50,13 +50,13 @@ int main() {
 	if(nth_weekday_in_the_year == -1)
 	{
 		//
-		printf("%sError : \n%s", BOLDRED, RESET);
+		printf("%sError : %s\n", BOLDRED, RESET);
 	}
 	//
 	else if(nth_weekday_in_the_year == 1)
 	{
 		//
-		printf("%sError : \n%s", BOLDRED, RESET);
+		printf("%sError : %s\n", BOLDRED, RESET);
 	}
 	//
 	else

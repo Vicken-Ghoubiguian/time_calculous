@@ -55,7 +55,7 @@ int main() {
 	else
 	{
 		//
-		printf("%s%s%s\n", BOLDMAGENTA, asctime(gmtime(&nth_weekday_in_the_year)), RESET);
+		printf("%s%dth %s of the year %d : %s%s\n", BOLDMAGENTA, wished_number, weekDays[wday], year, asctime(gmtime(&nth_weekday_in_the_year)), RESET);
 	}
 
 	return 0;

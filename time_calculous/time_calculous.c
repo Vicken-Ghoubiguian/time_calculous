@@ -297,7 +297,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     ldy_dt = gmtime(&ldy_time);
     wday_of_the_ldy = ldy_dt->tm_wday;
 
-    //
+    // ==================>>> THERE ARE TO MODIFY THE CONDITION, BECAUSE IT IS NOT ADAPT...
     if(number_of_weeks_in_the_year < number_of_weekday_in_the_year || (number_of_weeks_in_the_year <= number_of_weekday_in_the_year && wday_of_the_ldy < wday))
     {
         //...so returning the error code -1

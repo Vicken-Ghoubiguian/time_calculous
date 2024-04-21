@@ -53,6 +53,12 @@ int main() {
 		printf("%sError : \n%s", BOLDRED, RESET);
 	}
 	//
+	else if(nth_weekday_in_the_year == 1)
+	{
+		//
+		printf("%sError : \n%s", BOLDRED, RESET);
+	}
+	//
 	else
 	{
 		//

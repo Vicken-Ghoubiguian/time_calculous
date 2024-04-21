@@ -254,14 +254,14 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     fdy_time = timegm(fdy_dt);
     fdy_dt = gmtime(&fdy_time);
 
-    //
+    // In the case where the 'number_of_weekday_in_the_year' number is less than 1...
     if(number_of_weekday_in_the_year < 1)
     {
-        //
+        //...so returning the error code 1
         return 1;
     }
 
-    //
+    // In the case where the weekday of the first day in the wished year is not the 'wday' weekday...
     if(fdy_dt->tm_wday != wday)
     {
         //
@@ -274,10 +274,10 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
         }
     }
 
-    //
+    // In the case where the 'number_of_weekday_in_the_year' is equal to 1...
     if(number_of_weekday_in_the_year == 1)
     {
-        //
+        //...so returning the first day in the year as a timestamp
         return fdy_time;
     }
 
@@ -300,7 +300,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     //
     if(number_of_weeks_in_the_year < number_of_weekday_in_the_year || (number_of_weeks_in_the_year <= number_of_weekday_in_the_year && wday_of_the_ldy < wday))
     {
-        //
+        //...so returning the error code -1
         return -1;
     }
 

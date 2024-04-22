@@ -56,7 +56,7 @@ int main() {
 	else if(nth_weekday_in_the_year == 1)
 	{
 		//
-		printf("%sError : %s\n", BOLDRED, RESET);
+		printf("%sError : you cannot demand a number of the wished weekday in the wished year less than 1%s\n", BOLDRED, RESET);
 	}
 	//
 	else

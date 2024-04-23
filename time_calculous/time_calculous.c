@@ -310,6 +310,6 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
         return -1;
     }
 
-    //
+    // Returning the value of the 'calculous_result' which contains the wished value
     return calculous_result;
 }

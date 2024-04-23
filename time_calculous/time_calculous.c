@@ -298,7 +298,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     //
     calculous_result = fdy_time + (week * (number_of_weekday_in_the_year - 1));
 
-    // ==================>>> THERE ARE TO MODIFY THE CONDITION, BECAUSE IT IS NOT ADAPT...
+    //
     if(ldy_time < calculous_result)
     {
         //...so returning the error code -1

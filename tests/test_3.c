@@ -8,7 +8,7 @@
 //
 int main() {
 
-    // Definition of all needed variables
+    // Definition of 'year'' variable
     int year;
 
     // To enter the wished year

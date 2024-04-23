@@ -294,16 +294,16 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
     ldy_dt->tm_min = 0;
     ldy_dt->tm_sec = 0;
 
-    //
+    // Conversion of the 'ldy_dt' struct tm* value and put it in the 'ldy_time' time_t variable
     ldy_time = timegm(ldy_dt);
 
     // Definition of the weekday of the last day in the year
     ldy_dt = gmtime(&ldy_time);
 
-    //
+    // Calculous of the wished datetime and put it in the 'calculous_result' variable
     calculous_result = fdy_time + (week * (number_of_weekday_in_the_year - 1));
 
-    //
+    // In the case where the timestamp of the last day of the year is less than the 'calculous_result' value...
     if(ldy_time < calculous_result)
     {
         //...so returning the error code -1

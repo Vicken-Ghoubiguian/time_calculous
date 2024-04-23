@@ -234,8 +234,6 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 {
     // Definition of all needed variables
     time_t current_time = time(NULL);
-    //int number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&current_time), year);
-    //int wday_of_the_ldy;
     struct tm *fdy_dt;
     struct tm *ldy_dt;
     time_t fdy_time;
@@ -296,7 +294,6 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
     // Definition of the weekday of the last day in the year
     ldy_dt = gmtime(&ldy_time);
-    //wday_of_the_ldy = ldy_dt->tm_wday;
 
     //
     calculous_result = fdy_time + (week * (number_of_weekday_in_the_year - 1));

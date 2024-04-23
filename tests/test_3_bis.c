@@ -18,7 +18,6 @@ int main() {
     int weeks_count;
     int year = 2000;
     int number_of_weeks_in_the_year;
-    time_t timestamp = time(NULL);
 
     // To display top of the array
     printf("\n____________________________\n");
@@ -29,7 +28,7 @@ int main() {
     while(year <= 2100)
     {
         // Calculous on the number of weeks in the year 'year' using the 'number_of_weeks_in_a_year_according_to_the_iso_norm' function
-        number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
+        number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(year);
 
         // In the case where there are 53 weeks in the year...
         if(number_of_weeks_in_the_year == 53)

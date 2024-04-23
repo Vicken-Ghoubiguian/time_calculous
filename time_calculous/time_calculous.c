@@ -187,13 +187,18 @@ time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int
     return date_timestamp;
 }
 
-// Definition of the 'number_of_weeks_in_a_year_according_to_the_iso_norm' function to determine how many weeks there are in the year in the 'datetime' struct tm according iso norm
-int number_of_weeks_in_a_year_according_to_the_iso_norm(struct tm *datetime, int year)
+// Definition of the 'number_of_weeks_in_a_year_according_to_the_iso_norm' function to determine how many weeks there are in the year according iso norm
+int number_of_weeks_in_a_year_according_to_the_iso_norm(int year)
 {
     // Definition of all needed variables
     int condition;
     int is_leap_year_condition;
+    struct tm *datetime;
     time_t timestamp;
+    time_t current_time = time(NULL);
+
+    //
+    datetime = gmtime(&current_time);
 
     // Initialization of the 'date_tm' to make all the necessary calculations
     datetime->tm_year = year - 1900;

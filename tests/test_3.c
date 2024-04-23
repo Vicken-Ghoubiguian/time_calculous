@@ -10,14 +10,13 @@ int main() {
 
     // Definition of all needed variables
     int year;
-    time_t timestamp = time(NULL);
 
     // To enter the wished year
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 
     // To get the number of weeks in the wished year
-    int weeks_count = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&timestamp), year);
+    int weeks_count = number_of_weeks_in_a_year_according_to_the_iso_norm(year);
 
     //
     printf("\n");

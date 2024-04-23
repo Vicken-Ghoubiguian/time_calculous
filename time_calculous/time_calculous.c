@@ -234,12 +234,13 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 {
     // Definition of all needed variables
     time_t current_time = time(NULL);
-    int number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&current_time), year);
-    int wday_of_the_ldy;
+    //int number_of_weeks_in_the_year = number_of_weeks_in_a_year_according_to_the_iso_norm(gmtime(&current_time), year);
+    //int wday_of_the_ldy;
     struct tm *fdy_dt;
     struct tm *ldy_dt;
     time_t fdy_time;
     time_t ldy_time;
+    time_t calculous_result;
 
     // Initialization of the 'fdy_dt' variable which is the first day in the wished year
     fdy_dt = gmtime(&current_time);
@@ -295,15 +296,18 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
     // Definition of the weekday of the last day in the year
     ldy_dt = gmtime(&ldy_time);
-    wday_of_the_ldy = ldy_dt->tm_wday;
+    //wday_of_the_ldy = ldy_dt->tm_wday;
+
+    //
+    calculous_result = fdy_time + (week * (number_of_weekday_in_the_year - 1));
 
     // ==================>>> THERE ARE TO MODIFY THE CONDITION, BECAUSE IT IS NOT ADAPT...
-    if(number_of_weeks_in_the_year < number_of_weekday_in_the_year || (number_of_weeks_in_the_year <= number_of_weekday_in_the_year && wday_of_the_ldy < wday))
+    if(ldy_time < calculous_result)
     {
         //...so returning the error code -1
         return -1;
     }
 
     //
-    return fdy_time + (week * (number_of_weekday_in_the_year - 1));
+    return calculous_result;
 }

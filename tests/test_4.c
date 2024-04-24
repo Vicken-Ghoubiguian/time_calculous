@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-//
+// Importation of the 'time_calculous' library
 #include "../time_calculous/time_calculous.h"
 
 // Definition of colors constants
@@ -10,6 +10,7 @@
 #define BOLDRED "\033[1m\033[31m"
 #define BOLDMAGENTA "\033[1m\033[35m"
 
+// Initialisation of 'main' function
 int main() {
 
 	// Definition of all needed variables

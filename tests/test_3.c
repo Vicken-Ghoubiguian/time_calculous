@@ -5,7 +5,7 @@
 // Importation of the 'time_calculous' library
 #include "../time_calculous/time_calculous.h"
 
-//
+// Initialisation of 'main' function
 int main() {
 
     // Definition of 'year'' variable

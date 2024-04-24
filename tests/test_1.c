@@ -9,7 +9,7 @@
 #define RESET "\033[0m"
 #define BOLDRED "\033[1m\033[31m"
 
-//
+// Initialisation of 'main' function
 int main() {
 
     // Definition of all needed variables

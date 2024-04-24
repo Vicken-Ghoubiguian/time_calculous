@@ -1,6 +1,3 @@
-#ifndef TIME_CALCULOUS
-#define TIME_CALCULOUS
-
 #include <time.h>
 
 // Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested
@@ -53,5 +50,3 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(int year);
 
 // Definition of the 'wished_wday_in_choosen_year' function to get the nth choosen weekday in a choosen year
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year);
-
-#endif

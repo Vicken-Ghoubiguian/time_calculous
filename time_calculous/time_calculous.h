@@ -51,5 +51,5 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(int year);
 // Definition of the 'wished_wday_in_choosen_year' function to get the nth choosen weekday in a choosen year
 time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_the_year);
 
-//
+// Definition of the 'wished_number_in_year_is_day_in_choosen_year' function to get the corresponding day number in the year
 int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year);

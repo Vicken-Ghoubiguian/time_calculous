@@ -46,6 +46,16 @@ int main() {
     scanf("%d", &year);
 
     //
+    if(year < 1900)
+    {
+        //
+        printf("\n%sErreur : l'année que vous avez renseigné n'est pas valide, celle-ci doit être supérieure ou égale à 1900 !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
+
+    //
     printf("Please enter the weekday you want (0 : Sunday, 1 : Monday, 2 : Tuesday, 3 : Wednesday, 4 : Thursday, 5 : Friday, 6 : Saturday): ");
     scanf("%d", &wday);
 

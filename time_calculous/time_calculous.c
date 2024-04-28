@@ -351,7 +351,7 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
         date_tm = gmtime(&date_timestamp);
 
         //
-        condition = date_tm->tm_mday != mday && date_tm->tm_mon != month && date_tm->tm_year != year;
+        condition = date_tm->tm_mday != mday || date_tm->tm_mon != month || date_tm->tm_year != year;
     }
 
     //

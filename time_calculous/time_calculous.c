@@ -318,7 +318,7 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
 {
     //
-    int i = 0;
+    int i = 1;
     int condition;
     struct tm *date_tm;
     time_t date_timestamp;
@@ -334,6 +334,13 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
     date_tm->tm_hour = 0;
     date_tm->tm_min = 0;
     date_tm->tm_sec = 0;
+
+    //
+    if(date_tm->tm_mday == mday && date_tm->tm_mon == month && date_tm->tm_year == year)
+    {
+        //
+        return 1;
+    }
 
     //
     while(condition)

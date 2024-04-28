@@ -317,17 +317,17 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 // Definition of the 'wished_number_in_year_is_day_in_choosen_year' function to get the corresponding day number in the year
 int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
 {
-    //
+    // Definition of all needed variables
     int i = 1;
     int condition;
     struct tm *date_tm;
     time_t date_timestamp;
     time_t today = time(NULL);
 
-    //
+    // Initialization of the 'date_tm' variable to now date and time
     date_tm = gmtime(&today);
 
-    //
+    // Initialization of the 'date_tm' variable as the first day in the wished year
     date_tm->tm_year = year;
     date_tm->tm_mon = 0;
     date_tm->tm_mday = 1;
@@ -338,7 +338,7 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
     //
     if(date_tm->tm_mday == mday && date_tm->tm_mon == month && date_tm->tm_year == year)
     {
-        //
+        //...so returning 1
         return 1;
     }
 
@@ -358,6 +358,6 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
         date_tm = gmtime(&date_timestamp);
     }
 
-    //
+    //...so returning 'i' as the result
     return i;
 }

@@ -330,7 +330,7 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
     //
     date_tm->tm_year = year;
     date_tm->tm_mon = 0;
-    date_tm->mday = 1;
+    date_tm->tm_mday = 1;
     date_tm->tm_hour = 0;
     date_tm->tm_min = 0;
     date_tm->tm_sec = 0;

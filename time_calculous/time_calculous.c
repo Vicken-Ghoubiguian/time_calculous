@@ -318,5 +318,42 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
 {
     //
-    return 0;
+    int i = 0;
+    int condition;
+    struct tm *date_tm;
+    time_t date_timestamp;
+    time_t today = time(NULL);
+
+    //
+    date_tm = gmtime(&today);
+
+    //
+    date_tm->tm_year = year;
+    date_tm->tm_mon = 0;
+    date_tm->mday = 1;
+    date_tm->tm_hour = 0;
+    date_tm->tm_min = 0;
+    date_tm->tm_sec = 0;
+
+    //
+    while(condition)
+    {
+        //
+        i = i + 1;
+
+        //
+        date_timestamp = timegm(date_tm);
+
+        //
+        date_timestamp = date_timestamp + day;
+
+        //
+        date_tm = gmtime(&date_timestamp);
+
+        //
+        condition = date_tm->tm_mday != mday && date_tm->tm_mon != month && date_tm->tm_year != year;
+    }
+
+    //
+    return i;
 }

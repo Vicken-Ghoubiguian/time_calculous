@@ -68,7 +68,7 @@ int main() {
     number_of_day_in_year = wished_number_in_year_is_day_in_choosen_year(mday, month, year);
 
     //
-    printf("%d\n\n", number_of_day_in_year);
+    printf("Le numéro du jour demandé dans l'année demandée : %d\n\n", number_of_day_in_year);
 
     //
     return 0;

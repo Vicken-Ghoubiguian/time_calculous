@@ -52,14 +52,14 @@ int main() {
     scanf("%d", &mday);
 
     //
-    /*if(wday < 0 || wday > 6)
+    if(mday < 0 || mday > number_of_days_in_choosen_month_in_choosen_year(month, year))
     {
         //
-        printf("\n%sErreur : le jour de la semaine que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
+        printf("\n%sErreur : le numéro de jour dans le mois renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;
-    }*/
+    }
 
     // Breaking line instruction
     printf("\n");

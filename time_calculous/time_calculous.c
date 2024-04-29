@@ -365,7 +365,24 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
 //
 int number_of_days_in_choosen_month_in_choosen_year(int month, int year)
 {
+    //
+    int is_leap_year = 1;
 
     //
-    return 0;
+    switch(month)
+    {
+        case 0 : return 31;
+        case 1 : if(is_leap_year){ return 29; }else{ return 28; }
+        case 2 : return 31;
+        case 3 : return 30;
+        case 4 : return 31;
+        case 5 : return 30;
+        case 6 : return 31;
+        case 7 : return 31;
+        case 8 : return 30;
+        case 9 : return 31;
+        case 10 : return 30;
+        case 11 : return 31;
+        default : return -1;
+    }
 }

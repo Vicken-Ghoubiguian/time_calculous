@@ -12,7 +12,7 @@
 // Initialisation of 'main' function
 int main() {
 
-    // Definition of 'year'' variable
+    // Definition of 'year' variable
     int year;
 
     // To enter the wished year

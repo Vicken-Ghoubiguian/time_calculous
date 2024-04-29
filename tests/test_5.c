@@ -21,6 +21,16 @@ int main() {
     printf("Veuillez entrer l'année que vous voulez : ");
     scanf("%d", &year);
 
+    //
+    if(year < 1900)
+    {
+        //
+        printf("\n%sErreur : l'année que vous avez renseigné n'est pas valide, celle-ci doit être supérieure ou égale à 1900 !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
+
     // To enter the wished month
     printf("Veuillez entrer le mois que vous voulez [de 0 à 11] : ");
     scanf("%d", &month);

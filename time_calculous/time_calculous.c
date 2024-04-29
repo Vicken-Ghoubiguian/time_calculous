@@ -366,7 +366,7 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
 int number_of_days_in_choosen_month_in_choosen_year(int month, int year)
 {
     //
-    int is_leap_year = 1;
+    int is_leap_year = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 && year % 100 == 0);
 
     //
     switch(month)

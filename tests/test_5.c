@@ -7,6 +7,7 @@
 
 // Definition of colors constants
 #define RESET "\033[0m"
+#define BOLDGREEN "\033[1m\033[32m"
 #define BOLDRED "\033[1m\033[31m"
 
 // Initialisation of 'main' function
@@ -68,7 +69,7 @@ int main() {
     number_of_day_in_year = wished_number_in_year_is_day_in_choosen_year(mday, month, year);
 
     //
-    printf("Le numéro du jour demandé dans l'année demandée : %d\n\n", number_of_day_in_year);
+    printf("%sLe numéro du jour demandé dans l'année demandée : %d%s\n\n", BOLDGREEN, number_of_day_in_year, RESET);
 
     //
     return 0;

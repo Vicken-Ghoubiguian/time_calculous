@@ -16,6 +16,7 @@ int main() {
     int year;
     int month;
     int mday;
+    int n;
 
     // To enter the wished year
     printf("Veuillez entrer l'année que vous voulez : ");
@@ -63,12 +64,11 @@ int main() {
     printf("\n");
 
     //
-    int n = wished_number_in_year_is_day_in_choosen_year(mday, month, year);
+    n = wished_number_in_year_is_day_in_choosen_year(mday, month, year);
 
     //
     printf("%d\n\n", n);
 
     //
     return 0;
-
 };

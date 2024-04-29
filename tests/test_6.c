@@ -53,7 +53,7 @@ int main() {
     number_of_days_in_month = number_of_days_in_choosen_month_in_choosen_year(month, year);
 
     //
-    printf("%d\n\n", number_of_days_in_month);
+    printf("Number of days in %s in %d: %d\n\n", months[month], year, number_of_days_in_month);
 
     //
     return 0;

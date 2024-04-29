@@ -53,3 +53,6 @@ time_t wished_wday_in_choosen_year(int year, int wday, int number_of_weekday_in_
 
 // Definition of the 'wished_number_in_year_is_day_in_choosen_year' function to get the corresponding day number in the year
 int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year);
+
+//
+int number_of_days_in_choosen_month_in_choosen_year(int month, int year);

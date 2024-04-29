@@ -361,3 +361,11 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
     //...so returning 'i' as the result
     return i;
 }
+
+//
+int number_of_days_in_choosen_month_in_choosen_year(int month, int year)
+{
+
+    //
+    return 0;
+}

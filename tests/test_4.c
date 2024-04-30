@@ -61,7 +61,7 @@ int main() {
 	if(nth_weekday_in_the_year == -1)
 	{
 		//
-		printf("%sError : %s\n\n", BOLDRED, RESET);
+		printf("%sError : the resulting date is greater than the last date of the chosen year%s\n\n", BOLDRED, RESET);
 
 		//...and return -1 error code
         return -1;

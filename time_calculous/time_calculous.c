@@ -368,7 +368,7 @@ int number_of_days_in_choosen_month_in_choosen_year(int month, int year)
     // Determine if the wished year is a leap year or not
     int is_leap_year = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 && year % 100 == 0);
 
-    // 
+    // Allow the value of the choosen month so...
     switch(month)
     {
         case 0 : return 31; //...31 days in January

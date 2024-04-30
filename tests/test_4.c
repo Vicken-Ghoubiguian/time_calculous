@@ -43,7 +43,7 @@ int main() {
         //
         printf("\n%sErreur : le jour de la semaine que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
 
-        //
+        //...and return -1 error code
         return -1;
     }
 
@@ -63,7 +63,7 @@ int main() {
 		//
 		printf("%sError : %s\n\n", BOLDRED, RESET);
 
-		//
+		//...and return -1 error code
         return -1;
 	}
 	//
@@ -72,7 +72,7 @@ int main() {
 		//
 		printf("%sError : you cannot demand a number of the wished weekday in the wished year less than 1%s\n\n", BOLDRED, RESET);
 
-		//
+		//...and return -1 error code
         return -1;
 	}
 	//
@@ -81,7 +81,7 @@ int main() {
 		//
 		printf("%s%dth %s of the year %d : %s%s\n", BOLDMAGENTA, wished_number, weekDays[wday], year, asctime(gmtime(&nth_weekday_in_the_year)), RESET);
 
-		//
+		//...and return -1 error code
         return -1;
 	}
 

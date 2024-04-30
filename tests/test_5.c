@@ -44,7 +44,7 @@ int main() {
         //
         printf("\n%sErreur : le mois de l'année que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
 
-        //
+        //...and return -1 error code
         return -1;
     }
 
@@ -58,7 +58,7 @@ int main() {
         //
         printf("\n%sErreur : le numéro de jour dans le mois renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
 
-        //
+        //...and return -1 error code
         return -1;
     }
 

@@ -62,18 +62,27 @@ int main() {
 	{
 		//
 		printf("%sError : %s\n\n", BOLDRED, RESET);
+
+		//
+        return -1;
 	}
 	//
 	else if(nth_weekday_in_the_year == 1)
 	{
 		//
 		printf("%sError : you cannot demand a number of the wished weekday in the wished year less than 1%s\n\n", BOLDRED, RESET);
+
+		//
+        return -1;
 	}
 	//
 	else
 	{
 		//
 		printf("%s%dth %s of the year %d : %s%s\n", BOLDMAGENTA, wished_number, weekDays[wday], year, asctime(gmtime(&nth_weekday_in_the_year)), RESET);
+
+		//
+        return -1;
 	}
 
 	return 0;

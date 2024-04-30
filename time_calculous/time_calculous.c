@@ -368,21 +368,21 @@ int number_of_days_in_choosen_month_in_choosen_year(int month, int year)
     // Determine if the wished year is a leap year or not
     int is_leap_year = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 && year % 100 == 0);
 
-    //
+    // 
     switch(month)
     {
-        case 0 : return 31;
-        case 1 : if(is_leap_year){ return 29; }else{ return 28; }
-        case 2 : return 31;
-        case 3 : return 30;
-        case 4 : return 31;
-        case 5 : return 30;
-        case 6 : return 31;
-        case 7 : return 31;
-        case 8 : return 30;
-        case 9 : return 31;
-        case 10 : return 30;
-        case 11 : return 31;
-        default : return -1;
+        case 0 : return 31; //...31 days in January
+        case 1 : if(is_leap_year){ return 29; }else{ return 28; } //...29 if the wished year is leap or 28 if not 
+        case 2 : return 31; //...31 days in march
+        case 3 : return 30; //...30 days in april
+        case 4 : return 31; //...31 days in may
+        case 5 : return 30; //...30 days in june
+        case 6 : return 31; //...31 days in july
+        case 7 : return 31; //...31 days in august
+        case 8 : return 30; //...30 days in september
+        case 9 : return 31; //...31 days in october
+        case 10 : return 30; //...30 days in november
+        case 11 : return 31; //...30 days in december
+        default : return -1; //...the error code -1 in all other cases
     }
 }

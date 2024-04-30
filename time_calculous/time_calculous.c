@@ -365,7 +365,7 @@ int wished_number_in_year_is_day_in_choosen_year(int mday, int month, int year)
 // Definition of the 'number_of_days_in_choosen_month_in_choosen_year' function to get the number of days in a choosen month in a choosen year
 int number_of_days_in_choosen_month_in_choosen_year(int month, int year)
 {
-    // 
+    // Determine if the wished year is a leap year or not
     int is_leap_year = (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0 && year % 100 == 0);
 
     //

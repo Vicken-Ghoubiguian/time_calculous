@@ -16,6 +16,9 @@ enum time_unit {
     hour = 3600, // definition of an hour as 3600 seconds
     day = 86400, // definition of a day as 86400 seconds
     week = 604800 // definition of a week as 604800 seconds
+    month = 2629800 // definition of a month as 2629800 seconds
+    year = 31536000 // definition of a year as 31536000 seconds
+    decade = 315360000 // definition of a decade as 315360000 seconds
 };
 
 //

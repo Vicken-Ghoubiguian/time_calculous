@@ -142,7 +142,7 @@ gcc test_5.c ../time_calculous/time_calculous.c -o test_5
 
 #### Execution
 
-### Test 6 :
+### Test 6 : to get the number of days in all months for a chosen year
 
 #### Presentation
 

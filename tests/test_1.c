@@ -8,6 +8,7 @@
 // Definition of colors constants
 #define RESET "\033[0m"
 #define BOLDRED "\033[1m\033[31m"
+#define BOLDBLUE "\033[1m\033[34m"
 
 // Initialisation of 'main' function
 int main() {
@@ -63,7 +64,7 @@ int main() {
     printf("\n");
 
     //
-    printf("Date of first %s of %s %d : ", weekDays[wday], months[month], year);
+    printf("%sDate of first %s of %s %d : ", BOLDBLUE, weekDays[wday], months[month], year);
     time_t datetime_for_first = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, FIRST);
     printf("%s", asctime(gmtime(&datetime_for_first)));
 
@@ -85,7 +86,7 @@ int main() {
     //
     printf("Date of last %s of %s %d : ", weekDays[wday], months[month], year);
     time_t datetime_for_last = wished_wday_in_choosen_month(year, month, wday, 0, 0, 0, LAST);
-    printf("%s", asctime(gmtime(&datetime_for_last)));
+    printf("%s%s", asctime(gmtime(&datetime_for_last)), RESET);
 
     // Breaking line instruction
     printf("\n");

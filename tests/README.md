@@ -100,7 +100,15 @@ gcc test_3_bis.c ../time_calculous/time_calculous.c -o test_3_bis
 
 #### Compilation
 
+```bash
+gcc test_4.c ../time_calculous/time_calculous.c -o test_4
+```
+
 #### Execution
+
+```bash
+./test_4
+```
 
 ### Test 4 bis :
 
@@ -116,7 +124,15 @@ gcc test_3_bis.c ../time_calculous/time_calculous.c -o test_3_bis
 
 #### Compilation
 
+```bash
+gcc test_5.c ../time_calculous/time_calculous.c -o test_5
+```
+
 #### Execution
+
+```bash
+./test_5
+```
 
 ### Test 5 bis :
 
@@ -132,7 +148,15 @@ gcc test_3_bis.c ../time_calculous/time_calculous.c -o test_3_bis
 
 #### Compilation
 
+```bash
+gcc test_6.c ../time_calculous/time_calculous.c -o test_6
+```
+
 #### Execution
+
+```bash
+./test_6
+```
 
 ### Test 6 bis :
 

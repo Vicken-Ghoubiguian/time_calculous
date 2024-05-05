@@ -9,6 +9,7 @@
 #define RESET "\033[0m"
 #define BOLDGREEN "\033[1m\033[32m"
 #define BOLDRED "\033[1m\033[31m"
+#define BOLDMAGENTA "\033[1m\033[35m"
 
 // Initialisation of 'main' function
 int main() {
@@ -53,7 +54,7 @@ int main() {
     number_of_days_in_month = number_of_days_in_choosen_month_in_choosen_year(month, year);
 
     //
-    printf("Number of days in %s in %d: %d\n\n", months[month], year, number_of_days_in_month);
+    printf("%sNumber of days in %s in %d: %d%s\n\n", BOLDMAGENTA, months[month], year, number_of_days_in_month, RESET);
 
     //
     return 0;

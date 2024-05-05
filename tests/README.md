@@ -5,10 +5,14 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 # Contents
 
 * [Introduction](#introduction),
+* [Tests](#tests),
 * [Conclusion](#conclusion)
 
 <a title='introduction'></a>
 ## Introduction
+
+<a title='tests'></a>
+## Tests
 
 ### Test 1 : to get a wished weekday in a chosen month
 

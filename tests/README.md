@@ -16,6 +16,12 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 gcc test_1.c ../time_calculous/time_calculous.c -o test_1
 ```
 
+#### Execution
+
+```bash
+./test_1
+```
+
 ### Test 1 bis :
 
 #### Presentation
@@ -24,6 +30,12 @@ gcc test_1.c ../time_calculous/time_calculous.c -o test_1
 
 ```bash
 gcc test_1_bis.c ../time_calculous/time_calculous.c -o test_1_bis
+```
+
+#### Execution
+
+```bash
+./test_1_bis
 ```
 
 ### Test 2 : to make calculations on dates and times
@@ -36,11 +48,19 @@ gcc test_1_bis.c ../time_calculous/time_calculous.c -o test_1_bis
 gcc test_2.c ../time_calculous/time_calculous.c -o test_2
 ```
 
+#### Execution
+
+```bash
+./test_2
+```
+
 ### Test 2 bis :
 
 #### Presentation
 
 #### Compilation
+
+#### Execution
 
 ### Test 3 : to get the number of weeks in a chosen year
 
@@ -52,10 +72,18 @@ gcc test_2.c ../time_calculous/time_calculous.c -o test_2
 gcc test_3.c ../time_calculous/time_calculous.c -o test_3
 ```
 
+#### Execution
+
+```bash
+./test_3
+```
+
 ### Test 3 bis :
 
 #### Presentation
 
 #### Compilation
+
+#### Execution
 
 ## Conclusion

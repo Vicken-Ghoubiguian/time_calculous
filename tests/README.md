@@ -78,13 +78,21 @@ gcc test_3.c ../time_calculous/time_calculous.c -o test_3
 ./test_3
 ```
 
-### Test 3 bis :
+### Test 3 bis : to get the number of weeks in all years from 2000 to 2100
 
 #### Presentation
 
 #### Compilation
 
+```bash
+gcc test_3_bis.c ../time_calculous/time_calculous.c -o test_3_bis
+```
+
 #### Execution
+
+```bash
+./test_3_bis
+```
 
 ### Test 4 :
 

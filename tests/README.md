@@ -118,7 +118,7 @@ gcc test_4.c ../time_calculous/time_calculous.c -o test_4
 
 #### Execution
 
-### Test 5 :
+### Test 5 : to get the number of the wished day in the wished month in the wished year
 
 #### Presentation
 

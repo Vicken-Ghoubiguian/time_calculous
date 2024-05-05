@@ -94,7 +94,7 @@ gcc test_3_bis.c ../time_calculous/time_calculous.c -o test_3_bis
 ./test_3_bis
 ```
 
-### Test 4 :
+### Test 4 : to get the wished nth wished weekday in the wished year
 
 #### Presentation
 

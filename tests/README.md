@@ -86,4 +86,52 @@ gcc test_3.c ../time_calculous/time_calculous.c -o test_3
 
 #### Execution
 
+### Test 4 :
+
+#### Presentation
+
+#### Compilation
+
+#### Execution
+
+### Test 4 bis :
+
+#### Presentation
+
+#### Compilation
+
+#### Execution
+
+### Test 5 :
+
+#### Presentation
+
+#### Compilation
+
+#### Execution
+
+### Test 5 bis :
+
+#### Presentation
+
+#### Compilation
+
+#### Execution
+
+### Test 6 :
+
+#### Presentation
+
+#### Compilation
+
+#### Execution
+
+### Test 6 bis :
+
+#### Presentation
+
+#### Compilation
+
+#### Execution
+
 ## Conclusion

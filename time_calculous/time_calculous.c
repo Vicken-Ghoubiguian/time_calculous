@@ -29,27 +29,27 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     long long int datetime_calculation;
 
     //
-    if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
-    {
+    /*if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
+    {*/
         //
         cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
 
         //
         cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;
-    }
+    //}
 
     //
     cdatetime_timestamp = timegm(cdatetime);
 
     //
-    if(hours >  0 || minutes > 0 || seconds > 0)
-    {
+    /*if(hours >  0 || minutes > 0 || seconds > 0)
+    {*/
         //
         datetime_calculation = hour * hours + minute * minutes + second * seconds;
 
         //
         cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
-    }
+    //}
 
     //
     return cdatetime_timestamp;

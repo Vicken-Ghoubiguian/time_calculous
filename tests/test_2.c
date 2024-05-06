@@ -65,7 +65,7 @@ int main() {
     if(calculations_results == -1)
     {
         //
-        printf("%s  %s", BOLDRED, , RESET);
+        printf("%sThe resulting date and time are not available%s", BOLDRED, RESET);
     }
     //
     else

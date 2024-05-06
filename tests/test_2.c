@@ -51,8 +51,7 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    //time_t today = time(NULL);
-    time_t calculations_results = calculations_on_date_and_time(/*gmtime(&today),*/decades, years, months, weeks, days, hours, minutes, seconds);
+    time_t calculations_results = calculations_on_date_and_time(decades, years, months, weeks, days, hours, minutes, seconds);
 
     // Breaking line instruction
     printf("\n");

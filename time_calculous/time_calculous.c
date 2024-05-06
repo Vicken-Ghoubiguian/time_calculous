@@ -27,29 +27,22 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     time_t cdatetime_timestamp = time(NULL);
     struct tm *cdatetime = gmtime(&cdatetime_timestamp);
     long long int datetime_calculation;
+    time_t min_time;
 
     //
-    /*if(decades > 0 || years >  0 || months > 0 || weeks > 0 || days > 0)
-    {*/
-        //
-        cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
+    cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
 
-        //
-        cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;
-    //}
+    //
+    cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;
 
     //
     cdatetime_timestamp = timegm(cdatetime);
 
     //
-    /*if(hours >  0 || minutes > 0 || seconds > 0)
-    {*/
-        //
-        datetime_calculation = hour * hours + minute * minutes + second * seconds;
+    datetime_calculation = hour * hours + minute * minutes + second * seconds;
 
-        //
-        cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
-    //}
+    //
+    cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
 
     //
     return cdatetime_timestamp;

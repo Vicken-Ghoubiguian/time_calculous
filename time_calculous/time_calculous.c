@@ -28,7 +28,7 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     struct tm *cdatetime = gmtime(&cdatetime_timestamp);
     long long int datetime_calculation;
     struct tm *cdatetime_min_time;
-    time_t min_time;
+    time_t min_time = 0;
 
     //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
@@ -46,7 +46,16 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
 
     //
-    return cdatetime_timestamp;
+    if(cdatetime_timestamp < min_time)
+    {
+        //
+        return -1;
+    }
+    else
+    {
+        //
+        return cdatetime_timestamp;
+    }
 }
 
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished weekday in the wished month and the wished year

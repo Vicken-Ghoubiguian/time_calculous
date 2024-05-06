@@ -5,6 +5,11 @@
 // Importation of the 'time_calculous' library
 #include "../time_calculous/time_calculous.h"
 
+// Definition of colors constants
+#define RESET "\033[0m"
+#define BOLDGREEN "\033[1m\033[32m"
+#define BOLDRED "\033[1m\033[31m"
+
 // Initialisation of 'main' function
 int main() {
 
@@ -57,7 +62,7 @@ int main() {
     printf("\n");
 
     //
-    printf("%s", asctime(gmtime(&calculations_results)));
+    printf("%sResulting date and time : %s%s", BOLDGREEN, asctime(gmtime(&calculations_results)), RESET);
 
     // Breaking line instruction
     printf("\n");

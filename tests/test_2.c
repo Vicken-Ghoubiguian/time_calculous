@@ -62,7 +62,17 @@ int main() {
     printf("\n");
 
     //
-    printf("%sResulting date and time : %s%s", BOLDGREEN, asctime(gmtime(&calculations_results)), RESET);
+    if(calculations_results == -1)
+    {
+        //
+        printf("%s  %s", BOLDRED, , RESET);
+    }
+    //
+    else
+    {
+        //
+        printf("%sResulting date and time : %s%s", BOLDGREEN, asctime(gmtime(&calculations_results)), RESET);
+    }
 
     // Breaking line instruction
     printf("\n");

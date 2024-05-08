@@ -30,6 +30,12 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     struct tm *cdatetime_min_time;
     time_t min_time = 0;
 
+    // Definition of the 'cdatetime_min_time' which corresponds to the 'January 1 1900 00:00:00' date and time
+
+
+    // Conversion of the 'cdatetime_min_time' value to a time_t one
+
+
     //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
 

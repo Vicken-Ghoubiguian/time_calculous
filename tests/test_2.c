@@ -61,13 +61,13 @@ int main() {
     // Breaking line instruction
     printf("\n");
 
-    //
+    // In the case where the 'calculations_results' variable is equal to -1 (an error occured)...
     if(calculations_results == -1)
     {
         //
-        printf("%sThe resulting date and time are not available (The resulting date and time cannot be lower than January 1 1900 00:00:00)%s\n", BOLDRED, RESET);
+        printf("%sThe resulting date and time are not corrects (The resulting date and time cannot be lower than January 1 1900 00:00:00)%s\n", BOLDRED, RESET);
     }
-    //
+    // ...and in the other case...
     else
     {
         //

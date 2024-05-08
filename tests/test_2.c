@@ -65,7 +65,7 @@ int main() {
     if(calculations_results == -1)
     {
         //
-        printf("%sThe resulting date and time are not available (The resulting date and time cannot be lower than January 1 1900 00:00:00)%s", BOLDRED, RESET);
+        printf("%sThe resulting date and time are not available (The resulting date and time cannot be lower than January 1 1900 00:00:00)%s\n", BOLDRED, RESET);
     }
     //
     else

@@ -29,17 +29,19 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     long long int datetime_calculation;
     struct tm *cdatetime_min_time;
     time_t min_time = 0;
+    //time_t today = time(NULL);
 
     // Definition of the 'cdatetime_min_time' which corresponds to the 'January 1 1900 00:00:00' date and time
-    /*cdatetime_min_time->tm_year = 0;
+    /*cdatetime_min_time = gmtime(&today);
+    cdatetime_min_time->tm_year = 0;
     cdatetime_min_time->tm_mon = 0;
     cdatetime_min_time->tm_mday = 1;
     cdatetime_min_time->tm_hour = 0;
     cdatetime_min_time->tm_min = 0;
-    cdatetime_min_time->tm_sec = 0;*/
+    cdatetime_min_time->tm_sec = 0;
 
     // Conversion of the 'cdatetime_min_time' value to a time_t one
-    //min_time = timegm(cdatetime_min_time);
+    min_time = timegm(cdatetime_min_time);*/
 
     //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);

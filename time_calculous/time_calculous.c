@@ -30,20 +30,7 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     time_t cdatetime_timestamp;
     struct tm *cdatetime = gmtime(&today);
     long long int datetime_calculation;
-    //struct tm *struct_tm_min_time;
     time_t min_time = -2208988800;
-
-    // Definition of the 'struct_tm_min_time' which corresponds to the 'January 1 1900 00:00:00' date and time
-    /*struct_tm_min_time = gmtime(&today);
-    struct_tm_min_time->tm_year = 0;
-    struct_tm_min_time->tm_mon = 0;
-    struct_tm_min_time->tm_mday = 1;
-    struct_tm_min_time->tm_hour = 0;
-    struct_tm_min_time->tm_min = 0;
-    struct_tm_min_time->tm_sec = 0;
-
-    // Conversion of the 'struct_tm_min_time' value to a time_t one
-    min_time = timegm(struct_tm_min_time);*/
 
     printf("\n\n%ld\n\n", min_time);
 

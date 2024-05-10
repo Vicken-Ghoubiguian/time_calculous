@@ -30,6 +30,11 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     long long int datetime_calculation;
     time_t min_time = -2208988800;
 
+    // ==================
+    // example : 366 % 365 + leap year = 1 year OR 366 % 365 + not leap year = 1 year + 1 month
+    // example : 13 months => 1 year + 1 month
+    // ==================
+
     //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
 

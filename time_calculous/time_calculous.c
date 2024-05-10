@@ -46,16 +46,17 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
 
     //
-    /*if(cdatetime_timestamp < min_time)
+    if(cdatetime_timestamp < min_time)
     {
         //
         return -1;
     }
+    //
     else
     {
         //
         return cdatetime_timestamp;
-    }*/
+    }
 
     return cdatetime_timestamp;
 }

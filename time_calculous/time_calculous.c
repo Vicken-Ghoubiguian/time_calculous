@@ -1,6 +1,8 @@
 #include <time.h>
 #include "time_calculous.h"
 
+#include <stdio.h>
+
 //
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 {
@@ -24,24 +26,26 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 time_t calculations_on_date_and_time_from_today(int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
 {
     // Definition of all needed variables
-    time_t cdatetime_timestamp = time(NULL);
-    struct tm *cdatetime = gmtime(&cdatetime_timestamp);
+    time_t today = time(NULL);
+    time_t cdatetime_timestamp;
+    struct tm *cdatetime = gmtime(&today);
     long long int datetime_calculation;
-    struct tm *cdatetime_min_time;
-    time_t min_time = 0;
-    //time_t today = time(NULL);
+    //struct tm *struct_tm_min_time;
+    time_t min_time = -2208988800;
 
-    // Definition of the 'cdatetime_min_time' which corresponds to the 'January 1 1900 00:00:00' date and time
-    /*cdatetime_min_time = gmtime(&today);
-    cdatetime_min_time->tm_year = 1900;
-    cdatetime_min_time->tm_mon = 0;
-    cdatetime_min_time->tm_mday = 1;
-    cdatetime_min_time->tm_hour = 0;
-    cdatetime_min_time->tm_min = 0;
-    cdatetime_min_time->tm_sec = 0;
+    // Definition of the 'struct_tm_min_time' which corresponds to the 'January 1 1900 00:00:00' date and time
+    /*struct_tm_min_time = gmtime(&today);
+    struct_tm_min_time->tm_year = 0;
+    struct_tm_min_time->tm_mon = 0;
+    struct_tm_min_time->tm_mday = 1;
+    struct_tm_min_time->tm_hour = 0;
+    struct_tm_min_time->tm_min = 0;
+    struct_tm_min_time->tm_sec = 0;
 
-    // Conversion of the 'cdatetime_min_time' value to a time_t one
-    min_time = timegm(cdatetime_min_time);*/
+    // Conversion of the 'struct_tm_min_time' value to a time_t one
+    min_time = timegm(struct_tm_min_time);*/
+
+    printf("\n\n%ld\n\n", min_time);
 
     //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);

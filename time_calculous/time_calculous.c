@@ -1,8 +1,6 @@
 #include <time.h>
 #include "time_calculous.h"
 
-#include <stdio.h>
-
 //
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 {
@@ -31,8 +29,6 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     struct tm *cdatetime = gmtime(&today);
     long long int datetime_calculation;
     time_t min_time = -2208988800;
-
-    printf("\n\n%ld\n\n", min_time);
 
     //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);

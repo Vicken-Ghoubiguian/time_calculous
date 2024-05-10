@@ -48,17 +48,15 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     //
     if(cdatetime_timestamp < min_time)
     {
-        //
+        // ...
         return -1;
     }
-    //
+    // ...or otherwise...
     else
     {
-        //
+        // ...returning the calculation result
         return cdatetime_timestamp;
     }
-
-    return cdatetime_timestamp;
 }
 
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished weekday in the wished month and the wished year

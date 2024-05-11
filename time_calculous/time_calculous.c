@@ -36,6 +36,17 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     // ==================
 
     //
+    if(months >= 12)
+    {
+        //
+        int test = months / 12;
+        years = years + int(months / 12);
+
+        //
+        months = months % 12;
+    }
+
+    //
     cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
 
     //

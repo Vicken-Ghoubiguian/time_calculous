@@ -36,11 +36,15 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     // ==================
 
     //
-    /*if(years >= 10)
+    if(years >= 10)
     {
         //
-        int test_
-    }*/
+        int test_years_decade = years / 10;
+        decades = decades + test_years_decade;
+
+        //
+        years = years % 10;
+    }
 
     //
     if(months >= 12)

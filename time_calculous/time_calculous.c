@@ -35,18 +35,18 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     // example : 
     // ==================
 
-    //
+    // In the case where the number of years is greater or equal than 10...
     if(years >= 10)
     {
-        //
+        // 
         decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10);
         years = years % 10;
     }
 
-    //
+    // In the case where the number of month is greater or equal than 12...
     if(months >= 12)
     {
-        //
+        // 
         decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(decades,120);
         years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12);
         months = months % 12;

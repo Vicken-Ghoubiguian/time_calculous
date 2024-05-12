@@ -1,6 +1,6 @@
 #include <time.h>
 
-// 
+// Definition of the 'DIV_FOR_TIME_CALCULATIONS' function as a macro to be directly call in the 'calculations_on_times' types functions
 #define DIV_FOR_TIME_CALCULATIONS(x,y) { x/y }
 
 // Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested

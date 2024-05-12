@@ -39,8 +39,8 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     if(years >= 10)
     {
         //
-        int test_years_decade = years / 10;
-        decades = decades + test_years_decade;
+        //int test_years_decade = years / 10;
+        decades = decades + (int)DIV_WITH_QUOTIENT_AS_INT(years,10);
 
         //
         years = years % 10;
@@ -50,12 +50,12 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     if(months >= 12)
     {
         //
-        int test_months_decade = decades / 120;
-        decades = decades + test_months_decade;
+        //int test_months_decade = decades / 120;
+        decades = decades + (int)DIV_WITH_QUOTIENT_AS_INT(decades,120);
 
         //
-        int test_months_year = months / 12;
-        years = years + test_months_year;
+        //int test_months_year = months / 12;
+        years = years + (int)DIV_WITH_QUOTIENT_AS_INT(months,12);
 
         //
         months = months % 12;

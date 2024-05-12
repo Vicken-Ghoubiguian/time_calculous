@@ -1,5 +1,8 @@
 #include <time.h>
 
+// 
+#define DIV_WITH_QUOTIENT_AS_INT(x,y) { x/y }
+
 // Defining the enumeration named "numeral" to specify which iteration of a week day in a month is requested
 enum numeral {
     FIRST, // First iteration of a week day in a month

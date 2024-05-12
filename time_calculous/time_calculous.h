@@ -22,8 +22,8 @@ enum time_unit {
     month = 2629800, // definition of a month as 2629800 seconds
     year = 31536000, // definition of a year as 31536000 seconds
     decade = 315360000, // definition of a decade as 315360000 seconds
-    century = 3153600000 /*,*/ // definition of a century as 3153600000 seconds
-    //millennium = // definition of a millennium as 3153600000 seconds
+    century = 3153600000, // definition of a century as 3153600000 seconds
+    millennium = 31536000000 // definition of a millennium as 31536000000 seconds
 };
 
 //

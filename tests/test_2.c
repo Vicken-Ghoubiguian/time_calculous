@@ -14,7 +14,7 @@
 int main() {
 
     // Definition of the used variable
-    //int millenniums;
+    int millenniums;
     int centuries;
     int decades;
     int years;
@@ -24,6 +24,10 @@ int main() {
     int hours;
     int minutes;
     int seconds;
+
+    //
+    printf("Veuillez entrer le nombre de millénaires que vous voulez : ");
+    scanf("%d", &millenniums);
 
     // To enter the wished number of centuries
     printf("Veuillez entrer le nombre de siécles que vous voulez : ");
@@ -62,7 +66,7 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    time_t calculations_results = calculations_on_date_and_time_from_today(centuries, decades, years, months, weeks, days, hours, minutes, seconds);
+    time_t calculations_results = calculations_on_date_and_time_from_today(millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
 
     // Breaking line instruction
     printf("\n");

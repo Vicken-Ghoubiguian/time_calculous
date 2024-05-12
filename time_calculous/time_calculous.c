@@ -21,7 +21,7 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 }
 
 // Definition of the 'calculations_on_date_and_time_from_today' to make calculations on datetimes
-time_t calculations_on_date_and_time_from_today(int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
+time_t calculations_on_date_and_time_from_today(int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
 {
     // Definition of all needed variables
     time_t today = time(NULL);
@@ -39,6 +39,7 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     if(years >= 10)
     {
         // 
+        centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100);
         decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10);
         years = years % 10;
     }
@@ -47,13 +48,14 @@ time_t calculations_on_date_and_time_from_today(int decades, int years, int mont
     if(months >= 12)
     {
         // 
-        decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(decades,120);
+        centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200);
+        decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120);
         years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12);
         months = months % 12;
     }
 
     //
-    cdatetime->tm_year = cdatetime->tm_year + ((decades * 10) + years);
+    cdatetime->tm_year = cdatetime->tm_year + ((centuries * 100) + (decades * 10) + years);
 
     //
     cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;

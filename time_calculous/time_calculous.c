@@ -63,6 +63,15 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         months = months % 12;
     }
 
+    // day
+    
+
+    // hour
+
+
+    // minute
+
+
     //
     cdatetime->tm_year = cdatetime->tm_year + ((millenniums * 1000) + (centuries * 100) + (decades * 10) + years);
 

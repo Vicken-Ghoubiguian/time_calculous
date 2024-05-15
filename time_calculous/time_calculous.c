@@ -63,11 +63,15 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         months = months % 12;
     }*/
 
-    //
-    /*while(!(months < 12))
+    // 
+    while(months >= 12)
     {
-
-    }*/
+        //
+        if(months >= 12000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = months % 12000; }
+        if(months >= 1200 && months <= 11999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200); months = months % 1200; }
+        if(months >= 120 && months <= 1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = months % 120; }
+        if(months >= 12 && months <= 119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = months % 12; }
+    }
 
     // day
     

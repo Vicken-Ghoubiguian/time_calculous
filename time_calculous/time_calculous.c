@@ -34,14 +34,6 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // example : 366 days % 365 + leap year = 1 year OR 366 % 365 + not leap year = 1 year (366 / 365 = 1.00273972603) + 1 day (366 % 365 = 1)
     // ==================
 
-    // In the case where the number of centuries is greater or equal than 10...
-    /*if(centuries >= 10)
-    {
-        //
-        millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,10);
-        centuries = centuries % 10;
-    }*/
-
     //
     while(centuries >= 10)
     {

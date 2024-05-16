@@ -38,17 +38,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     while(centuries >= 10)
     {
         if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
-    }
-
-    // In the case where the number of years is greater or equal than 10...
-    /*if(years >= 10)
-    {
-        // 
-        millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,1000);
-        centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100);
-        decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10);
-        years = years % 10;
-    }*/    
+    }  
 
     //
     while(years >= 10)

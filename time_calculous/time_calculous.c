@@ -50,6 +50,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         years = years % 10;
     }*/    
 
+    //
     while(years >= 10)
     {
         //

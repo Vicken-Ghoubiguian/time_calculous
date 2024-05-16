@@ -30,10 +30,6 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     long long int datetime_calculation;
     time_t min_time = -2208988800;
 
-    // ==================
-    // example : 366 days % 365 + leap year = 1 year OR 366 % 365 + not leap year = 1 year (366 / 365 = 1.00273972603) + 1 day (366 % 365 = 1)
-    // ==================
-
     //
     while(centuries >= 10)
     {
@@ -68,6 +64,9 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     }
 
     // days
+    // ==================
+    // example : 366 days % 365 + leap year = 1 year OR 366 % 365 + not leap year = 1 year (366 / 365 = 1.00273972603) + 1 day (366 % 365 = 1)
+    // ==================
     
 
     // hours

@@ -40,6 +40,11 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
         }
     }
+    //
+    else
+    {
+        
+    }
 
     //
     if(decades >= 0)
@@ -51,6 +56,11 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(decades >= 100){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = decades % 100; }
             if(decades >= 10 && decades <= 99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = decades % 10; }
         }
+    }
+    //
+    else
+    {
+
     }
 
     //
@@ -65,6 +75,11 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(years >= 10 && years <= 99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = years % 10; }
         }
     }
+    //
+    else
+    {
+
+    }
 
     //
     if(months >= 0)
@@ -78,6 +93,11 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(months >= 120 && months <= 1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = months % 120; }
             if(months >= 12 && months <= 119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = months % 12; }
         }
+    }
+    //
+    else
+    {
+
     }
 
     // days

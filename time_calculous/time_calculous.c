@@ -31,37 +31,53 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     time_t min_time = -2208988800;
 
     //
-    while(centuries >= 10)
+    if(centuries >= 0)
     {
         //
-        if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
+        while(centuries >= 10)
+        {
+            //
+            if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
+        }
     }
 
     //
-    while(decades >= 10)
+    if(decades >= 0)
     {
         //
-        if(decades >= 100){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = decades % 100; }
-        if(decades >= 10 && decades <= 99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = decades % 10; }
+        while(decades >= 10)
+        {
+            //
+            if(decades >= 100){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = decades % 100; }
+            if(decades >= 10 && decades <= 99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = decades % 10; }
+        }
     }
 
     //
-    while(years >= 10)
+    if(years >= 0)
     {
         //
-        if(years >= 1000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = years % 1000; }
-        if(years >= 100 && years <= 999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100); years = years % 100; }
-        if(years >= 10 && years <= 99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = years % 10; }
+        while(years >= 10)
+        {
+            //
+            if(years >= 1000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = years % 1000; }
+            if(years >= 100 && years <= 999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100); years = years % 100; }
+            if(years >= 10 && years <= 99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = years % 10; }
+        }
     }
 
     //
-    while(months >= 12)
+    if(months >= 0)
     {
         //
-        if(months >= 12000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = months % 12000; }
-        if(months >= 1200 && months <= 11999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200); months = months % 1200; }
-        if(months >= 120 && months <= 1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = months % 120; }
-        if(months >= 12 && months <= 119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = months % 12; }
+        while(months >= 12)
+        {
+            //
+            if(months >= 12000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = months % 12000; }
+            if(months >= 1200 && months <= 11999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200); months = months % 1200; }
+            if(months >= 120 && months <= 1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = months % 120; }
+            if(months >= 12 && months <= 119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = months % 12; }
+        }
     }
 
     // days

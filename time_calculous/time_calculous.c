@@ -33,6 +33,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     //
     while(centuries >= 10)
     {
+        //
         if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
     }
 
@@ -53,7 +54,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         if(years >= 10 && years <= 99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = years % 10; }
     }
 
-    // 
+    //
     while(months >= 12)
     {
         //

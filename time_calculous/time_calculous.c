@@ -30,7 +30,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     long long int datetime_calculation;
     time_t min_time = -2208988800;
 
-    //
+    // If the number of centuries is positive (to want to add centuries)...
     if(centuries >= 0)
     {
         //
@@ -40,13 +40,13 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
         }
     }
-    //
+    // In the other case (to want to remove centuries)...
     else
     {
-        
+
     }
 
-    //
+    // If the number of decades is positive (to want to add decades)...
     if(decades >= 0)
     {
         //
@@ -57,13 +57,13 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(decades >= 10 && decades <= 99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = decades % 10; }
         }
     }
-    //
+    // In the other case (to want to remove decades)...
     else
     {
 
     }
 
-    //
+    // If the number of years is positive (to want to add years)...
     if(years >= 0)
     {
         //
@@ -75,13 +75,13 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(years >= 10 && years <= 99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = years % 10; }
         }
     }
-    //
+    // In the other case (to want to remove years)...
     else
     {
 
     }
 
-    //
+    // If the number of months is positive (to want to add months)...
     if(months >= 0)
     {
         //
@@ -94,7 +94,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(months >= 12 && months <= 119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = months % 12; }
         }
     }
-    //
+    // In the other case (to want to remove months)...
     else
     {
 

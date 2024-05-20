@@ -129,12 +129,12 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // weeks
     if(weeks >= 4)
     {
-
+        
     }
     //
     else
     {
-
+        
     }
 
     // days

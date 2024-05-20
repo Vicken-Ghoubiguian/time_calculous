@@ -43,7 +43,12 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // In the other case (to want to remove centuries)...
     else
     {
-
+        //
+        while(centuries <= -10)
+        {
+            //
+            if(centuries <= -10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = (-1 * centuries) % 10; centuries = -1 * centuries; }
+        }
     }
 
     // If the number of decades is positive (to want to add decades)...
@@ -60,7 +65,13 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // In the other case (to want to remove decades)...
     else
     {
-
+        //
+        while(decades <= -10)
+        {
+            //
+            if(decades <= -100){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = (-1 * decades) % 100; decades = -1 * decades; }
+            if(decades <= -10 && decades >= -99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = (-1 * decades) % 10; decades = -1 * decades; }
+        }
     }
 
     // If the number of years is positive (to want to add years)...

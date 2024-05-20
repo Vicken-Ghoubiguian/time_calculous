@@ -126,6 +126,17 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         }
     }
 
+    // weeks
+    if(weeks >= 4)
+    {
+
+    }
+    //
+    else
+    {
+
+    }
+
     // days
     // ==================
     // example : 366 days % 365 + leap year = 1 year OR 366 % 365 + not leap year = 1 year (366 / 365 = 1.00273972603) + 1 day (366 % 365 = 1)
@@ -154,6 +165,16 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
 
     }
 
+    // seconds
+    if(seconds >= 60)
+    {
+
+    }
+    //
+    else
+    {
+
+    }
 
     //
     cdatetime->tm_year = cdatetime->tm_year + ((millenniums * 1000) + (centuries * 100) + (decades * 10) + years);

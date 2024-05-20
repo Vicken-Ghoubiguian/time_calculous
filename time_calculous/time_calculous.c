@@ -89,7 +89,14 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // In the other case (to want to remove years)...
     else
     {
-
+        //
+        while(years <= -10)
+        {
+            //
+            if(years <= -1000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = (-1 * years) % 1000; years = -1 * years; }
+            if(years <= -100 && years >= -999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100); years = (-1 * years) % 100; years = -1 * years; }
+            if(years <= -10 && years >= -99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = (-1 * years) % 10; years = -1 * years; }
+        }
     }
 
     // If the number of months is positive (to want to add months)...

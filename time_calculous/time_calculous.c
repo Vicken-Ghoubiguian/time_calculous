@@ -115,7 +115,15 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // In the other case (to want to remove months)...
     else
     {
-
+        //
+        while(months <= -12)
+        {
+            //
+            if(months <= -12000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = (-1 * months) % 12000; months = -1 * months; }
+            if(months <= -1200 && months >= -11999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200); months = (-1 * months) % 1200; months = -1 * months; }
+            if(months <= -120 && months >= -1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = (-1 * months) % 120; months = -1 * months; }
+            if(months <= -12 && months >= -119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = (-1 * months) % 12; months = -1 * months; }
+        }
     }
 
     // days

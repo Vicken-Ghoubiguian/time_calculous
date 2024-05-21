@@ -153,7 +153,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     
 
     // hours
-    if(hours >= 24)
+    if(hours >= 0)
     {
 
     }
@@ -164,7 +164,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     }
 
     // minutes
-    if(minutes >= 60)
+    if(minutes >= 0)
     {
 
     }
@@ -175,7 +175,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     }
 
     // seconds
-    if(seconds >= 60)
+    if(seconds >= 0)
     {
 
     }

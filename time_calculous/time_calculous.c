@@ -177,12 +177,28 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // seconds
     if(seconds >= 0)
     {
-
+        //
+        while(seconds >= 60)
+        {
+            /*if(seconds >= 31536000000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = seconds % 31536000000; }
+            if(seconds >= 3153600000 && seconds <= 31535999999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(seconds,3153600000); seconds = seconds % 3153600000; }
+            if(seconds >= 315360000 && seconds <= 3153599999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(seconds,315360000); seconds = seconds % 315360000; }*/
+            if(seconds >= 31536000 && seconds <= 315359999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000); seconds = seconds % 31536000; }
+            if(seconds >= 2629800 && seconds <= 31535999){ months = months + (int)DIV_FOR_TIME_CALCULATIONS(seconds,2629800); seconds = seconds % 2629800; }
+            if(seconds >= 604800 && seconds <= 2629799){ weeks = weeks + (int)DIV_FOR_TIME_CALCULATIONS(seconds,604800); seconds = seconds % 604800; }
+            if(seconds >= 86400 && seconds <= 604799){ days = days + (int)DIV_FOR_TIME_CALCULATIONS(seconds,86400); seconds = seconds % 86400; }
+            if(seconds >= 3600 && seconds <= 86399){ hours = hours + (int)DIV_FOR_TIME_CALCULATIONS(seconds,3600); seconds = seconds % 3600; }
+            if(seconds >= 60 && seconds <= 3599){ minutes = minutes + (int)DIV_FOR_TIME_CALCULATIONS(seconds,60); seconds = seconds % 60; }
+        }
     }
     //
     else
     {
-
+        //
+        while(seconds <= 60)
+        {
+            
+        }
     }
 
     //

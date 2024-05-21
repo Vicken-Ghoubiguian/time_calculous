@@ -229,7 +229,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // Calculation and definition of the month
     cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;
 
-    //
+    // Conversion of the 'cdatetime' struct tm value to the 'cdatetime_timestamp' timestamp value
     cdatetime_timestamp = timegm(cdatetime);
 
     // Calculation of all weeks, days, hours, minutes, and seconds and affectation of the result to the 'datetime_calculation' variable

@@ -192,7 +192,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         //
         while(seconds >= 60)
         {
-            //if(seconds >= 31536000000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = seconds % 31536000000; }
+            if((long long int)seconds >= 31536000000){ millenniums = millenniums + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = seconds % 31536000000; }
             if((long long int)seconds >= 3153600000 && (long long int)seconds <= 31535999999){ centuries = centuries + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,3153600000); seconds = seconds % 3153600000; }
             if((long long int)seconds >= 315360000 && (long long int)seconds <= 3153599999){ decades = decades + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,315360000); seconds = seconds % 315360000; }
             if(seconds >= 31536000 && seconds <= 315359999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000); seconds = seconds % 31536000; }
@@ -209,7 +209,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         //
         while(seconds <= -60)
         {
-            //if(seconds <= -31536000000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = (-1 * seconds) % 31536000000; seconds = -1 * seconds; }
+            if((long long int)seconds <= -31536000000){ millenniums = millenniums + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = (-1 * seconds) % 31536000000; seconds = -1 * seconds; }
             if((long long int)seconds <= -3153600000 && (long long int)seconds >= -31535999999){ centuries = centuries + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,3153600000); seconds = (-1 * seconds) % 3153600000; seconds = -1 * seconds; }
             if((long long int)seconds <= -315360000 && (long long int)seconds >= -3153599999){ decades = decades + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,315360000); seconds = (-1 * seconds) % 315360000; seconds = -1 * seconds; }
             if(seconds <= -31536000 && seconds >= -315359999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000); seconds = (-1 * seconds) % 31536000; seconds = -1 * seconds; }

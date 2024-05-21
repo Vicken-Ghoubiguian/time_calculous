@@ -223,19 +223,19 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         }
     }
 
-    //
+    // Calculation and definition of the year
     cdatetime->tm_year = cdatetime->tm_year + ((millenniums * 1000) + (centuries * 100) + (decades * 10) + years);
 
-    //
+    // Calculation and definition of the month
     cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;
 
     //
     cdatetime_timestamp = timegm(cdatetime);
 
-    //
+    // Calculation of all weeks, days, hours, minutes, and seconds and affectation of the result to the 'datetime_calculation' variable
     datetime_calculation = week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
 
-    //
+    // Adding the 'datetime_calculation' value to the 'cdatetime_timestamp' one and affectation to the 'cdatetime_timestamp' variable
     cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;
 
     // If the calculation result, in the 'cdatetime_timestamp' variable, is less than the date and time of January 1 1900 00:00:00 as a timestamp...

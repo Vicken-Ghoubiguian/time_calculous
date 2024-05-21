@@ -169,7 +169,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     {
 
     }
-    //
+    // In the other case (to want to remove hours)...
     else
     {
 
@@ -180,7 +180,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     {
 
     }
-    //
+    // In the other case (to want to remove minutes)...
     else
     {
 

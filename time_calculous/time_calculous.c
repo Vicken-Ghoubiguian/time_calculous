@@ -127,15 +127,24 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     }
 
     // weeks
-    if(weeks >= 4)
+    /*if(weeks >= 0)
     {
-        
+        //
+        while(weeks <= 4)
+        {
+            //
+            if(){}
+            if(){}
+            if(){}
+            if(){}
+            if(){}
+        }
     }
     //
     else
     {
         
-    }
+    }*/
 
     // days
     // ==================

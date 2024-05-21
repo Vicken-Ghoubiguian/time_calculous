@@ -81,7 +81,7 @@ int main() {
     else
     {
         //
-        printf("%sResulting date and time : %s%s", BOLDGREEN, asctime(gmtime(&calculations_results)), RESET);
+        printf("%sResulting date and time (UTC) : %s%s", BOLDGREEN, asctime(gmtime(&calculations_results)), RESET);
     }
 
     // Breaking line instruction

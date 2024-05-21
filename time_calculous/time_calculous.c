@@ -186,7 +186,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
 
     }
 
-    // seconds
+    // If the number of seconds is positive (to want to add seconds)...
     if(seconds >= 0)
     {
         //
@@ -203,7 +203,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
             if(seconds >= 60 && seconds <= 3599){ minutes = minutes + (int)DIV_FOR_TIME_CALCULATIONS(seconds,60); seconds = seconds % 60; }
         }
     }
-    //
+    // In the other case (to want to remove seconds)...
     else
     {
         //

@@ -164,7 +164,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     }
     */
 
-    // hours
+    // If the number of hours is positive (to want to add hours)...
     if(hours >= 0)
     {
 
@@ -175,7 +175,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
 
     }
 
-    // minutes
+    // If the number of minutes is positive (to want to add minutes)...
     if(minutes >= 0)
     {
 

@@ -219,7 +219,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     cdatetime_timestamp = timegm(cdatetime);
 
     //
-    datetime_calculation = hour * hours + minute * minutes + second * seconds;
+    datetime_calculation = week * weeks + day * days + hour * hours + minute * minutes + second * seconds;
 
     //
     cdatetime_timestamp = cdatetime_timestamp + datetime_calculation;

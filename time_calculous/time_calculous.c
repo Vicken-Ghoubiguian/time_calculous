@@ -184,10 +184,17 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     else
     {
         //
-        /*while(hours <= -24)
+        while(hours <= -24)
         {
-
-        }*/
+            //
+            if(hours <= -8760000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = (-1 * hours) % 8760000; hours = -1 * hours; }
+            if(hours <= -8756000 && hours >= -8759999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(hours,8756000); hours = (-1 * hours) % 8756000; hours = -1 * hours; }
+            if(hours <= -875600 && hours >= -875999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(hours,875600); hours = (-1 * hours) % 875600; hours = -1 * hours; }
+            if(hours <= -8760 && hours >= -87599){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760); hours = (-1 * hours) % 8760; hours = -1 * hours; }
+            if(hours <= -730 && hours >= -8759){ months = months + (int)DIV_FOR_TIME_CALCULATIONS(hours,730); hours = (-1 * hours) % 730; hours = -1 * hours; }
+            if(hours <= -168 && hours >= -729){ weeks = weeks + (int)DIV_FOR_TIME_CALCULATIONS(hours,168); hours = (-1 * hours) % 168; hours = -1 * hours; }
+            if(hours <= -24 && hours >= -167){ days = days + (int)DIV_FOR_TIME_CALCULATIONS(hours,24); hours = (-1 * hours) % 24; hours = -1 * hours; }
+        }
     }
 
     // If the number of minutes is positive (to want to add minutes)...

@@ -178,7 +178,19 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     // If the number of minutes is positive (to want to add minutes)...
     if(minutes >= 0)
     {
-
+        //
+        while(minutes >= 60)
+        {
+            //
+            if(minutes >= 525600000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600000); minutes = minutes % 525600000; }
+            if(minutes >= 52560000 && minutes <= 525599999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(minutes,52560000); minutes = minutes % 52560000; }
+            if(minutes >= 5256000 && minutes <= 52559999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(minutes,5256000); minutes = minutes % 5256000; }
+            if(minutes >= 525600 && minutes <= 5255999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600); minutes = minutes % 525600; }
+            if(minutes >= 43800 && minutes <= 525599){ months = months + (int)DIV_FOR_TIME_CALCULATIONS(minutes,43800); minutes = minutes % 43800; }
+            if(minutes >= 10080 && minutes <= 43799){ weeks = weeks + (int)DIV_FOR_TIME_CALCULATIONS(minutes,10080); minutes = minutes % 10080; }
+            if(minutes >= 1440 && minutes <= 10079){ days = days + (int)DIV_FOR_TIME_CALCULATIONS(minutes,1440); minutes = minutes % 1440; }
+            if(minutes >= 60 && minutes <= 1439){ hours = hours + (int)DIV_FOR_TIME_CALCULATIONS(minutes,60); minutes = minutes % 60; }
+        }
     }
     // In the other case (to want to remove minutes)...
     else

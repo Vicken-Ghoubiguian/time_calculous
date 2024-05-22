@@ -170,6 +170,7 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
         //
         while(hours >= 24)
         {
+            //
             if(hours >= 8760000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = hours % 8760000; }
             if(hours >= 8756000 && hours <= 8759999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(hours,8756000); hours = hours % 8756000; }
             if(hours >= 875600 && hours <= 875999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(hours,875600); hours = hours % 875600; }

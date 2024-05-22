@@ -168,10 +168,16 @@ time_t calculations_on_date_and_time_from_today(int millenniums, int centuries, 
     if(hours >= 0)
     {
         //
-        /*while(hours >= 24)
+        while(hours >= 24)
         {
-
-        }*/
+            if(hours >= 8760000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = hours % 8760000; }
+            if(hours >= 8756000 && hours <= 8759999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(hours,8756000); hours = hours % 8756000; }
+            if(hours >= 875600 && hours <= 875999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(hours,875600); hours = hours % 875600; }
+            if(hours >= 8760 && hours <= 87599){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760); hours = hours % 8760; }
+            if(hours >= 730 && hours <= 8759){ months = months + (int)DIV_FOR_TIME_CALCULATIONS(hours,730); hours = hours % 730; }
+            if(hours >= 168 && hours <= 729){ weeks = weeks + (int)DIV_FOR_TIME_CALCULATIONS(hours,168); hours = hours % 168; }
+            if(hours >= 24 && hours <= 167){ days = days + (int)DIV_FOR_TIME_CALCULATIONS(hours,24); hours = hours % 24; }
+        }
     }
     // In the other case (to want to remove hours)...
     else

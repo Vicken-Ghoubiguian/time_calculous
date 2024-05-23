@@ -21,6 +21,17 @@ int main() {
     int seconds;
     time_t choosen_datetime = time(NULL);
 
+    //=======================================================================
+    //===========> Configuration of the wished datetime
+    //=======================================================================
+
+    // Breaking line instruction
+    printf("\n");
+
+    //=======================================================================
+    //===========> Configuration of all parameters for calculous
+    //=======================================================================
+
     //
     printf("Veuillez entrer le nombre de millénaires que vous voulez : ");
     scanf("%d", &millenniums);

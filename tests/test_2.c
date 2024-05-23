@@ -24,6 +24,7 @@ int main() {
     int hours;
     int minutes;
     int seconds;
+    time_t today = time(NULL);
 
     //
     printf("Veuillez entrer le nombre de millénaires que vous voulez : ");
@@ -66,7 +67,7 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    time_t calculations_results = calculations_on_date_and_time_from_today(millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
+    time_t calculations_results = calculations_on_date_and_time_from_today(today, millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
 
     // Breaking line instruction
     printf("\n");

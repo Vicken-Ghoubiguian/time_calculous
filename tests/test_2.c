@@ -67,7 +67,7 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    time_t calculations_results = calculations_on_date_and_time_from_today(today, millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
+    time_t calculations_results = calculations_on_date_and_time(today, millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
 
     // Breaking line instruction
     printf("\n");

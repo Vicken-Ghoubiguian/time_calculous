@@ -20,8 +20,8 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
     return calculation_result;
 }
 
-// Definition of the 'calculations_on_date_and_time_from_today' to make calculations on datetimes
-time_t calculations_on_date_and_time_from_today(time_t datetime_as_timestamp, int millenniums, int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
+// Definition of the 'calculations_on_date_and_time' to make calculations on datetimes
+time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniums, int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
 {
     // Definition of all needed variables
     //time_t today = time(NULL);

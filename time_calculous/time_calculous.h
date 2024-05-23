@@ -47,8 +47,8 @@ static char* months[] = {"January", "February", "March", "April", "May", "June",
 // Definition of 'diffs_on_date_and_time' which returns, as timestamp, the difference between 2 datetimes as timestamps
 time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt);
 
-// Definition of the 'calculations_on_date_and_time_from_today' to make calculations on datetimes
-time_t calculations_on_date_and_time_from_today(time_t datetime_as_timestamp, int millenniums, int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds);
+// Definition of the 'calculations_on_date_and_time' to make calculations on datetimes
+time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniums, int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds);
 
 // Definition of the 'wished_wday_in_choosen_month' function to get the date of the wished week day in the wished month and the wished year
 time_t wished_wday_in_choosen_month(int year, int month, int wday, int hour, int minute, int second, enum numeral num);

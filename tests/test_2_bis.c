@@ -26,7 +26,7 @@ int main() {
     //=======================================================================
 
     // Breaking line instruction
-    printf("\n");
+    printf("\n\n\n\n");
 
     //=======================================================================
     //===========> Configuration of all parameters for calculous

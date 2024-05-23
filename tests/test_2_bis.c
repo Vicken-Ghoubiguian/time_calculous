@@ -8,6 +8,18 @@
 // Initialisation of 'main' function
 int main() {
 
+    // Definition of the used variable
+    int millenniums;
+    int centuries;
+    int decades;
+    int years;
+    int months;
+    int weeks;
+    int days;
+    int hours;
+    int minutes;
+    int seconds;
+
     //
     return 0;
 }

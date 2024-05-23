@@ -19,6 +19,7 @@ int main() {
     int hours;
     int minutes;
     int seconds;
+    time_t choosen_datetime = time(NULL);
 
     //
     return 0;

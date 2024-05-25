@@ -32,7 +32,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of centuries is positive (to want to add centuries)...
     if(centuries >= 0)
     {
-        //
+        // As long as the wished number of centuries is greater than or equal to 10, so...
         while(centuries >= 10)
         {
             //
@@ -53,7 +53,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of decades is positive (to want to add decades)...
     if(decades >= 0)
     {
-        //
+        // As long as the wished number of decades is greater than or equal to 10, so...
         while(decades >= 10)
         {
             //
@@ -76,7 +76,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of years is positive (to want to add years)...
     if(years >= 0)
     {
-        //
+        // As long as the wished number of years is greater than or equal to 10, so...
         while(years >= 10)
         {
             //
@@ -101,7 +101,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of months is positive (to want to add months)...
     if(months >= 0)
     {
-        //
+        // As long as the wished number of months is greater than or equal to 12, so...
         while(months >= 12)
         {
             //
@@ -166,7 +166,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of hours is positive (to want to add hours)...
     if(hours >= 0)
     {
-        //
+        // As long as the wished number of hours is greater than or equal to 24, so...
         while(hours >= 24)
         {
             //
@@ -199,7 +199,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of minutes is positive (to want to add minutes)...
     if(minutes >= 0)
     {
-        //
+        // As long as the wished number of minutes is greater than or equal to 60, so...
         while(minutes >= 60)
         {
             //
@@ -234,7 +234,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // If the number of seconds is positive (to want to add seconds)...
     if(seconds >= 0)
     {
-        //
+        // As long as the wished number of seconds is greater than or equal to 60, so...
         while(seconds >= 60)
         {
             //

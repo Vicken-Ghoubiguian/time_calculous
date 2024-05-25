@@ -26,7 +26,7 @@ int main() {
     if(year < 1900)
     {
         //...so display error in red...
-        printf("\n%sError: the year you entered is not valid, it must be greater than or equal to 1900!%s\n\n", BOLDRED, RESET);
+        printf("\n%sError : the year you entered is not valid, it must be greater than or equal to 1900!%s\n\n", BOLDRED, RESET);
 
         //...and return -1 error code
         return -1;
@@ -54,7 +54,7 @@ int main() {
     if(wday < 0 || wday > 6)
     {
         //
-        printf("\n%sError: the day of the week you entered is not valid !%s\n\n", BOLDRED, RESET);
+        printf("\n%sError : the day of the week you entered is not valid !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;

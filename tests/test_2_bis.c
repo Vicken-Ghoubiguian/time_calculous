@@ -5,6 +5,11 @@
 // Importation of the 'time_calculous' library
 #include "../time_calculous/time_calculous.h"
 
+// Definition of colors constants
+#define RESET "\033[0m"
+#define BOLDGREEN "\033[1m\033[32m"
+#define BOLDRED "\033[1m\033[31m"
+
 // Initialisation of 'main' function
 int main() {
 
@@ -73,7 +78,7 @@ int main() {
     scanf("%d", &seconds);
 
     //
-    time_t calculations_results = calculations_on_date_and_time(today, millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
+    time_t calculations_results = calculations_on_date_and_time(choosen_datetime, millenniums, centuries, decades, years, months, weeks, days, hours, minutes, seconds);
 
     // Breaking line instruction
     printf("\n");

@@ -9,6 +9,7 @@
 #define RESET "\033[0m"
 #define BOLDGREEN "\033[1m\033[32m"
 #define BOLDRED "\033[1m\033[31m"
+#define BOLDMAGENTA "\033[1m\033[35m"
 
 // Initialisation of 'main' function
 int main() {
@@ -25,6 +26,9 @@ int main() {
     int minutes;
     int seconds;
     time_t today = time(NULL);
+
+    //
+    printf("%s\nInitial date and time (UTC) : %s%s\n", BOLDMAGENTA, asctime(gmtime(&today)), RESET);
 
     // To enter the wished number of millennials
     printf("Please enter the number of millennials you want : ");

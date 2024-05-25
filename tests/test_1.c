@@ -19,42 +19,42 @@ int main() {
     int wday;
 
     // To enter the wished year
-    printf("Veuillez entrer l'année que vous voulez : ");
+    printf("Please enter the year you want : ");
     scanf("%d", &year);
 
     // In the case where the wished year is less than 1900...
     if(year < 1900)
     {
         //...so display error in red...
-        printf("\n%sErreur : l'année que vous avez renseigné n'est pas valide, celle-ci doit être supérieure ou égale à 1900 !%s\n\n", BOLDRED, RESET);
+        printf("\n%sError: the year you entered is not valid, it must be greater than or equal to 1900!%s\n\n", BOLDRED, RESET);
 
         //...and return -1 error code
         return -1;
     }
 
     // To enter the wished month
-    printf("Veuillez entrer le mois que vous voulez [de 0 à 11] : ");
+    printf("Please enter the month you want [0 to 11] : ");
     scanf("%d", &month);
 
     //
     if(month < 0 || month > 11)
     {
         //
-        printf("\n%sErreur : le mois de l'année que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
+        printf("\n%sError : the month of the year you entered is not valid !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;
     }
 
     //
-    printf("Veuillez entrer le jour de la semaine que vous voulez [de 0 à 6] : ");
+    printf("Please enter the day of the week you want [0 to 6] : ");
     scanf("%d", &wday);
 
     //
     if(wday < 0 || wday > 6)
     {
         //
-        printf("\n%sErreur : le jour de la semaine que vous avez renseigné n'est pas valide !%s\n\n", BOLDRED, RESET);
+        printf("\n%sError: the day of the week you entered is not valid !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;

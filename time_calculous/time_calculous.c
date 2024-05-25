@@ -21,7 +21,7 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 }
 
 // Definition of the 'calculations_on_date_and_time' to make calculations on datetimes
-time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniums, int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
+time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennials, int centuries, int decades, int years, int months, int weeks, int days, int hours, int minutes, int seconds)
 {
     // Definition of all needed variables
     time_t cdatetime_timestamp;
@@ -36,7 +36,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(centuries >= 10)
         {
             //
-            if(centuries >= 10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
+            if(centuries >= 10){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = centuries % 10; }
         }
     }
     // In the other case (to want to remove centuries)...
@@ -46,7 +46,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(centuries <= -10)
         {
             //
-            if(centuries <= -10){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = (-1 * centuries) % 10; centuries = -1 * centuries; }
+            if(centuries <= -10){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(centuries,10); centuries = (-1 * centuries) % 10; centuries = -1 * centuries; }
         }
     }
 
@@ -57,7 +57,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(decades >= 10)
         {
             //
-            if(decades >= 100){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = decades % 100; }
+            if(decades >= 100){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = decades % 100; }
             if(decades >= 10 && decades <= 99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = decades % 10; }
         }
     }
@@ -68,7 +68,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(decades <= -10)
         {
             //
-            if(decades <= -100){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = (-1 * decades) % 100; decades = -1 * decades; }
+            if(decades <= -100){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(decades,100); decades = (-1 * decades) % 100; decades = -1 * decades; }
             if(decades <= -10 && decades >= -99){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(decades,10); decades = (-1 * decades) % 10; decades = -1 * decades; }
         }
     }
@@ -80,7 +80,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(years >= 10)
         {
             //
-            if(years >= 1000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = years % 1000; }
+            if(years >= 1000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = years % 1000; }
             if(years >= 100 && years <= 999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100); years = years % 100; }
             if(years >= 10 && years <= 99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = years % 10; }
         }
@@ -92,7 +92,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(years <= -10)
         {
             //
-            if(years <= -1000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = (-1 * years) % 1000; years = -1 * years; }
+            if(years <= -1000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(years,1000); years = (-1 * years) % 1000; years = -1 * years; }
             if(years <= -100 && years >= -999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(years,100); years = (-1 * years) % 100; years = -1 * years; }
             if(years <= -10 && years >= -99){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(years,10); years = (-1 * years) % 10; years = -1 * years; }
         }
@@ -105,7 +105,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(months >= 12)
         {
             //
-            if(months >= 12000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = months % 12000; }
+            if(months >= 12000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = months % 12000; }
             if(months >= 1200 && months <= 11999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200); months = months % 1200; }
             if(months >= 120 && months <= 1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = months % 120; }
             if(months >= 12 && months <= 119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = months % 12; }
@@ -118,7 +118,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(months <= -12)
         {
             //
-            if(months <= -12000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = (-1 * months) % 12000; months = -1 * months; }
+            if(months <= -12000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(months,12000); months = (-1 * months) % 12000; months = -1 * months; }
             if(months <= -1200 && months >= -11999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(months,1200); months = (-1 * months) % 1200; months = -1 * months; }
             if(months <= -120 && months >= -1199){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(months,120); months = (-1 * months) % 120; months = -1 * months; }
             if(months <= -12 && months >= -119){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(months,12); months = (-1 * months) % 12; months = -1 * months; }
@@ -170,7 +170,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(hours >= 24)
         {
             //
-            if(hours >= 8760000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = hours % 8760000; }
+            if(hours >= 8760000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = hours % 8760000; }
             if(hours >= 8756000 && hours <= 8759999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(hours,8756000); hours = hours % 8756000; }
             if(hours >= 875600 && hours <= 8755999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(hours,875600); hours = hours % 875600; }
             if(hours >= 8760 && hours <= 875599){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760); hours = hours % 8760; }
@@ -186,7 +186,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(hours <= -24)
         {
             //
-            if(hours <= -8760000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = (-1 * hours) % 8760000; hours = -1 * hours; }
+            if(hours <= -8760000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760000); hours = (-1 * hours) % 8760000; hours = -1 * hours; }
             if(hours <= -8756000 && hours >= -8759999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(hours,8756000); hours = (-1 * hours) % 8756000; hours = -1 * hours; }
             if(hours <= -875600 && hours >= -8755999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(hours,875600); hours = (-1 * hours) % 875600; hours = -1 * hours; }
             if(hours <= -8760 && hours >= -875599){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(hours,8760); hours = (-1 * hours) % 8760; hours = -1 * hours; }
@@ -203,7 +203,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(minutes >= 60)
         {
             //
-            if(minutes >= 525600000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600000); minutes = minutes % 525600000; }
+            if(minutes >= 525600000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600000); minutes = minutes % 525600000; }
             if(minutes >= 52560000 && minutes <= 525599999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(minutes,52560000); minutes = minutes % 52560000; }
             if(minutes >= 5256000 && minutes <= 52559999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(minutes,5256000); minutes = minutes % 5256000; }
             if(minutes >= 525600 && minutes <= 5255999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600); minutes = minutes % 525600; }
@@ -220,7 +220,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(minutes <= -60)
         {
             //
-            if(minutes <= -525600000){ millenniums = millenniums + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600000); minutes = (-1 * minutes) % 525600000; minutes = -1 * minutes; }
+            if(minutes <= -525600000){ millennials = millennials + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600000); minutes = (-1 * minutes) % 525600000; minutes = -1 * minutes; }
             if(minutes <= -52560000 && minutes >= -525599999){ centuries = centuries + (int)DIV_FOR_TIME_CALCULATIONS(minutes,52560000); minutes = (-1 * minutes) % 52560000; minutes = -1 * minutes; }
             if(minutes <= -5256000 && minutes >= -52559999){ decades = decades + (int)DIV_FOR_TIME_CALCULATIONS(minutes,5256000); minutes = (-1 * minutes) % 5256000; minutes = -1 * minutes; }
             if(minutes <= -525600 && minutes >= -5255999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(minutes,525600); minutes = (-1 * minutes) % 525600; minutes = -1 * minutes; }
@@ -238,7 +238,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(seconds >= 60)
         {
             //
-            if((long long int)seconds >= 31536000000){ millenniums = millenniums + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = seconds % 31536000000; }
+            if((long long int)seconds >= 31536000000){ millennials = millennials + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = seconds % 31536000000; }
             if((long long int)seconds >= 3153600000 && (long long int)seconds <= 31535999999){ centuries = centuries + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,3153600000); seconds = seconds % 3153600000; }
             if((long long int)seconds >= 315360000 && (long long int)seconds <= 3153599999){ decades = decades + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,315360000); seconds = seconds % 315360000; }
             if(seconds >= 31536000 && seconds <= 315359999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000); seconds = seconds % 31536000; }
@@ -256,7 +256,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
         while(seconds <= -60)
         {
             //
-            if((long long int)seconds <= -31536000000){ millenniums = millenniums + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = (-1 * seconds) % 31536000000; seconds = -1 * seconds; }
+            if((long long int)seconds <= -31536000000){ millennials = millennials + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000000); seconds = (-1 * seconds) % 31536000000; seconds = -1 * seconds; }
             if((long long int)seconds <= -3153600000 && (long long int)seconds >= -31535999999){ centuries = centuries + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,3153600000); seconds = (-1 * seconds) % 3153600000; seconds = -1 * seconds; }
             if((long long int)seconds <= -315360000 && (long long int)seconds >= -3153599999){ decades = decades + (long long int)DIV_FOR_TIME_CALCULATIONS(seconds,315360000); seconds = (-1 * seconds) % 315360000; seconds = -1 * seconds; }
             if(seconds <= -31536000 && seconds >= -315359999){ years = years + (int)DIV_FOR_TIME_CALCULATIONS(seconds,31536000); seconds = (-1 * seconds) % 31536000; seconds = -1 * seconds; }
@@ -269,7 +269,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millenniu
     }
 
     // Calculation and definition of the year
-    cdatetime->tm_year = cdatetime->tm_year + ((millenniums * 1000) + (centuries * 100) + (decades * 10) + years);
+    cdatetime->tm_year = cdatetime->tm_year + ((millennials * 1000) + (centuries * 100) + (decades * 10) + years);
 
     // Calculation and definition of the month
     cdatetime->tm_mon = (cdatetime->tm_mon + months) % 12;

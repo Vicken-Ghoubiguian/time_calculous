@@ -27,43 +27,43 @@ int main() {
     time_t today = time(NULL);
 
     //
-    printf("Veuillez entrer le nombre de millénaires que vous voulez : ");
+    printf("Please enter the number of millennials you want : ");
     scanf("%d", &millenniums);
 
     // To enter the wished number of centuries
-    printf("Veuillez entrer le nombre de siécles que vous voulez : ");
+    printf("Please enter the number of centuries you want : ");
     scanf("%d", &centuries);
 
     // To enter the wished number of decades
-    printf("Veuillez entrer le nombre de décennies que vous voulez : ");
+    printf("Please enter the number of decades you want : ");
     scanf("%d", &decades);
 
     // To enter the wished number of years
-    printf("Veuillez entrer le nombre d'années que vous voulez : ");
+    printf("Please enter the number of years you want : ");
     scanf("%d", &years);
 
     // To enter the wished number of months
-    printf("Veuillez entrer le nombre de mois que vous voulez : ");
+    printf("Please enter the number of months you want : ");
     scanf("%d", &months);
 
     // To enter the wished number of weeks
-    printf("Veuillez entrer le nombre de semaines que vous voulez : ");
+    printf("Please enter the number of weeks you want : ");
     scanf("%d", &weeks);
 
     // To enter the wished number of days
-    printf("Veuillez entrer le nombre de jours que vous voulez : ");
+    printf("Please enter the number of days you want : ");
     scanf("%d", &days);
 
     // To enter the wished number of hours
-    printf("Veuillez entrer le nombre de heures que vous voulez : ");
+    printf("Please enter the number of hours you want : ");
     scanf("%d", &hours);
 
     // To enter the wished number of minutes
-    printf("Veuillez entrer le nombre de minutes que vous voulez : ");
+    printf("Please enter the number of minutes you want : ");
     scanf("%d", &minutes);
 
     // To enter the wished number of seconds
-    printf("Veuillez entrer le nombre de secondes que vous voulez : ");
+    printf("Please enter the number of seconds you want : ");
     scanf("%d", &seconds);
 
     //

@@ -26,7 +26,7 @@ int main() {
     int seconds;
     time_t today = time(NULL);
 
-    //
+    // To enter the wished number of millennials
     printf("Please enter the number of millennials you want : ");
     scanf("%d", &millenniums);
 

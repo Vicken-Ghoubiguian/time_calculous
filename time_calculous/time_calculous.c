@@ -42,7 +42,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove centuries)...
     else
     {
-        //
+        // As long as the wished number of centuries is less than or equal to -10, so...
         while(centuries <= -10)
         {
             //
@@ -64,7 +64,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove decades)...
     else
     {
-        //
+        // As long as the wished number of decades is less than or equal to -10, so...
         while(decades <= -10)
         {
             //
@@ -88,7 +88,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove years)...
     else
     {
-        //
+        // As long as the wished number of years is less than or equal to -10, so...
         while(years <= -10)
         {
             //
@@ -114,7 +114,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove months)...
     else
     {
-        //
+        // As long as the desired number of months is less than or equal to -12, then...
         while(months <= -12)
         {
             //
@@ -182,7 +182,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove hours)...
     else
     {
-        //
+        // As long as the wished number of hours is less than or equal to -24, so...
         while(hours <= -24)
         {
             //
@@ -216,7 +216,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove minutes)...
     else
     {
-        //
+        // As long as the wished number of minutes is less than or equal to -60, so...
         while(minutes <= -60)
         {
             //
@@ -252,7 +252,7 @@ time_t calculations_on_date_and_time(time_t datetime_as_timestamp, int millennia
     // In the other case (to want to remove seconds)...
     else
     {
-        //
+        // As long as the wished number of seconds is less than or equal to -60, so...
         while(seconds <= -60)
         {
             //

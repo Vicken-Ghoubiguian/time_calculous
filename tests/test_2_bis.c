@@ -32,7 +32,7 @@ int main() {
     int datetime_minute;
     int datetime_second;
     int number_of_days_in_month_in_year;
-    time_t choosen_datetime_as_timestamp = time(NULL);
+    time_t choosen_datetime_as_timestamp;
     struct tm *choosen_datetime_as_struct_tm;
 
     // Breaking line instruction
@@ -124,6 +124,9 @@ int main() {
         //
         return -1;
     }
+
+    //
+    choosen_datetime_as_timestamp = time(NULL);
 
     //
     choosen_datetime_as_struct_tm = gmtime(&choosen_datetime_as_timestamp);

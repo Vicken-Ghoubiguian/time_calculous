@@ -96,13 +96,6 @@ int main() {
     //
     printf("%s\nInitial date and time (UTC) : %s%s\n", BOLDMAGENTA, asctime(gmtime(&choosen_datetime_as_timestamp)), RESET);
 
-    //=======================================================================
-    //===========> Configuration of the wished datetime
-    //=======================================================================
-
-    // Breaking line instruction
-    printf("\n\n\n\n");
-
     // To enter the wished number of millennials
     printf("Please enter the number of millennials you want : ");
     scanf("%d", &millennials);

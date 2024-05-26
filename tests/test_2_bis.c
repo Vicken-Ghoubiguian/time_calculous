@@ -80,6 +80,12 @@ int main() {
         return -1;
     }
 
+    // =====> to include hours
+
+    // =====> to include minutes
+
+    // =====> to include seconds
+
     //
     choosen_datetime_as_struct_tm = gmtime(&choosen_datetime_as_timestamp);
 

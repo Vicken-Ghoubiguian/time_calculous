@@ -83,8 +83,6 @@ int main() {
         return -1;
     }
 
-    // =====> to include hours
-
     //
     printf("Please enter the hour you want [0 to 23] : ");
     scanf("%d", &datetime_hour);
@@ -99,8 +97,6 @@ int main() {
         return -1;
     }
 
-    // =====> to include minutes
-
     //
     printf("Please enter the minute you want [0 to 59] : ");
     scanf("%d", &datetime_minute);
@@ -114,8 +110,6 @@ int main() {
         //
         return -1;
     }
-
-    // =====> to include seconds
 
     //
     printf("Please enter the second you want [0 to 59] : ");

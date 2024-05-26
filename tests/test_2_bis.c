@@ -28,6 +28,9 @@ int main() {
     int datetime_year;
     int datetime_month;
     int datetime_month_day;
+    int datetime_hour;
+    int datetime_minute;
+    int datetime_second;
     int number_of_days_in_month_in_year;
     time_t choosen_datetime_as_timestamp = time(NULL);
     struct tm *choosen_datetime_as_struct_tm;
@@ -82,9 +85,51 @@ int main() {
 
     // =====> to include hours
 
+    //
+    printf("Please enter the hour you want [0 to 23] : ");
+    scanf("%d", &datetime_hour);
+
+    //
+    if(datetime_hour < 0 || datetime_hour > 23)
+    {
+        //
+        printf("\n%sError : the hour you entered is not valid !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
+
     // =====> to include minutes
 
+    //
+    printf("Please enter the minute you want [0 to 59] : ");
+    scanf("%d", &datetime_minute);
+
+    //
+    if(datetime_minute < 0 || datetime_minute > 59)
+    {
+        //
+        printf("\n%sError : the minute you entered is not valid !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
+
     // =====> to include seconds
+
+    //
+    printf("Please enter the second you want [0 to 59] : ");
+    scanf("%d", &datetime_second);
+
+    //
+    if(datetime_second < 0 || datetime_second > 59)
+    {
+        //
+        printf("\n%sError : the second you entered is not valid !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
 
     //
     choosen_datetime_as_struct_tm = gmtime(&choosen_datetime_as_timestamp);

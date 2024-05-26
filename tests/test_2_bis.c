@@ -27,7 +27,8 @@ int main() {
     time_t choosen_datetime = time(NULL);
     int datetime_year;
     int datetime_month;
-    int datetime_day;
+    int datetime_month_day;
+    int number_of_days_in_month_in_year;
 
     // Breaking line instruction
     printf("\n");
@@ -55,6 +56,23 @@ int main() {
     {
         //
         printf("\n%sError : the month of the year you entered is not valid !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
+
+    //
+    number_of_days_in_month_in_year = number_of_days_in_choosen_month_in_choosen_year(datetime_month, datetime_year);
+
+    // To enter the wished month's day
+    printf("Please enter the month day you want [1 to %d] : ", number_of_days_in_month_in_year);
+    scanf("%d", &datetime_month_day);
+
+    //
+    if(datetime_month_day < 1 || datetime_month_day > number_of_days_in_month_in_year)
+    {
+        //
+        printf("\n%sError : the month's day you entered is not valid !%s\n\n", BOLDRED, RESET);
 
         //
         return -1;

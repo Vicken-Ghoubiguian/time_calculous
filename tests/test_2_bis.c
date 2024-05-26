@@ -132,9 +132,9 @@ int main() {
     choosen_datetime_as_struct_tm->tm_year = datetime_year - 1900;
     choosen_datetime_as_struct_tm->tm_mon = datetime_month;
     choosen_datetime_as_struct_tm->tm_mday = datetime_month_day;
-    choosen_datetime_as_struct_tm->tm_hour = 0;
-    choosen_datetime_as_struct_tm->tm_min = 0;
-    choosen_datetime_as_struct_tm->tm_sec = 0;
+    choosen_datetime_as_struct_tm->tm_hour = datetime_hour;
+    choosen_datetime_as_struct_tm->tm_min = datetime_minute;
+    choosen_datetime_as_struct_tm->tm_sec = datetime_second;
 
     //
     choosen_datetime_as_timestamp = timegm(choosen_datetime_as_struct_tm);

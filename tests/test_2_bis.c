@@ -24,11 +24,11 @@ int main() {
     int hours;
     int minutes;
     int seconds;
-    time_t choosen_datetime = time(NULL);
     int datetime_year;
     int datetime_month;
     int datetime_month_day;
     int number_of_days_in_month_in_year;
+    time_t choosen_datetime = time(NULL);
 
     // Breaking line instruction
     printf("\n");

@@ -93,6 +93,9 @@ int main() {
     //
     choosen_datetime_as_timestamp = timegm(choosen_datetime_as_struct_tm);
 
+    //
+    printf("%s\nInitial date and time (UTC) : %s%s\n", BOLDMAGENTA, asctime(gmtime(&choosen_datetime_as_timestamp)), RESET);
+
     //=======================================================================
     //===========> Configuration of the wished datetime
     //=======================================================================

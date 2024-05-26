@@ -85,10 +85,6 @@ int main() {
     // Breaking line instruction
     printf("\n\n\n\n");
 
-    //=======================================================================
-    //===========> Configuration of all parameters for calculous
-    //=======================================================================
-
     // To enter the wished number of millennials
     printf("Please enter the number of millennials you want : ");
     scanf("%d", &millennials);

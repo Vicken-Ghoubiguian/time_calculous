@@ -25,6 +25,40 @@ int main() {
     int minutes;
     int seconds;
     time_t choosen_datetime = time(NULL);
+    int datetime_year;
+    int datetime_month;
+    int datetime_day;
+
+    // Breaking line instruction
+    printf("\n");
+
+    // To enter the wished year
+    printf("Please enter the year you want : ");
+    scanf("%d", &datetime_year);
+
+    // In the case where the wished year is less than 1900...
+    if(datetime_year < 1900)
+    {
+        //...so display error in red...
+        printf("\n%sError : the year you entered is not valid, it must be greater than or equal to 1900!%s\n\n", BOLDRED, RESET);
+
+        //...and return -1 error code
+        return -1;
+    }
+
+    // To enter the wished month
+    printf("Please enter the month you want [0 to 11] : ");
+    scanf("%d", &datetime_month);
+
+    //
+    if(datetime_month < 0 || datetime_month > 11)
+    {
+        //
+        printf("\n%sError : the month of the year you entered is not valid !%s\n\n", BOLDRED, RESET);
+
+        //
+        return -1;
+    }
 
     //=======================================================================
     //===========> Configuration of the wished datetime

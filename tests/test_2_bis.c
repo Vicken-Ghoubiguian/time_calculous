@@ -128,7 +128,7 @@ int main() {
     //
     choosen_datetime_as_struct_tm = gmtime(&choosen_datetime_as_timestamp);
 
-    //
+    // To define the wished datetime as a struct tm
     choosen_datetime_as_struct_tm->tm_year = datetime_year - 1900;
     choosen_datetime_as_struct_tm->tm_mon = datetime_month;
     choosen_datetime_as_struct_tm->tm_mday = datetime_month_day;

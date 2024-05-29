@@ -16,7 +16,7 @@ C library to make all possible calculations on time and dates...
 <a href="presentation"></a>
 ## Presentation
 
-This is a C library to make all possible calculations on time and dates.
+This is a C library to make all possible calculations on dates and times.
 
 <a href="how_to_use_it"></a>
 ## How to use it ?

@@ -1,6 +1,6 @@
 # time_calculous
 
-C library to make all calculations on time and dates...
+C library to make all possible calculations on time and dates...
 
 ## Contents
 
@@ -15,6 +15,8 @@ C library to make all calculations on time and dates...
 
 <a href="presentation"></a>
 ## Presentation
+
+This is a C library to make all possible calculations on time and dates.
 
 <a href="how_to_use_it"></a>
 ## How to use it ?

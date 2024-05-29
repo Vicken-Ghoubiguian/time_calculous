@@ -16,7 +16,7 @@ C library to make all possible calculations on dates and time...
 <a href="presentation"></a>
 ## Presentation
 
-This is a C library to make all possible calculations on dates and time. Initially developed to develop the 'wished_wday_in_choosen_month' function, used in the []() library, it has become a separated library of mathematical calculations on dates and time.
+This is a C library to make all possible calculations on dates and time. Initially developed to develop the 'wished_wday_in_choosen_month' function, used in the []() C library, it has become a separated library of mathematical calculations on dates and time.
 
 <a href="how_to_use_it"></a>
 ## How to use it ?

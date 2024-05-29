@@ -16,7 +16,7 @@ C library to make all possible calculations on dates and time...
 <a href="presentation"></a>
 ## Presentation
 
-This is a C library to make all possible calculations on dates and time. Initially developed to develop the 'wished_wday_in_choosen_month' function, used in the [WorldClockLib](https://github.com/Vicken-Ghoubiguian/WorldClockLib) C library, it has become a separated library of mathematical calculations on dates and time.
+This is a C library to make all possible calculations on dates and time. Initially developed to develop the 'wished_wday_in_choosen_month' function, used in the [WorldClockLib](https://github.com/Vicken-Ghoubiguian/WorldClockLib) C library, it has become a separated library of mathematical calculations on dates and time. A complete and exhaustive documentation will be available very soon in this GitHub repository.
 
 <a href="how_to_use_it"></a>
 ## How to use it ?
@@ -35,6 +35,8 @@ This is a C library to make all possible calculations on dates and time. Initial
 
 <a href="all_developed_examples"></a>
 ### All developed examples
+
+
 
 <a href="conclusion"></a>
 ## Conclusion

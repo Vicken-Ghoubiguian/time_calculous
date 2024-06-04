@@ -8,6 +8,7 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
     time_t first_dt_timestamp;
     time_t second_dt_timestamp;
     time_t calculation_result;
+    struct time_diff td;
 
     //
     first_dt_timestamp = timegm(first_dt);

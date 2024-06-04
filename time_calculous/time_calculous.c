@@ -2,7 +2,7 @@
 #include "time_calculous.h"
 
 //
-time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
+struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
 {
     // Definition of all needed variables
     time_t first_dt_timestamp;
@@ -18,7 +18,7 @@ time_t diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt)
     calculation_result = first_dt_timestamp - second_dt_timestamp;
 
     //
-    return calculation_result;
+    return td;
 }
 
 // Definition of the 'calculations_on_date_and_time' to make calculations on datetimes

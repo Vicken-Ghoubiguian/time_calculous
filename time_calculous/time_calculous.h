@@ -29,8 +29,12 @@ enum time_unit {
 //
 struct time_diff {
 
+    int millenniums;
+    int centuries;
+    int decades;
     int years;
     int months;
+    int weeks;
     int days;
     int hours;
     int minutes;

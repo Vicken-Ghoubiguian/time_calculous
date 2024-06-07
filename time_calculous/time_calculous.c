@@ -15,7 +15,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     first_dt_timestamp = timegm(first_dt);
     second_dt_timestamp = timegm(second_dt);
 
-    // 
+    // Subtract the 'first_dt_timestamp' value from the 'second_dt_timestamp' value and add it in the 'calculation_result' variable
     calculation_result = first_dt_timestamp - second_dt_timestamp;
 
     // In the case where the 'calculation_result' value is less than 0

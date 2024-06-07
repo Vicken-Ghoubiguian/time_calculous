@@ -9,6 +9,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     time_t second_dt_timestamp;
     time_t calculation_result;
     struct time_diff td;
+    int diff_calc;
 
     //
     first_dt_timestamp = timegm(first_dt);
@@ -19,6 +20,24 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
 
     // Calculate and encapsulate number of centuries, years, months, days, hours, minutes... results in the 'time_diff' struct
 
+    //
+    diff_calc = calculation_result / millennium;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.millenniums = diff_calc;
+
+        //
+        calculation_result = calculation_result % millennium;
+    }
+
+    /*td.years = calculation_result / year;
+
+    td.months = calculation_result / month;
+
+    td.weeks = calculation_result / week;*/
 
     //
     return td;

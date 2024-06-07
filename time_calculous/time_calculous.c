@@ -31,6 +31,100 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
         calculation_result = calculation_result % millennium;
     }
 
+    //
+    diff_calc = calculation_result / century;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.centuries = diff_calc;
+
+        //
+        calculation_result = calculation_result % century;
+    }
+
+    //
+    diff_calc = calculation_result / year;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.years = diff_calc;
+
+        //
+        calculation_result = calculation_result % year;
+    }
+
+    //
+    diff_calc = calculation_result / month;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.months = diff_calc;
+
+        //
+        calculation_result = calculation_result % month;
+    }
+
+    //
+    diff_calc = calculation_result / week;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.weeks = diff_calc;
+
+        //
+        calculation_result = calculation_result % week;
+    }
+
+    //
+    diff_calc = calculation_result / day;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.days = diff_calc;
+
+        //
+        calculation_result = calculation_result % day;
+    }
+
+    //
+    diff_calc = calculation_result / hour;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.hours = diff_calc;
+
+        //
+        calculation_result = calculation_result % hour;
+    }
+
+    //
+    diff_calc = calculation_result / minute;
+
+    //
+    if(diff_calc > 0)
+    {
+        //
+        td.minutes = diff_calc;
+
+        //
+        calculation_result = calculation_result % minute;
+    }
+
+    //
+    td.seconds = calculation_result;
+
     /*td.years = calculation_result / year;
 
     td.months = calculation_result / month;

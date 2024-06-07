@@ -125,12 +125,6 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     //
     td.seconds = calculation_result;
 
-    /*td.years = calculation_result / year;
-
-    td.months = calculation_result / month;
-
-    td.weeks = calculation_result / week;*/
-
     //
     return td;
 }

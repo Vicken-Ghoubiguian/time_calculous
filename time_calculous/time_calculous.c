@@ -38,7 +38,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / millennium;
+    diff_calc = (int)calculation_result / millennium;
     if(diff_calc > 0)
     {
         td.millenniums = diff_calc;
@@ -46,7 +46,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / century;
+    diff_calc = (int)calculation_result / century;
     if(diff_calc > 0)
     {
         td.centuries = diff_calc;
@@ -54,7 +54,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / decade;
+    diff_calc = (int)calculation_result / decade;
     if(diff_calc > 0)
     {
         td.decades = diff_calc;
@@ -62,7 +62,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / year;
+    diff_calc = (int)calculation_result / year;
     if(diff_calc > 0)
     {
         td.years = diff_calc;
@@ -70,7 +70,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / month;
+    diff_calc = (int)calculation_result / month;
     if(diff_calc > 0)
     {
         td.months = diff_calc;
@@ -78,7 +78,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / week;
+    diff_calc = (int)calculation_result / week;
     if(diff_calc > 0)
     {
         td.weeks = diff_calc;
@@ -86,7 +86,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / day;
+    diff_calc = (int)calculation_result / day;
     if(diff_calc > 0)
     {
         td.days = diff_calc;
@@ -94,7 +94,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / hour;
+    diff_calc = (int)calculation_result / hour;
     if(diff_calc > 0)
     {
         td.hours = diff_calc;
@@ -102,7 +102,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
-    diff_calc = calculation_result / minute;
+    diff_calc = (int)calculation_result / minute;
     if(diff_calc > 0)
     {
         td.minutes = diff_calc;
@@ -119,7 +119,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
 //
 void print_time_diff(struct time_diff *time_diff_dts)
 {
-    
+
 }
 
 // Definition of the 'calculations_on_date_and_time' to make calculations on datetimes

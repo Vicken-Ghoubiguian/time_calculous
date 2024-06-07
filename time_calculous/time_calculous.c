@@ -11,7 +11,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     struct time_diff td;
     int diff_calc;
 
-    //
+    // Conversion of the 'first_dt' and the 'second_dt' struct tm values to the 'first_dt_timestamp' and the 'second_dt_timestamp' timestamp value
     first_dt_timestamp = timegm(first_dt);
     second_dt_timestamp = timegm(second_dt);
 

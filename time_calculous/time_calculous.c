@@ -22,6 +22,19 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     if(calculation_result < 0)
     {
         // =====> returning 'td' struct time_diff with -1 as value for all fields...
+        td.millenniums = -1;
+        td.centuries = -1;
+        td.decades = -1;
+        td.years = -1;
+        td.months = -1;
+        td.weeks = -1;
+        td.days = -1;
+        td.hours = -1;
+        td.minutes = -1;
+        td.seconds = -1;
+
+        //
+        return td;
     }
 
     //

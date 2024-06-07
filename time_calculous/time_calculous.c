@@ -109,7 +109,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
         calculation_result = calculation_result % minute;
     }
 
-    //
+    // Adding the resulting seconds in the 'seconds' field of the 'td' struct time_diff
     td.seconds = calculation_result;
 
     // Returning the result of calculation as a 'td' struct time_diff

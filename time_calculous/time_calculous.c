@@ -18,8 +18,6 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     //
     calculation_result = first_dt_timestamp - second_dt_timestamp;
 
-    // Calculate and encapsulate number of centuries, years, months, days, hours, minutes... results in the 'time_diff' struct
-
     //
     diff_calc = calculation_result / millennium;
 

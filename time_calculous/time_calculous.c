@@ -19,6 +19,12 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     calculation_result = first_dt_timestamp - second_dt_timestamp;
 
     //
+    if(calculation_result < 0)
+    {
+        // =====> returning 'td' struct time_diff with -1 as value for all fields...
+    }
+
+    //
     diff_calc = calculation_result / millennium;
     if(diff_calc > 0)
     {

@@ -54,6 +54,14 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     }
 
     //
+    diff_calc = calculation_result / decade;
+    if(diff_calc > 0)
+    {
+        td.decades = diff_calc;
+        calculation_result = calculation_result % decade;
+    }
+
+    //
     diff_calc = calculation_result / year;
     if(diff_calc > 0)
     {

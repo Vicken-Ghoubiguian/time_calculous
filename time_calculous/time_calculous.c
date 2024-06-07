@@ -33,7 +33,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
         td.minutes = -1;
         td.seconds = -1;
 
-        //
+        // Returning the error code (which is -1) as a 'td' struct time_diff
         return td;
     }
 
@@ -112,7 +112,7 @@ struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_d
     //
     td.seconds = calculation_result;
 
-    //
+    // Returning the result of calculation as a 'td' struct time_diff
     return td;
 }
 

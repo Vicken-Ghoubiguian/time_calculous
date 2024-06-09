@@ -8,7 +8,7 @@
 // Initialisation of 'main' function
 int main() {
 
-    // 
+    // Definition of the used variable
     int year_0;
     int month_0;
     int mday_0;

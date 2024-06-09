@@ -1,4 +1,5 @@
 #include <time.h>
+#include <stdio.h>
 #include "time_calculous.h"
 
 //
@@ -111,9 +112,10 @@ struct time_diff diffs_on_date_and_time(time_t first_dt, time_t second_dt)
 }
 
 //
-void print_time_diff(struct time_diff *time_diff_dts)
+void print_time_diff(struct time_diff time_diff_dts)
 {
-
+    //
+    printf("%d millenniums %d centuries %d decades %d years %d months %d weeks %d days %d hours %d minutes %d seconds", time_diff_dts.millenniums, time_diff_dts.centuries, time_diff_dts.decades, time_diff_dts.years, time_diff_dts.months, time_diff_dts.weeks, time_diff_dts.days, time_diff_dts.hours, time_diff_dts.minutes, time_diff_dts.seconds);
 }
 
 // Definition of the 'calculations_on_date_and_time' to make calculations on datetimes

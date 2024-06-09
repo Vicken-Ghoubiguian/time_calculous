@@ -49,7 +49,7 @@ static char* weekDays[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday
 static char* months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"};
 
 // Definition of 'diffs_on_date_and_time' which returns, as timestamp, the difference between 2 datetimes as timestamps
-struct time_diff diffs_on_date_and_time(struct tm *first_dt, struct tm *second_dt);
+struct time_diff diffs_on_date_and_time(time_t first_dt, time_t second_dt);
 
 //
 void print_time_diff(struct time_diff *time_diff_dts);

@@ -5,17 +5,11 @@
 struct time_diff diffs_on_date_and_time(time_t first_dt, time_t second_dt)
 {
     // Definition of all needed variables
-    /*time_t first_dt_timestamp;
-    time_t second_dt_timestamp;*/
     time_t calculation_result;
     struct time_diff td;
     int diff_calc;
 
-    // Conversion of the 'first_dt' and the 'second_dt' struct tm values to the 'first_dt_timestamp' and the 'second_dt_timestamp' timestamp value
-    /*first_dt_timestamp = timegm(first_dt);
-    second_dt_timestamp = timegm(second_dt);*/
-
-    // Subtract the 'first_dt_timestamp' value from the 'second_dt_timestamp' value and add it in the 'calculation_result' variable
+    // Subtract the 'calculation_result' value from the 'first_dt' value and add it in the 'second_dt' variable
     calculation_result = first_dt - second_dt;
 
     // In the case where the 'calculation_result' value is less than 0

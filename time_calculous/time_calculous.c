@@ -33,72 +33,72 @@ struct time_diff diffs_on_date_and_time(time_t first_dt, time_t second_dt)
     }
 
     //
-    diff_calc = (int)calculation_result / millennium;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, millennium);
+    if(diff_calc >= 0)
     {
         td.millenniums = diff_calc;
         calculation_result = calculation_result % millennium;
     }
 
     //
-    diff_calc = (int)calculation_result / century;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, century);
+    if(diff_calc >= 0)
     {
         td.centuries = diff_calc;
         calculation_result = calculation_result % century;
     }
 
     //
-    diff_calc = (int)calculation_result / decade;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, decade);
+    if(diff_calc >= 0)
     {
         td.decades = diff_calc;
         calculation_result = calculation_result % decade;
     }
 
     //
-    diff_calc = (int)calculation_result / year;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, year);
+    if(diff_calc >= 0)
     {
         td.years = diff_calc;
         calculation_result = calculation_result % year;
     }
 
     //
-    diff_calc = (int)calculation_result / month;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, month);
+    if(diff_calc >= 0)
     {
         td.months = diff_calc;
         calculation_result = calculation_result % month;
     }
 
     //
-    diff_calc = (int)calculation_result / week;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, week);
+    if(diff_calc >= 0)
     {
         td.weeks = diff_calc;
         calculation_result = calculation_result % week;
     }
 
     //
-    diff_calc = (int)calculation_result / day;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, day);
+    if(diff_calc >= 0)
     {
         td.days = diff_calc;
         calculation_result = calculation_result % day;
     }
 
     //
-    diff_calc = (int)calculation_result / hour;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, hour);
+    if(diff_calc >= 0)
     {
         td.hours = diff_calc;
         calculation_result = calculation_result % hour;
     }
 
     //
-    diff_calc = (int)calculation_result / minute;
-    if(diff_calc > 0)
+    diff_calc = (int)DIV_FOR_TIME_CALCULATIONS(calculation_result, minute);
+    if(diff_calc >= 0)
     {
         td.minutes = diff_calc;
         calculation_result = calculation_result % minute;

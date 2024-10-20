@@ -124,7 +124,15 @@ gcc test_4.c ../time_calculous/time_calculous.c -o test_4
 
 #### Compilation
 
+```bash
+gcc test_4_bis.c ../time_calculous/time_calculous.c -o test_4_bis
+```
+
 #### Execution
+
+```bash
+./test_4_bis
+```
 
 ### Test 5 : to get the number of the wished day in the wished month in the wished year
 
@@ -148,7 +156,15 @@ gcc test_5.c ../time_calculous/time_calculous.c -o test_5
 
 #### Compilation
 
+```bash
+gcc test_5_bis.c ../time_calculous/time_calculous.c -o test_5_bis
+```
+
 #### Execution
+
+```bash
+./test_5_bis
+```
 
 ### Test 6 : to get the number of days in all months for a chosen year
 
@@ -172,7 +188,15 @@ gcc test_6.c ../time_calculous/time_calculous.c -o test_6
 
 #### Compilation
 
+```bash
+gcc test_6_bis.c ../time_calculous/time_calculous.c -o test_6_bis
+```
+
 #### Execution
+
+```bash
+./test_6_bis
+```
 
 <a title='conclusion'></a>
 ## Conclusion

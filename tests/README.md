@@ -6,7 +6,18 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 
 * [Introduction](#introduction),
 * [Tests](#tests),
-
+    * [Test 1](#test_1),
+    * [Test 1 bis](#test_1_bis),
+    * [Test 2](#test_2),
+    * [Test 2 bis](#test_2_bis),
+    * [Test 3](#test_3),
+    * [Test 3 bis](#test_3_bis),
+    * [Test 4](#test_4),
+    * [Test 4 bis](#test_4_bis),
+    * [Test 5](#test_5),
+    * [Test 5 bis](#test_5_bis),
+    * [Test 6](#test_6),
+    * [Test 6 bis](#test_6_bis),
 * [Conclusion](#conclusion).
 
 <a title='introduction'></a>

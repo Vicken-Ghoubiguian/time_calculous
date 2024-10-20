@@ -10,10 +10,9 @@ C library to make all possible calculations on dates and time...
     * [Downloading from the official GitHub repos](#from_downloading),
     * [Cloning from the official GitHub repos](#from_cloning).
   * [How to develop it ?](#how_to_develop_it),
-  * [How to test it ?](#how_to_test_it).
-* [How to integrate it to your software project ?](#how_to_integrate_it_to_your_software_project),
+* [How to test it and how to integrate it to your software project ?](#how_to_test_it_and_integrate_it)
   * [All developed examples](#all_developed_examples).
-* [Conclusion](#conclusion)
+* [Conclusion](#conclusion).
 
 <a name="presentation"></a>
 ## Presentation
@@ -37,11 +36,8 @@ You can get this C library from its official GitHub repos, by downloading or clo
 <a name="how_to_develop_it"></a>
 ### How to develop it ?
 
-<a name="how_to_test_it"></a>
-### How to test it ?
-
-<a name="how_to_integrate_it_to_your_software_project"></a>
-## How to integrate it to your software project ?
+<a name="how_to_test_it_and_integrate_it"></a>
+## How to test it and how to integrate it to your software project ?
 
 <a name="all_developed_examples"></a>
 ### All developed examples

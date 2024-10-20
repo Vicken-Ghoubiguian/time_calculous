@@ -46,7 +46,7 @@ You can get this C library from its official GitHub repos, by downloading or clo
 <a href="all_developed_examples"></a>
 ### All developed examples
 
-
+At your disposition, there are many examples which allow you to test all the functions of this C library, with every possible values you choose. To use them, you have to follow the instructions in the subfolder official GitHub repos just [here](https://github.com/Vicken-Ghoubiguian/time_calculous/tree/main/tests).
 
 <a href="conclusion"></a>
 ## Conclusion

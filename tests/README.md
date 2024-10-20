@@ -6,7 +6,8 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 
 * [Introduction](#introduction),
 * [Tests](#tests),
-* [Conclusion](#conclusion)
+
+* [Conclusion](#conclusion).
 
 <a title='introduction'></a>
 ## Introduction

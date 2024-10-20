@@ -24,6 +24,8 @@ This is a C library to make all possible calculations on dates and time. Initial
 <a href="how_to_get_it"></a>
 ### How to get it ?
 
+You can get this C library from its official GitHub repos, by downloading or cloning it. Let's us see each of these options :
+
 <a href="how_to_develop_it"></a>
 ### How to develop it ?
 

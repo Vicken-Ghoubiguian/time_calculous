@@ -26,6 +26,10 @@ This is a C library to make all possible calculations on dates and time. Initial
 
 You can get this C library from its official GitHub repos, by downloading or cloning it. Let's us see each of these options :
 
+#### Downloading from the official GitHub repos
+
+#### Cloning from the official GitHub repos
+
 <a href="how_to_develop_it"></a>
 ### How to develop it ?
 

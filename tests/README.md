@@ -16,8 +16,6 @@ Tests folder of the [time_calculous](https://github.com/Vicken-Ghoubiguian/time_
 
 ### Test 1 : to get a wished weekday in a chosen month
 
-#### Presentation
-
 #### Compilation
 
 ```bash
@@ -31,8 +29,6 @@ gcc test_1.c ../time_calculous/time_calculous.c -o test_1
 ```
 
 ### Test 1 bis :
-
-#### Presentation
 
 #### Compilation
 
@@ -48,8 +44,6 @@ gcc test_1_bis.c ../time_calculous/time_calculous.c -o test_1_bis
 
 ### Test 2 : to make calculations on dates and times
 
-#### Presentation
-
 #### Compilation
 
 ```bash
@@ -64,15 +58,11 @@ gcc test_2.c ../time_calculous/time_calculous.c -o test_2
 
 ### Test 2 bis :
 
-#### Presentation
-
 #### Compilation
 
 #### Execution
 
 ### Test 3 : to get the number of weeks in a chosen year
-
-#### Presentation
 
 #### Compilation
 
@@ -88,8 +78,6 @@ gcc test_3.c ../time_calculous/time_calculous.c -o test_3
 
 ### Test 3 bis : to get the number of weeks in all years from 2000 to 2100
 
-#### Presentation
-
 #### Compilation
 
 ```bash
@@ -103,8 +91,6 @@ gcc test_3_bis.c ../time_calculous/time_calculous.c -o test_3_bis
 ```
 
 ### Test 4 : to get the wished nth wished weekday in the wished year
-
-#### Presentation
 
 #### Compilation
 
@@ -120,8 +106,6 @@ gcc test_4.c ../time_calculous/time_calculous.c -o test_4
 
 ### Test 4 bis :
 
-#### Presentation
-
 #### Compilation
 
 ```bash
@@ -135,8 +119,6 @@ gcc test_4_bis.c ../time_calculous/time_calculous.c -o test_4_bis
 ```
 
 ### Test 5 : to get the number of the wished day in the wished month in the wished year
-
-#### Presentation
 
 #### Compilation
 
@@ -152,8 +134,6 @@ gcc test_5.c ../time_calculous/time_calculous.c -o test_5
 
 ### Test 5 bis :
 
-#### Presentation
-
 #### Compilation
 
 ```bash
@@ -168,8 +148,6 @@ gcc test_5_bis.c ../time_calculous/time_calculous.c -o test_5_bis
 
 ### Test 6 : to get the number of days in all months for a chosen year
 
-#### Presentation
-
 #### Compilation
 
 ```bash
@@ -183,8 +161,6 @@ gcc test_6.c ../time_calculous/time_calculous.c -o test_6
 ```
 
 ### Test 6 bis :
-
-#### Presentation
 
 #### Compilation
 

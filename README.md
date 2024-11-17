@@ -57,6 +57,8 @@ This C library can be integrated and used in all projects you want whatever the 
 * [LKMP_time_calculous](https://github.com/Vicken-Ghoubiguian/LKMP_time_calculous),
 * [time_calculous_for_npm](https://github.com/Vicken-Ghoubiguian/time_calculous_for_npm),
 * [time_calculous_GoAPI](https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI),
+* [Foreign_function_interface_time_calculous](https://github.com/Vicken-Ghoubiguian/Foreign_function_interface_time_calculous),
+* [time_calculous_GoWebApp](https://github.com/Vicken-Ghoubiguian/time_calculous_GoWebApp).
 
 <a name="conclusion"></a>
 ## Conclusion

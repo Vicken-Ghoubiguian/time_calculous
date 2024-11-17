@@ -50,5 +50,13 @@ At your disposition, there are many examples which allow you to test all the fun
 
 This C library can be integrated and used in all projects you want whatever the used technologies and programming languages. Below, there are exposed all developed examples with their respective links and explanations :
 
+* [WPF_time_calculous](https://github.com/Vicken-Ghoubiguian/WPF_time_calculous),
+* [UWP_time_calculous](https://github.com/Vicken-Ghoubiguian/UWP_time_calculous),
+* [GTK_time_calculous](https://github.com/Vicken-Ghoubiguian/GTK_time_calculous),
+* [QT_time_calculous](https://github.com/Vicken-Ghoubiguian/QT_time_calculous),
+* [LKMP_time_calculous](https://github.com/Vicken-Ghoubiguian/LKMP_time_calculous),
+* [time_calculous_for_npm](https://github.com/Vicken-Ghoubiguian/time_calculous_for_npm),
+* [time_calculous_GoAPI](https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI),
+
 <a name="conclusion"></a>
 ## Conclusion

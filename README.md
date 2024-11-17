@@ -48,7 +48,7 @@ At your disposition, there are many examples which allow you to test all the fun
 <a name="all_developed_examples_integrated_in_other_projets"></a>
 ### All developed examples integrated in other projects
 
-
+This C library can be integrated and used in all projects you want whatever the used technologies and programming languages. Below, there are exposed all developed examples with their respective links and explanations:
 
 <a name="conclusion"></a>
 ## Conclusion

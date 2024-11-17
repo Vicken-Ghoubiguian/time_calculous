@@ -60,7 +60,7 @@ This C library can be integrated and used in all projects you want whatever the 
 * [Foreign_function_interface_time_calculous](https://github.com/Vicken-Ghoubiguian/Foreign_function_interface_time_calculous) : (used programming languages and technologies : );
 * [time_calculous_GoWebApp](https://github.com/Vicken-Ghoubiguian/time_calculous_GoWebApp) : (used programming languages and technologies : ).
 
-
+Other projects using many others technologies and programming languages could be developed with this C library. So now it's your turn to take the plunge.
 
 <a name="conclusion"></a>
 ## Conclusion

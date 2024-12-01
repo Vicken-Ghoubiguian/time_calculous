@@ -551,7 +551,7 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(int year)
     datetime = gmtime(&timestamp);
 
     // 
-    /* Explanation of the condition : the wished year has 53 years if...
+    /* Explanation of the condition : the wished year has 53 weeks if...
      * -
      OR
      * - 

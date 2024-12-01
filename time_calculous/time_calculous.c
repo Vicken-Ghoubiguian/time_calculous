@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include "time_calculous.h"
 
-//
+// Definition of 'diffs_on_date_and_time' which returns, as timestamp, the difference between 2 datetimes as timestamps
 struct time_diff diffs_on_date_and_time(time_t first_dt, time_t second_dt)
 {
     // Definition of all needed variables

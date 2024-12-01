@@ -552,11 +552,13 @@ int number_of_weeks_in_a_year_according_to_the_iso_norm(int year)
 
     // 
     /* Explanation of the condition : the wished year has 53 weeks if...
-     * -
+     * - the week day of the january 1th of the current year is thursday;
      OR
-     * - 
+     * - the following condition is verified :
+        * - the week day of the january 1th of the current year is wednesday;
+        AND
         * - 
-        * - 
+        AND 
         * -
      */
     condition = (datetime->tm_wday == 4) || ((datetime->tm_wday == 3) && (((datetime->tm_year % 4 == 0) && (datetime->tm_year % 100 != 0)) || (datetime->tm_year % 400 == 0)));

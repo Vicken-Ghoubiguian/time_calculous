@@ -93,7 +93,7 @@ int main() {
     printf("%ld", timestamp_1);
 
     //
-    struct time_diff td = diffs_on_date_and_time(timegm(dt_0), timegm(dt_1));
+    struct time_diff td = diffs_on_date_and_time(1730422861, 1304211661);
 
     //
     printf("\n");

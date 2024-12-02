@@ -15,10 +15,10 @@ int main() {
     int hour_0;
     int minute_0;
     int second_0;
-    struct tm dt_0;
+    struct tm *dt_0;
     time_t timestamp_0;
     time_t timestamp_1;
-    struct tm dt_1;
+    struct tm *dt_1;
     int year_1;
     int month_1;
     int mday_1;
@@ -43,9 +43,9 @@ int main() {
     scanf("%d", &minute_0);
     printf("Please enter the second you want : ");
     scanf("%d", &second_0);
-    printf("\n");
 
     //
+    printf("\n");
     printf("Second datetime you want : \n");
 
     //
@@ -64,9 +64,22 @@ int main() {
     printf("\n");
 
     //
+    dt_0->tm_year = year_0;
+    dt_0->tm_mon = month_0;
+    dt_0->tm_mday = mday_0;
+    dt_0->tm_hour = hour_0;
+    dt_0->tm_min = minute_0;
+    dt_0->tm_sec = second_0;
 
     //
+    dt_1->tm_year = year_1;
+    dt_1->tm_mon = month_1;
+    dt_1->tm_mday = mday_1;
+    dt_1->tm_hour = hour_1;
+    dt_1->tm_min = minute_1;
+    dt_1->tm_sec = second_1;
 
+    //
     timestamp_0 = 1720549084;
     timestamp_1 = 1435207316;
 

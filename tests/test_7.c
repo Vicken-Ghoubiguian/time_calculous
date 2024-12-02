@@ -45,8 +45,6 @@ int main() {
     scanf("%d", &minute_0);
     printf("Please enter the second you want : ");
     scanf("%d", &second_0);
-
-    //
     printf("\n");
 
     //
@@ -65,8 +63,6 @@ int main() {
     scanf("%d", &minute_1);
     printf("Please enter the second you want : ");
     scanf("%d", &second_1);
-
-    //
     printf("\n");
 
     //

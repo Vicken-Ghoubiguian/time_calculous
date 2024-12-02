@@ -70,7 +70,14 @@ int main() {
     printf("\n");
 
     //
-    struct time_diff td = diffs_on_date_and_time(1720549084, 1435207316);
+
+    //
+
+    timestamp_0 = 1720549084;
+    timestamp_1 = 1435207316;
+
+    //
+    struct time_diff td = diffs_on_date_and_time(timestamp_0, timestamp_1);
 
     //
     printf("\n");

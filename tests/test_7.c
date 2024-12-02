@@ -64,7 +64,7 @@ int main() {
     printf("\n");
 
     //
-    dt_0->tm_year = year_0;
+    /*dt_0->tm_year = year_0 - 1900;
     dt_0->tm_mon = month_0;
     dt_0->tm_mday = mday_0;
     dt_0->tm_hour = hour_0;
@@ -72,7 +72,7 @@ int main() {
     dt_0->tm_sec = second_0;
 
     //
-    dt_1->tm_year = year_1;
+    dt_1->tm_year = year_1 - 1900;
     dt_1->tm_mon = month_1;
     dt_1->tm_mday = mday_1;
     dt_1->tm_hour = hour_1;
@@ -80,11 +80,11 @@ int main() {
     dt_1->tm_sec = second_1;
 
     //
-    timestamp_0 = 1720549084;
-    timestamp_1 = 1435207316;
+    timestamp_0 = timegm(dt_0);
+    timestamp_1 = timegm(dt_1);*/
 
     //
-    struct time_diff td = diffs_on_date_and_time(timestamp_0, timestamp_1);
+    struct time_diff td = diffs_on_date_and_time(1733149104, 1680445104);
 
     //
     printf("\n");

@@ -27,6 +27,12 @@ int main() {
     int second_1;
 
     //
+    printf("Please enter the first datetime you want : \n");
+
+    //
+    printf("Please enter the second datetime you want : \n");
+
+    //
     struct time_diff td = diffs_on_date_and_time(1720549084, 1435207316);
 
     //

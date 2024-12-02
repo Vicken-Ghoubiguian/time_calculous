@@ -28,8 +28,6 @@ int main() {
 
     //
     printf("\n");
-
-    //
     printf("First datetime you want : \n");
 
     //

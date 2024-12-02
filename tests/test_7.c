@@ -99,7 +99,7 @@ int main() {
     print_time_diff(td);
 
     //
-    printf("\n");
+    printf("\n\n");
 
     //
     return 0;

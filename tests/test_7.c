@@ -90,7 +90,8 @@ int main() {
     timestamp_1 = timegm(dt_1);
 
     //
-    struct time_diff td = diffs_on_date_and_time(1733149104, 1680445104);
+    //struct time_diff td = diffs_on_date_and_time(1733149104, 1680445104);
+    struct time_diff td = diffs_on_date_and_time(timestamp_0, timestamp_1);
 
     //
     printf("\n");

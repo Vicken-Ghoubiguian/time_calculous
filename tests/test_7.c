@@ -27,10 +27,47 @@ int main() {
     int second_1;
 
     //
-    printf("Please enter the first datetime you want : \n");
+    printf("\n");
 
     //
-    printf("Please enter the second datetime you want : \n");
+    printf("First datetime you want : \n");
+
+    //
+    printf("Please enter the year you want : ");
+    scanf("%d", &year_0);
+    printf("Please enter the month you want : ");
+    scanf("%d", &month_0);
+    printf("Please enter the month's day you want : ");
+    scanf("%d", &mday_0);
+    printf("Please enter the hour you want : ");
+    scanf("%d", &hour_0);
+    printf("Please enter the minute you want : ");
+    scanf("%d", &minute_0);
+    printf("Please enter the second you want : ");
+    scanf("%d", &second_0);
+
+    //
+    printf("\n");
+
+    //
+    printf("Second datetime you want : \n");
+
+    //
+    printf("Please enter the year you want : ");
+    scanf("%d", &year_1);
+    printf("Please enter the month you want : ");
+    scanf("%d", &month_1);
+    printf("Please enter the month's day you want : ");
+    scanf("%d", &mday_1);
+    printf("Please enter the hour you want : ");
+    scanf("%d", &hour_1);
+    printf("Please enter the minute you want : ");
+    scanf("%d", &minute_1);
+    printf("Please enter the second you want : ");
+    scanf("%d", &second_1);
+
+    //
+    printf("\n");
 
     //
     struct time_diff td = diffs_on_date_and_time(1720549084, 1435207316);

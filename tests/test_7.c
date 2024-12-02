@@ -89,6 +89,9 @@ int main() {
     timestamp_0 = timegm(dt_0);
     timestamp_1 = timegm(dt_1);
 
+    printf("%ld\n", timestamp_0);
+    printf("%ld", timestamp_1);
+
     //
     struct time_diff td = diffs_on_date_and_time(timestamp_0, timestamp_1);
 

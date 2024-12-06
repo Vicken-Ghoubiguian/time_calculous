@@ -60,8 +60,8 @@ This C library can be integrated and used in all projects you want whatever the 
 * [time_calculous_GoAPI](https://github.com/Vicken-Ghoubiguian/time_calculous_GoAPI) : (used programming languages and technologies : );
 * [Foreign_function_interface_time_calculous](https://github.com/Vicken-Ghoubiguian/Foreign_function_interface_time_calculous) : (used programming languages and technologies : );
 * [time_calculous_GoWebApp](https://github.com/Vicken-Ghoubiguian/time_calculous_GoWebApp) : (used programming languages and technologies : );
-* [time_calculous_RustAPI]() : (used programming languages and technologies : );
-* [time_calculous_RustWebApp]() : (used programming languages and technologies : ).
+* [time_calculous_RustAPI](https://github.com/Vicken-Ghoubiguian/time_calculous_RustAPI) : (used programming languages and technologies : );
+* [time_calculous_RustWebApp](https://github.com/Vicken-Ghoubiguian/time_calculous_RustWebApp) : (used programming languages and technologies : ).
 
 Other projects using many others technologies and programming languages could be developed with this C library. So now it's your turn to take the plunge.
 

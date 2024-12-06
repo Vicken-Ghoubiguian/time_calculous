@@ -50,6 +50,7 @@ At your disposition, there are many examples which allow you to test all the fun
 
 This C library can be integrated and used in all projects you want whatever the used technologies and programming languages. Below, there are exposed all developed examples with their respective links and explanations :
 
+* [WorldClockLib](https://github.com/Vicken-Ghoubiguian/WorldClockLib) : (used programming languages and technologies : );
 * [WPF_time_calculous](https://github.com/Vicken-Ghoubiguian/WPF_time_calculous) : (used programming languages and technologies : );
 * [UWP_time_calculous](https://github.com/Vicken-Ghoubiguian/UWP_time_calculous) : (used programming languages and technologies : );
 * [GTK_time_calculous](https://github.com/Vicken-Ghoubiguian/GTK_time_calculous) : (used programming languages and technologies : );
